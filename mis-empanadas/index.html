@@ -9,12 +9,25 @@
   <meta property="og:description" content="A family-run food truck parked around Port Richey, serving hand-folded empanadas and a short menu we actually want to eat ourselves." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://source.unsplash.com/featured/1600x1100/?service-business%2Cteam" />
+  <meta name="theme-color" content="#1f3a5f" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EM%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
   <style>
     *,*::before,*::after { box-sizing: border-box; }
     :root { --accent: #1f3a5f; }
     body { margin:0; background:#0a0a0a; color:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif; line-height:1.5; }
     img { max-width:100%; display:block; }
+    a { color: inherit; }
+
+    /* Reveal-on-scroll, lightweight (no JS — uses prefers-reduced-motion) */
+    .fx-up { opacity:0; transform: translateY(18px); animation: fxUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s forwards; }
+    .fx-up:nth-child(2) { animation-delay: 0.18s; }
+    .fx-up:nth-child(3) { animation-delay: 0.26s; }
+    .fx-up:nth-child(4) { animation-delay: 0.34s; }
+    .fx-up:nth-child(5) { animation-delay: 0.42s; }
+    .fx-up:nth-child(6) { animation-delay: 0.5s; }
+    @keyframes fxUp { to { opacity:1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { .fx-up { animation: none; opacity:1; transform: none; } }
 
     /* Sticky header */
     header.site { display:flex; align-items:center; justify-content:space-between; padding:18px 32px; border-bottom:1px solid #1f1f1f; position:sticky; top:0; background:rgba(10,10,10,0.85); backdrop-filter:blur(8px); z-index:10; }
@@ -25,19 +38,20 @@
     .header-phone { color:#cfcfcf; text-decoration:none; font-weight:600; font-size:15px; }
     .header-cta-btn { padding:10px 18px; border-radius:999px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:14px; }
 
-    /* Hero with photo */
+    /* Hero */
     .hero {
       position:relative;
-      min-height:640px;
+      min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
-      padding:64px 32px 56px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://source.unsplash.com/featured/1600x1100/?service-business%2Cteam');
+      padding:64px 32px 64px 32px;
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://source.unsplash.com/featured/1600x1100/?service-business%2Cteam');
       background-size: cover;
       background-position: center;
     }
-    .hero-inner { max-width:980px; width:100%; margin:0 auto; }
+    .hero::after { content:""; position:absolute; inset:auto 0 0 0; height:140px; background: linear-gradient(180deg, transparent, #0a0a0a); pointer-events:none; }
+    .hero-inner { max-width:980px; width:100%; margin:0 auto; position:relative; z-index:2; }
     .eyebrow { margin:0; font-size:13px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); }
-    .hero h1 { margin:14px 0 18px; font-size:72px; font-weight:900; line-height:1.04; letter-spacing:-0.025em; color:#f5f5f5; }
+    .hero h1 { margin:14px 0 18px; font-size:74px; font-weight:900; line-height:1.04; letter-spacing:-0.025em; color:#f5f5f5; }
     .hero p.tagline { margin:0 0 32px; font-size:22px; color:#dcdcdc; max-width:720px; line-height:1.45; }
     .ctas { display:flex; gap:12px; flex-wrap:wrap; }
     .cta-primary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:16px; }
@@ -45,7 +59,7 @@
 
     /* Trust bar */
     .trust-bar { background:#101010; border-top:1px solid #1f1f1f; border-bottom:1px solid #1f1f1f; }
-    .trust-inner { max-width:1080px; margin:0 auto; padding:32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:24px; text-align:center; }
+    .trust-inner { max-width:1080px; margin:0 auto; padding:32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; text-align:center; }
     .trust-item { padding:8px 12px; }
     .trust-value { font-size:22px; font-weight:800; color:#f5f5f5; letter-spacing:-0.01em; }
     .trust-label { margin-top:6px; font-size:13px; color:#9a9a9a; line-height:1.45; }
@@ -64,24 +78,29 @@
     .card p { margin:0; font-size:15px; color:#a8a8a8; line-height:1.6; }
 
     /* Gallery */
-    .gallery {
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 220px;
-      gap:12px;
-    }
-    .gallery-tile {
-      background-size:cover; background-position:center;
-      border-radius:10px;
-      filter: saturate(0.95);
-      transition: transform 250ms ease, filter 250ms ease;
-    }
+    .gallery { display:grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 220px; gap:12px; }
+    .gallery-tile { background-size:cover; background-position:center; border-radius:10px; filter: saturate(0.95); transition: transform 250ms ease, filter 250ms ease; }
     .gallery-tile:hover { transform: scale(1.02); filter: saturate(1.05); }
     .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+
+    /* Reviews / social proof */
+    .reviews { text-align:left; }
+    .reviews-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:24px; }
+    .review { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .review-stars { color: #ffc44d; font-size:18px; letter-spacing:0.05em; margin-bottom:10px; }
+    .review p { margin:0 0 14px; color:#cfcfcf; font-size:15px; line-height:1.6; }
+    .review-attr { font-size:13px; color:#9a9a9a; }
+    .review-empty { padding:40px 28px; background:#0f0f0f; border:1px dashed #2a2a2a; border-radius:14px; text-align:center; }
+    .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
+    .review-empty span { color:#7a7a7a; font-size:13px; }
 
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+
+    /* Service area */
+    .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
+    .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -94,16 +113,20 @@
     input, textarea { padding:14px; font-size:15px; background:#141414; border:1px solid #2a2a2a; border-radius:10px; color:#f5f5f5; font-family:inherit; }
     input:focus, textarea:focus { outline:none; border-color: var(--accent); }
     button { padding:14px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; border:none; cursor:pointer; font-weight:700; font-size:16px; }
+    button:hover { filter: brightness(1.08); }
     .form-note { margin:12px 0 0; font-size:13px; color:#9a9a9a; }
+    .contact-fallback { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
 
     /* Footer */
-    footer { padding:48px 32px 36px; text-align:center; border-top:1px solid #1f1f1f; background:#080808; }
+    footer { padding:56px 32px 36px; text-align:center; border-top:1px solid #1f1f1f; background:#080808; }
     footer .brand-foot { display:inline-flex; align-items:center; gap:10px; margin-bottom:14px; }
     footer .logo { width:32px; height:32px; font-size:16px; }
     footer .brand-foot-name { font-size:15px; font-weight:700; color:#f5f5f5; }
     footer p { margin:6px 0; font-size:13px; color:#7a7a7a; }
     footer p + p { margin-top:6px; }
     footer a { color:#cfcfcf; text-decoration:underline; }
+    .footer-cta { display:inline-flex; gap:14px; margin-top:14px; }
+    .footer-cta a { color:#cfcfcf; text-decoration:none; padding:8px 14px; border-radius:999px; border:1px solid #1f1f1f; font-size:13px; }
 
     /* Responsive */
     @media (max-width: 720px) {
@@ -154,7 +177,7 @@
         </div>
         <div class="trust-item">
           <div class="trust-value">Free quotes</div>
-          <div class="trust-label">Tell us what you need, we&#39;ll quote it</div>
+          <div class="trust-label">Tell us what you need, we will quote it</div>
         </div>
   </div></div>
 
@@ -162,22 +185,22 @@
     <p class="eyebrow">What we do</p>
     <h2>Services</h2>
     <div class="services-grid">
-        <div class="card">
+        <div class="card fx-up">
           <div class="card-badge">1</div>
           <h3>Daily empanadas</h3>
           <p>Beef, chicken, ham and cheese, spinach. Folded that morning, fried to order. We do not microwave anything on the truck.</p>
         </div>
-        <div class="card">
+        <div class="card fx-up">
           <div class="card-badge">2</div>
           <h3>Catering trays</h3>
           <p>Trays of 25 or 50 for offices, job sites, and parties around Pasco County. Order two days out and we handle the rest.</p>
         </div>
-        <div class="card">
+        <div class="card fx-up">
           <div class="card-badge">3</div>
           <h3>Truck bookings</h3>
           <p>Park the truck at your event, school, or company lot. Flat fee plus per-empanada pricing. We bring napkins, sauces, and a card reader.</p>
         </div>
-        <div class="card">
+        <div class="card fx-up">
           <div class="card-badge">4</div>
           <h3>Weekly specials</h3>
           <p>One rotating empanada each week, usually something we grew up eating. Posted to our line, sold until we run out for the day.</p>
@@ -188,7 +211,16 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile" style="background-image:url('https://source.unsplash.com/featured/800x800/?small-business%2Cstorefront%2C0');"></div><div class="gallery-tile" style="background-image:url('https://source.unsplash.com/featured/800x800/?main-street%2Clocal%2C1');"></div><div class="gallery-tile" style="background-image:url('https://source.unsplash.com/featured/800x800/?service-business%2Cteam%2C2');"></div><div class="gallery-tile" style="background-image:url('https://source.unsplash.com/featured/800x800/?small-business%2Cstorefront%2C3');"></div><div class="gallery-tile" style="background-image:url('https://source.unsplash.com/featured/800x800/?main-street%2Clocal%2C4');"></div><div class="gallery-tile" style="background-image:url('https://source.unsplash.com/featured/800x800/?service-business%2Cteam%2C5');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://source.unsplash.com/featured/800x800/?small-business%2Cstorefront%2C0');"></div><div class="gallery-tile fx-up" style="background-image:url('https://source.unsplash.com/featured/800x800/?main-street%2Clocal%2C1');"></div><div class="gallery-tile fx-up" style="background-image:url('https://source.unsplash.com/featured/800x800/?service-business%2Cteam%2C2');"></div><div class="gallery-tile fx-up" style="background-image:url('https://source.unsplash.com/featured/800x800/?small-business%2Cstorefront%2C3');"></div><div class="gallery-tile fx-up" style="background-image:url('https://source.unsplash.com/featured/800x800/?main-street%2Clocal%2C4');"></div><div class="gallery-tile fx-up" style="background-image:url('https://source.unsplash.com/featured/800x800/?service-business%2Cteam%2C5');"></div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <p class="eyebrow">Reviews</p>
+    <h2>What Port Richey says</h2>
+    <div class="review-empty">
+      <p>Real reviews from your customers will appear here.</p>
+      <span>Connect your Google Business Profile to pull live ratings into this section.</span>
     </div>
   </section>
 
@@ -196,6 +228,16 @@
     <p class="eyebrow">About</p>
     <h2>How we run the truck in Port Richey</h2>
     <p>We started Mis Empanadas to bring real, hand-folded empanadas to Port Richey instead of the frozen kind you find in gas stations. Every food truck in town runs on a Facebook post and a guess at where the line will be, so we keep our schedule simple and our menu short. If we pick up the phone, you talk to the same person making your food.</p>
+  </section>
+
+  <section class="service-area">
+    <p class="eyebrow">Service area</p>
+    <h2>We serve Port Richey + nearby</h2>
+    <div>
+      <span class="pill primary">Port Richey</span>
+      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Same-day quotes inside city limits</span>
+    </div>
   </section>
 
   <section id="contact" class="contact">
@@ -207,13 +249,19 @@
         <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">11 AM - 8 PM</span></div>
         <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Closed, catering by request</span></div>
     </div>
-    <form onsubmit="event.preventDefault();">
-      <input placeholder="Name" />
-      <input placeholder="Phone or email" />
-      <textarea placeholder="What do you need?" rows="4"></textarea>
-      <button type="submit">Send</button>
-      <p class="form-note">This is a preview. The contact form is not yet wired. Call to book today.</p>
-    </form>
+    <form action="https://formsubmit.co/misempanadaspr@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New lead from Mis Empanadas site preview" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_cc" value="chlebholdings@gmail.com" />
+        <input type="text" name="_honey" tabIndex="-1" autoComplete="off" style="display:none" />
+        <input name="name" required placeholder="Full name" autocomplete="name" />
+        <input name="email" type="email" required placeholder="Email" autocomplete="email" />
+        <input name="phone" type="tel" required placeholder="Phone" autocomplete="tel" inputmode="tel" />
+        <textarea name="message" rows="4" required placeholder="What do you need?"></textarea>
+        <button type="submit">Send</button>
+        <p class="form-note">We reply same day during open hours.</p>
+      </form>
   </section>
 
   <footer>
@@ -222,7 +270,11 @@
       <span class="brand-foot-name">Mis Empanadas</span>
     </div>
     <p>Port Richey, FL  ·  <a href="tel:+17276050875">(727) 605-0875</a></p>
-    <p style="margin-top:18px; color:#5a5a5a;">Custom website preview built by <a href="https://chleb.ai">Chleb AI</a></p>
+    <div class="footer-cta">
+      <a href="tel:+17276050875">Call</a>
+      <a href="#contact">Get a quote</a>
+    </div>
+    <p style="margin-top:24px; color:#5a5a5a;">© 2026 Mis Empanadas · Custom website preview built by <a href="https://chleb.ai">Chleb AI</a></p>
   </footer>
 
 </body>
