@@ -1,360 +1,193 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Island Vibes · Fayetteville, AR</title>
-  <meta name="description" content="Island Vibes is Kemar&#39;s jerk-and-curry food truck rolling between Dickson Street, the Square, and the Razorback tailgates around Fayetteville." />
-  <meta property="og:title" content="Island Vibes · Fayetteville, AR" />
-  <meta property="og:description" content="Island Vibes is Kemar&#39;s jerk-and-curry food truck rolling between Dickson Street, the Square, and the Razorback tailgates around Fayetteville." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
-  <meta name="theme-color" content="#1f5f3a" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f5f3a'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EI%3C%2Ftext%3E%3C%2Fsvg%3E" />
-  <meta name="robots" content="noindex,nofollow" />
-  <style>
-    *,*::before,*::after { box-sizing: border-box; }
-    :root { --accent: #1f5f3a; }
-    body { margin:0; background:#0a0a0a; color:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif; line-height:1.5; }
-    img { max-width:100%; display:block; }
-    a { color: inherit; }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Island Vibes · Fayetteville food truck</title>
+<meta name="description" content="Island Vibes brings jerk chicken, oxtail, and rice and peas to lots, offices, and weddings across Fayetteville and the rest of Northwest Arkansas." />
+<meta property="og:title" content="Island Vibes" />
+<meta property="og:description" content="Island Vibes brings jerk chicken, oxtail, and rice and peas to lots, offices, and weddings across Fayetteville and the rest of Northwest Arkansas." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&fit=crop&w=1200&h=800&q=80" />
+<meta name="robots" content="noindex,nofollow" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
 
-    /* Reveal-on-scroll, lightweight (no JS — uses prefers-reduced-motion) */
-    .fx-up { opacity:0; transform: translateY(18px); animation: fxUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s forwards; }
-    .fx-up:nth-child(2) { animation-delay: 0.18s; }
-    .fx-up:nth-child(3) { animation-delay: 0.26s; }
-    .fx-up:nth-child(4) { animation-delay: 0.34s; }
-    .fx-up:nth-child(5) { animation-delay: 0.42s; }
-    .fx-up:nth-child(6) { animation-delay: 0.5s; }
-    @keyframes fxUp { to { opacity:1; transform: translateY(0); } }
-    @media (prefers-reduced-motion: reduce) { .fx-up { animation: none; opacity:1; transform: none; } }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead .vol { font-weight: 700; }
+.masthead .right { color: #555; }
 
-    /* Sticky header */
-    header.site { display:flex; align-items:center; justify-content:space-between; padding:18px 32px; border-bottom:1px solid #1f1f1f; position:sticky; top:0; background:rgba(10,10,10,0.85); backdrop-filter:blur(8px); z-index:10; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:38px; height:38px; border-radius:9px; background:var(--accent); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; color:#f5f5f5; }
-    .brand-name { font-size:16px; font-weight:700; color:#f5f5f5; letter-spacing:-0.01em; }
-    .header-cta { display:flex; gap:10px; align-items:center; }
-    .header-phone { color:#cfcfcf; text-decoration:none; font-weight:600; font-size:15px; }
-    .header-cta-btn { padding:10px 18px; border-radius:999px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:14px; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
+.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand-name .accent { color: var(--rust); font-style: normal; }
+.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
-    /* Hero */
-    .hero {
-      position:relative;
-      min-height:680px;
-      display:flex; flex-direction:column; justify-content:flex-end;
-      padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
-      background-size: cover;
-      background-position: center;
-    }
-    .hero::after { content:""; position:absolute; inset:auto 0 0 0; height:140px; background: linear-gradient(180deg, transparent, #0a0a0a); pointer-events:none; }
-    .hero-inner { max-width:980px; width:100%; margin:0 auto; position:relative; z-index:2; }
-    .eyebrow { margin:0; font-size:13px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); }
-    .hero h1 { margin:14px 0 18px; font-size:74px; font-weight:900; line-height:1.04; letter-spacing:-0.025em; color:#f5f5f5; }
-    .hero p.tagline { margin:0 0 32px; font-size:22px; color:#dcdcdc; max-width:720px; line-height:1.45; }
-    .ctas { display:flex; gap:12px; flex-wrap:wrap; }
-    .cta-primary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:16px; }
-    .cta-secondary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; color:#f5f5f5; text-decoration:none; font-weight:600; font-size:16px; border:1px solid rgba(245,245,245,0.25); background: rgba(255,255,255,0.04); }
+.lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
+.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
-    /* Trust bar */
-    .trust-bar { background:#101010; border-top:1px solid #1f1f1f; border-bottom:1px solid #1f1f1f; }
-    .trust-inner { max-width:1080px; margin:0 auto; padding:32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; text-align:center; }
-    .trust-item { padding:8px 12px; }
-    .trust-value { font-size:22px; font-weight:800; color:#f5f5f5; letter-spacing:-0.01em; }
-    .trust-label { margin-top:6px; font-size:13px; color:#9a9a9a; line-height:1.45; }
+.schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
+.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
+.schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
+.schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
-    /* Generic sections */
-    section { padding:80px 32px; max-width:1080px; margin:0 auto; }
-    section + section { border-top:1px solid #1f1f1f; }
-    h2 { margin:12px 0 36px; font-size:42px; font-weight:800; letter-spacing:-0.015em; }
+.menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
+.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
+.menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
+.menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
+.menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
-    /* Services */
-    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
-    .card { padding:28px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; transition: transform 200ms ease, border-color 200ms ease; }
-    .card:hover { transform: translateY(-4px); border-color:#2a2a2a; }
-    .card-badge { width:38px; height:38px; border-radius:9px; background:var(--accent); color:#f5f5f5; font-weight:800; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
-    .card h3 { margin:0 0 8px; font-size:20px; font-weight:700; }
-    .card p { margin:0; font-size:15px; color:#a8a8a8; line-height:1.6; }
+.cluster { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 320px 320px; gap: 6px; margin: 80px 0 0; background: var(--ink); }
+.cluster-tile { background-size: cover; background-position: center; filter: contrast(1.05) saturate(1.05); }
+.cluster-tile.big { grid-row: span 2; }
 
-    /* Gallery */
-    .gallery { display:grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 220px; gap:12px; }
-    .gallery-tile { background-size:cover; background-position:center; border-radius:10px; filter: saturate(0.95); transition: transform 250ms ease, filter 250ms ease; }
-    .gallery-tile:hover { transform: scale(1.02); filter: saturate(1.05); }
-    .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
+.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
+.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
 
-    /* Reviews / social proof */
-    .reviews { text-align:left; }
-    .reviews-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:24px; }
-    .review { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-    .review-stars { color: #ffc44d; font-size:18px; letter-spacing:0.05em; margin-bottom:10px; }
-    .review p { margin:0 0 14px; color:#cfcfcf; font-size:15px; line-height:1.6; }
-    .review-attr { font-size:13px; color:#9a9a9a; }
-    .review-empty { padding:40px 28px; background:#0f0f0f; border:1px dashed #2a2a2a; border-radius:14px; text-align:center; }
-    .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
-    .review-empty span { color:#7a7a7a; font-size:13px; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
+.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
-    /* Specialties */
-    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
-    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
-    .specialty-row:last-child { border-bottom:none; }
-    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
-    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+.area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
+.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
 
-    /* Process */
-    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
-    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
-    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
-    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
+.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
+.foot-phone a { color: var(--mustard); text-decoration: none; }
+.foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
 
-    /* About */
-    .about { max-width:820px; }
-    .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
-    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
-    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
-    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
-
-    /* Service area */
-    .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
-    .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
-    .area-pills { line-height:2.4; }
-
-    /* Contact */
-    .contact { max-width:820px; }
-    .contact .phone { display:inline-block; margin:14px 0 28px; font-size:32px; font-weight:800; color:#f5f5f5; text-decoration:none; letter-spacing:-0.01em; }
-    .hours { display:grid; gap:8px; margin-bottom:28px; max-width:380px; }
-    .hours-row { display:flex; justify-content:space-between; color:#cfcfcf; font-size:15px; padding:8px 0; border-bottom:1px solid #1a1a1a; }
-    .hours-day { font-weight:600; }
-    .hours-time { color:#9a9a9a; }
-    form { display:flex; flex-direction:column; gap:12px; max-width:540px; }
-    input, textarea { padding:14px; font-size:15px; background:#141414; border:1px solid #2a2a2a; border-radius:10px; color:#f5f5f5; font-family:inherit; }
-    input:focus, textarea:focus { outline:none; border-color: var(--accent); }
-    button { padding:14px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; border:none; cursor:pointer; font-weight:700; font-size:16px; }
-    button:hover { filter: brightness(1.08); }
-    .form-note { margin:12px 0 0; font-size:13px; color:#9a9a9a; }
-    .contact-fallback { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-
-    /* Footer */
-    footer { padding:56px 32px 36px; text-align:center; border-top:1px solid #1f1f1f; background:#080808; }
-    footer .brand-foot { display:inline-flex; align-items:center; gap:10px; margin-bottom:14px; }
-    footer .logo { width:32px; height:32px; font-size:16px; }
-    footer .brand-foot-name { font-size:15px; font-weight:700; color:#f5f5f5; }
-    footer p { margin:6px 0; font-size:13px; color:#7a7a7a; }
-    footer p + p { margin-top:6px; }
-    footer a { color:#cfcfcf; text-decoration:underline; }
-    .footer-cta { display:inline-flex; gap:14px; margin-top:14px; }
-    .footer-cta a { color:#cfcfcf; text-decoration:none; padding:8px 14px; border-radius:999px; border:1px solid #1f1f1f; font-size:13px; }
-
-    /* Responsive */
-    @media (max-width: 720px) {
-      .hero { min-height:540px; padding:48px 22px 40px; }
-      .hero h1 { font-size:46px; }
-      .hero p.tagline { font-size:18px; }
-      h2 { font-size:30px; }
-      section { padding:56px 22px; }
-      .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
-      .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
-      .header-cta-btn { display:none; }
-      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
-      .process-step { padding:18px; }
-    }
-  </style>
+@media (max-width: 700px) {
+  .menu-list { grid-template-columns: 1fr; gap: 24px; }
+  .cluster { grid-template-columns: 1fr; grid-template-rows: 220px 220px 220px 220px 220px; }
+  .cluster-tile.big { grid-row: span 1; }
+}
+</style>
 </head>
 <body>
 
-  <header class="site">
-    <div class="brand">
-      <div class="logo">I</div>
-      <div class="brand-name">Island Vibes</div>
-    </div>
-    <div class="header-cta">
-      <a href="tel:+18642071518" class="header-phone">(864) 207-1518</a>
-      <a href="tel:+18642071518" class="header-cta-btn">Call now</a>
-    </div>
-  </header>
+<div class="masthead">
+  <div class="vol">Vol. 04 · 2026</div>
+  <div class="center">A Island Vibes Communique</div>
+  <div class="right">Fayetteville, AR</div>
+</div>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Fayetteville · AR</p>
-      <h1>Caribbean plates, parked across Fayetteville.</h1>
-      <p class="tagline">Island Vibes is Kemar&#39;s jerk-and-curry food truck rolling between Dickson Street, the Square, and the Razorback tailgates around Fayetteville.</p>
-      <div class="ctas">
-        <a href="tel:+18642071518" class="cta-primary">Call (864) 207-1518</a>
-        <a href="#contact" class="cta-secondary">Book a quote</a>
+<header class="brand">
+  <h1 class="brand-name">Island Vibes</h1>
+  <p class="brand-sub">Run by Kemar · Fayetteville</p>
+</header>
+
+<section class="lede">
+  <p><span class="drop-cap">I</span>sland Vibes brings jerk chicken, oxtail, and rice and peas to lots, offices, and weddings across Fayetteville and the rest of Northwest Arkansas.</p>
+</section>
+
+<section class="schedule">
+  <p class="schedule-eyebrow">How we run the truck in Fayetteville</p>
+  <h2>What happens when you call.</h2>
+  <div class="schedule-grid">
+    <div class="schedule-row">
+      <div class="schedule-day">Find the truck</div>
+      <div class="schedule-where">Daily location posted on the phone line and at the top of this page by 10 AM.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Order at the window</div>
+      <div class="schedule-where">Plates run eleven to sixteen dollars. Cash or card, no app, no upcharge.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Eat hot</div>
+      <div class="schedule-where">Picnic tables on site or grab it to-go in a sealed clamshell with sauce on the side.</div>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <p class="menu-eyebrow">The list</p>
+  <h2>What we make.</h2>
+  <div class="menu-list">
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Jerk chicken plate</div>
+        <div class="menu-item-leader"></div>
       </div>
+      <p class="menu-item-detail">Quarter chicken marinated overnight, charred on the flat-top, served over rice and peas with fried plantains and slaw.</p>
     </div>
-  </section>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Brown stew oxtail</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Slow-braised oxtail in brown gravy with butter beans, served over white rice with a side of steamed cabbage.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Curry goat bowl</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Bone-in goat simmered with Jamaican curry and potato, ladled over basmati. Comes with a hard-dough roll.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Escovitch snapper</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Whole fried red snapper topped with vinegar-pickled onions, peppers, and carrots. Served with festival dumplings.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Beef patty + coco bread</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Flaky pastry stuffed with seasoned ground beef, tucked inside a soft coco bread roll. Sells out by one.</p>
+    </div>
+  </div>
+</section>
 
-  <div class="trust-bar"><div class="trust-inner">
-        <div class="trust-item">
-          <div class="trust-value">Fayetteville</div>
-          <div class="trust-label">Locally owned &amp; operated</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Same-day response</div>
-          <div class="trust-label">Texts and calls answered fast</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Free quotes</div>
-          <div class="trust-label">Tell us what you need, we will quote it</div>
-        </div>
-  </div></div>
+<section class="cluster">
+  <div class="cluster-tile big" style="background-image: url('https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+</section>
 
-  <section>
-    <p class="eyebrow">What we do</p>
-    <h2>Services</h2>
-    <div class="services-grid">
-        <div class="card fx-up">
-          <div class="card-badge">1</div>
-          <h3>Lunch service</h3>
-          <p>We park the truck on a posted lunch route, take orders off the window, and have plates out in under ten minutes.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">2</div>
-          <h3>Private events</h3>
-          <p>We pull up to your driveway, office lot, or venue, set up a single-line service, and feed your guest count off one menu.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">3</div>
-          <h3>Wedding catering</h3>
-          <p>Two or three plates picked ahead of time, prepped that morning, served from the truck at your reception window.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">4</div>
-          <h3>Office drop-offs</h3>
-          <p>Pre-ordered plates packed in foil pans, delivered hot to your office in Fayetteville with utensils and sauces included.</p>
-        </div>
-    </div>
-  </section>
+<section class="note">
+  <p class="note-eyebrow">A short note</p>
+  <h2>From Kemar.</h2>
+  <p>Kemar grew up cooking with his grandmother in Kingston before moving to Fayetteville for school. He runs the truck himself most days, sources the scotch bonnets and pimento weekly, and won&#39;t sub out the jerk marinade no matter how busy the lot gets.</p>
+  <p class="signature">— Kemar</p>
+</section>
 
-  <section class="specialties">
-    <p class="eyebrow">What we're known for</p>
-    <h2>Specialties</h2>
-    <div class="specialty-list">
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Jerk chicken plate</div>
-          <div class="specialty-detail">Quarter chicken marinated overnight, charred on the flat-top, served over rice and peas with cabbage and plantain.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Oxtail and rice</div>
-          <div class="specialty-detail">Braised four hours in brown gravy with butter beans, scooped over rice and peas with steamed cabbage on the side.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Curry goat plate</div>
-          <div class="specialty-detail">Bone-in goat slow-cooked in yellow curry and scotch bonnet, plated with rice and peas and fried plantain.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Brown stew snapper</div>
-          <div class="specialty-detail">Whole snapper fried then simmered in brown stew gravy with peppers and onions, served over white rice.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Jerk wings basket</div>
-          <div class="specialty-detail">Six jerk wings, festival dumpling on the side, mango habanero or jerk aioli for dipping. Walk-up window order.</div>
-        </div>
-    </div>
-  </section>
+<section class="catering">
+  <h2>Book Island Vibes.</h2>
+  <p>We started Island Vibes because nobody in Northwest Arkansas was cooking the food we grew up eating. Every plate is built that morning, the jerk goes on a real charcoal box, and the rice and peas is cooked in coconut milk like it should be. If we run out by two, we run out, that&#39;s how we keep it honest.</p>
+  <a href="tel:+18642071518" class="catering-btn">(864) 207-1518 · Call to book</a>
+</section>
 
-  <section class="process">
-    <p class="eyebrow">How it works</p>
-    <h2>What happens when you call</h2>
-    <div class="process-list">
-        <div class="process-step fx-up">
-          <div class="process-num">1</div>
-          <div class="process-body">
-            <div class="process-name">Find the truck</div>
-            <div class="process-detail">Check the week&#39;s posted route on the site or text the number for today&#39;s spot.</div>
-          </div>
-        </div>
-        <div class="process-step fx-up">
-          <div class="process-num">2</div>
-          <div class="process-body">
-            <div class="process-name">Order at the window</div>
-            <div class="process-detail">Pick a plate, pay at the truck, we hand it out hot in about ten minutes.</div>
-          </div>
-        </div>
-        <div class="process-step fx-up">
-          <div class="process-num">3</div>
-          <div class="process-body">
-            <div class="process-name">Book the truck</div>
-            <div class="process-detail">For events, call Kemar with the date, headcount, and address to lock the slot.</div>
-          </div>
-        </div>
-    </div>
-  </section>
+<section class="area">
+  <p>Where we roll</p>
+  <p class="area-cities">Dickson Street · Mount Sequoyah · Wedington · Springdale · Farmington · Johnson</p>
+</section>
 
-  <section>
-    <p class="eyebrow">The work</p>
-    <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
-    </div>
-  </section>
-
-  <section class="reviews">
-    <p class="eyebrow">Reviews</p>
-    <h2>What Fayetteville says</h2>
-    <div class="review-empty">
-      <p>Real reviews from your customers will appear here.</p>
-      <span>Connect your Google Business Profile to pull live ratings into this section.</span>
-    </div>
-  </section>
-
-  <section class="about">
-    <p class="eyebrow">About</p>
-    <h2>How we run the truck in Fayetteville</h2>
-    <p>We started Island Vibes because Fayetteville had no shortage of good food trucks but nowhere to get a real jerk plate without a two-hour drive. We cook every plate to order off the truck, post the route at the start of each week, and pick up the phone when you call about catering. If we are out of oxtail by 7 PM on a Saturday, that is the day we had.</p>
-    <div class="owner-note">
-      <div class="owner-eyebrow">Meet Kemar</div>
-      <p>Kemar grew up cooking jerk over pimento wood at home in Jamaica, moved to Northwest Arkansas, and got tired of driving to Tulsa for a real plate. He runs the truck himself, takes the calls himself, and won&#39;t send food out of the window he wouldn&#39;t eat standing next to it.</p>
-    </div>
-  </section>
-
-  <section class="service-area">
-    <p class="eyebrow">Service area</p>
-    <h2>We serve Fayetteville + nearby</h2>
-    <div class="area-pills">
-      <span class="pill primary">Fayetteville</span>
-      <span class="pill">Dickson Street</span><span class="pill">Wedington</span><span class="pill">Mount Sequoyah</span><span class="pill">Springdale</span><span class="pill">Farmington</span><span class="pill">Johnson</span>
-      <span class="pill">Same-day quotes inside city limits</span>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <p class="eyebrow">Contact</p>
-    <h2>Get in touch</h2>
-    <a href="tel:+18642071518" class="phone">(864) 207-1518</a>
-    <div class="hours">
-        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">11 AM - 8 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sat</span><span class="hours-time">12 PM - 9 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sun-Mon</span><span class="hours-time">Closed, private events by request</span></div>
-    </div>
-    <form action="https://formsubmit.co/islandvibesnwa@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New lead from Island Vibes site preview" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_cc" value="chlebholdings@gmail.com" />
-        <input type="text" name="_honey" tabIndex="-1" autoComplete="off" style="display:none" />
-        <input name="name" required placeholder="Full name" autocomplete="name" />
-        <input name="email" type="email" required placeholder="Email" autocomplete="email" />
-        <input name="phone" type="tel" required placeholder="Phone" autocomplete="tel" inputmode="tel" />
-        <textarea name="message" rows="4" required placeholder="What do you need?"></textarea>
-        <button type="submit">Send</button>
-        <p class="form-note">We reply same day during open hours.</p>
-      </form>
-  </section>
-
-  <footer>
-    <div class="brand-foot">
-      <div class="logo">I</div>
-      <span class="brand-foot-name">Island Vibes</span>
-    </div>
-    <p>Fayetteville, AR  ·  <a href="tel:+18642071518">(864) 207-1518</a></p>
-    <div class="footer-cta">
-      <a href="tel:+18642071518">Call</a>
-      <a href="#contact">Get a quote</a>
-    </div>
-    <p style="margin-top:24px; color:#5a5a5a;">© 2026 Island Vibes · Custom website preview built by <a href="https://chleb.ai">Chleb AI</a></p>
-  </footer>
+<footer class="foot">
+  <h3 class="foot-name">Island Vibes</h3>
+  <p class="foot-phone"><a href="tel:+18642071518">(864) 207-1518</a></p>
+  <p class="foot-meta">Fayetteville, AR · Run by Kemar</p>
+</footer>
 
 </body>
 </html>
