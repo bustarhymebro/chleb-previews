@@ -1,351 +1,193 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taqueria Maty · Riverview, FL</title>
-  <meta name="description" content="Taqueria Maty rolls out of Riverview with hand-pressed tortillas, slow-braised meats, and a salsa bar built for people who actually eat spicy." />
-  <meta property="og:title" content="Taqueria Maty · Riverview, FL" />
-  <meta property="og:description" content="Taqueria Maty rolls out of Riverview with hand-pressed tortillas, slow-braised meats, and a salsa bar built for people who actually eat spicy." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
-  <meta name="theme-color" content="#5f1f1f" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%235f1f1f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3ET%3C%2Ftext%3E%3C%2Fsvg%3E" />
-  <meta name="robots" content="noindex,nofollow" />
-  <style>
-    *,*::before,*::after { box-sizing: border-box; }
-    :root { --accent: #5f1f1f; }
-    body { margin:0; background:#0a0a0a; color:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif; line-height:1.5; }
-    img { max-width:100%; display:block; }
-    a { color: inherit; }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Taqueria Maty · Riverview food truck</title>
+<meta name="description" content="Maty runs a small food truck out of Riverview, slinging tacos, tortas, and weekend birria for folks who know the difference." />
+<meta property="og:title" content="Taqueria Maty" />
+<meta property="og:description" content="Maty runs a small food truck out of Riverview, slinging tacos, tortas, and weekend birria for folks who know the difference." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=1200&h=800&q=80" />
+<meta name="robots" content="noindex,nofollow" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
 
-    /* Reveal-on-scroll, lightweight (no JS — uses prefers-reduced-motion) */
-    .fx-up { opacity:0; transform: translateY(18px); animation: fxUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s forwards; }
-    .fx-up:nth-child(2) { animation-delay: 0.18s; }
-    .fx-up:nth-child(3) { animation-delay: 0.26s; }
-    .fx-up:nth-child(4) { animation-delay: 0.34s; }
-    .fx-up:nth-child(5) { animation-delay: 0.42s; }
-    .fx-up:nth-child(6) { animation-delay: 0.5s; }
-    @keyframes fxUp { to { opacity:1; transform: translateY(0); } }
-    @media (prefers-reduced-motion: reduce) { .fx-up { animation: none; opacity:1; transform: none; } }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead .vol { font-weight: 700; }
+.masthead .right { color: #555; }
 
-    /* Sticky header */
-    header.site { display:flex; align-items:center; justify-content:space-between; padding:18px 32px; border-bottom:1px solid #1f1f1f; position:sticky; top:0; background:rgba(10,10,10,0.85); backdrop-filter:blur(8px); z-index:10; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:38px; height:38px; border-radius:9px; background:var(--accent); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; color:#f5f5f5; }
-    .brand-name { font-size:16px; font-weight:700; color:#f5f5f5; letter-spacing:-0.01em; }
-    .header-cta { display:flex; gap:10px; align-items:center; }
-    .header-phone { color:#cfcfcf; text-decoration:none; font-weight:600; font-size:15px; }
-    .header-cta-btn { padding:10px 18px; border-radius:999px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:14px; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
+.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand-name .accent { color: var(--rust); font-style: normal; }
+.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
-    /* Hero */
-    .hero {
-      position:relative;
-      min-height:680px;
-      display:flex; flex-direction:column; justify-content:flex-end;
-      padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
-      background-size: cover;
-      background-position: center;
-    }
-    .hero::after { content:""; position:absolute; inset:auto 0 0 0; height:140px; background: linear-gradient(180deg, transparent, #0a0a0a); pointer-events:none; }
-    .hero-inner { max-width:980px; width:100%; margin:0 auto; position:relative; z-index:2; }
-    .eyebrow { margin:0; font-size:13px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); }
-    .hero h1 { margin:14px 0 18px; font-size:74px; font-weight:900; line-height:1.04; letter-spacing:-0.025em; color:#f5f5f5; }
-    .hero p.tagline { margin:0 0 32px; font-size:22px; color:#dcdcdc; max-width:720px; line-height:1.45; }
-    .ctas { display:flex; gap:12px; flex-wrap:wrap; }
-    .cta-primary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:16px; }
-    .cta-secondary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; color:#f5f5f5; text-decoration:none; font-weight:600; font-size:16px; border:1px solid rgba(245,245,245,0.25); background: rgba(255,255,255,0.04); }
+.lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
+.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
-    /* Trust bar */
-    .trust-bar { background:#101010; border-top:1px solid #1f1f1f; border-bottom:1px solid #1f1f1f; }
-    .trust-inner { max-width:1080px; margin:0 auto; padding:32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; text-align:center; }
-    .trust-item { padding:8px 12px; }
-    .trust-value { font-size:22px; font-weight:800; color:#f5f5f5; letter-spacing:-0.01em; }
-    .trust-label { margin-top:6px; font-size:13px; color:#9a9a9a; line-height:1.45; }
+.schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
+.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
+.schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
+.schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
-    /* Generic sections */
-    section { padding:80px 32px; max-width:1080px; margin:0 auto; }
-    section + section { border-top:1px solid #1f1f1f; }
-    h2 { margin:12px 0 36px; font-size:42px; font-weight:800; letter-spacing:-0.015em; }
+.menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
+.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
+.menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
+.menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
+.menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
-    /* Services */
-    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
-    .card { padding:28px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; transition: transform 200ms ease, border-color 200ms ease; }
-    .card:hover { transform: translateY(-4px); border-color:#2a2a2a; }
-    .card-badge { width:38px; height:38px; border-radius:9px; background:var(--accent); color:#f5f5f5; font-weight:800; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
-    .card h3 { margin:0 0 8px; font-size:20px; font-weight:700; }
-    .card p { margin:0; font-size:15px; color:#a8a8a8; line-height:1.6; }
+.cluster { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 320px 320px; gap: 6px; margin: 80px 0 0; background: var(--ink); }
+.cluster-tile { background-size: cover; background-position: center; filter: contrast(1.05) saturate(1.05); }
+.cluster-tile.big { grid-row: span 2; }
 
-    /* Gallery */
-    .gallery { display:grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 220px; gap:12px; }
-    .gallery-tile { background-size:cover; background-position:center; border-radius:10px; filter: saturate(0.95); transition: transform 250ms ease, filter 250ms ease; }
-    .gallery-tile:hover { transform: scale(1.02); filter: saturate(1.05); }
-    .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
+.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
+.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
 
-    /* Reviews / social proof */
-    .reviews { text-align:left; }
-    .reviews-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:24px; }
-    .review { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-    .review-stars { color: #ffc44d; font-size:18px; letter-spacing:0.05em; margin-bottom:10px; }
-    .review p { margin:0 0 14px; color:#cfcfcf; font-size:15px; line-height:1.6; }
-    .review-attr { font-size:13px; color:#9a9a9a; }
-    .review-empty { padding:40px 28px; background:#0f0f0f; border:1px dashed #2a2a2a; border-radius:14px; text-align:center; }
-    .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
-    .review-empty span { color:#7a7a7a; font-size:13px; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
+.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
-    /* Specialties */
-    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
-    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
-    .specialty-row:last-child { border-bottom:none; }
-    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
-    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+.area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
+.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
 
-    /* Process */
-    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
-    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
-    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
-    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
+.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
+.foot-phone a { color: var(--mustard); text-decoration: none; }
+.foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
 
-    /* About */
-    .about { max-width:820px; }
-    .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
-    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
-    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
-    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
-
-    /* Service area */
-    .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
-    .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
-    .area-pills { line-height:2.4; }
-
-    /* Contact */
-    .contact { max-width:820px; }
-    .contact .phone { display:inline-block; margin:14px 0 28px; font-size:32px; font-weight:800; color:#f5f5f5; text-decoration:none; letter-spacing:-0.01em; }
-    .hours { display:grid; gap:8px; margin-bottom:28px; max-width:380px; }
-    .hours-row { display:flex; justify-content:space-between; color:#cfcfcf; font-size:15px; padding:8px 0; border-bottom:1px solid #1a1a1a; }
-    .hours-day { font-weight:600; }
-    .hours-time { color:#9a9a9a; }
-    form { display:flex; flex-direction:column; gap:12px; max-width:540px; }
-    input, textarea { padding:14px; font-size:15px; background:#141414; border:1px solid #2a2a2a; border-radius:10px; color:#f5f5f5; font-family:inherit; }
-    input:focus, textarea:focus { outline:none; border-color: var(--accent); }
-    button { padding:14px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; border:none; cursor:pointer; font-weight:700; font-size:16px; }
-    button:hover { filter: brightness(1.08); }
-    .form-note { margin:12px 0 0; font-size:13px; color:#9a9a9a; }
-    .contact-fallback { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-
-    /* Footer */
-    footer { padding:56px 32px 36px; text-align:center; border-top:1px solid #1f1f1f; background:#080808; }
-    footer .brand-foot { display:inline-flex; align-items:center; gap:10px; margin-bottom:14px; }
-    footer .logo { width:32px; height:32px; font-size:16px; }
-    footer .brand-foot-name { font-size:15px; font-weight:700; color:#f5f5f5; }
-    footer p { margin:6px 0; font-size:13px; color:#7a7a7a; }
-    footer p + p { margin-top:6px; }
-    footer a { color:#cfcfcf; text-decoration:underline; }
-    .footer-cta { display:inline-flex; gap:14px; margin-top:14px; }
-    .footer-cta a { color:#cfcfcf; text-decoration:none; padding:8px 14px; border-radius:999px; border:1px solid #1f1f1f; font-size:13px; }
-
-    /* Responsive */
-    @media (max-width: 720px) {
-      .hero { min-height:540px; padding:48px 22px 40px; }
-      .hero h1 { font-size:46px; }
-      .hero p.tagline { font-size:18px; }
-      h2 { font-size:30px; }
-      section { padding:56px 22px; }
-      .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
-      .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
-      .header-cta-btn { display:none; }
-      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
-      .process-step { padding:18px; }
-    }
-  </style>
+@media (max-width: 700px) {
+  .menu-list { grid-template-columns: 1fr; gap: 24px; }
+  .cluster { grid-template-columns: 1fr; grid-template-rows: 220px 220px 220px 220px 220px; }
+  .cluster-tile.big { grid-row: span 1; }
+}
+</style>
 </head>
 <body>
 
-  <header class="site">
-    <div class="brand">
-      <div class="logo">T</div>
-      <div class="brand-name">Taqueria Maty</div>
-    </div>
-    <div class="header-cta">
-      <a href="tel:+18133597264" class="header-phone">(813) 359-7264</a>
-      <a href="tel:+18133597264" class="header-cta-btn">Call now</a>
-    </div>
-  </header>
+<div class="masthead">
+  <div class="vol">Vol. 04 · 2026</div>
+  <div class="center">A Taqueria Maty Communique</div>
+  <div class="right">Riverview, FL</div>
+</div>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Riverview · FL</p>
-      <h1>Real Mexican plates, parked in Riverview.</h1>
-      <p class="tagline">Taqueria Maty rolls out of Riverview with hand-pressed tortillas, slow-braised meats, and a salsa bar built for people who actually eat spicy.</p>
-      <div class="ctas">
-        <a href="tel:+18133597264" class="cta-primary">Call (813) 359-7264</a>
-        <a href="#contact" class="cta-secondary">Book a quote</a>
+<header class="brand">
+  <h1 class="brand-name">Taqueria Maty</h1>
+  <p class="brand-sub">Run by Maty · Riverview</p>
+</header>
+
+<section class="lede">
+  <p><span class="drop-cap">M</span>aty runs a small food truck out of Riverview, slinging tacos, tortas, and weekend birria for folks who know the difference.</p>
+</section>
+
+<section class="schedule">
+  <p class="schedule-eyebrow">How Riverview eats with us</p>
+  <h2>What happens when you call.</h2>
+  <div class="schedule-grid">
+    <div class="schedule-row">
+      <div class="schedule-day">Find the truck</div>
+      <div class="schedule-where">Check the location for the day, swing by the window, no reservation needed.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Order at the window</div>
+      <div class="schedule-where">Tell us what you want, watch it come off the plancha, pay cash or card.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Eat</div>
+      <div class="schedule-where">Grab a seat at the picnic tables, hit the salsa bar, ask for seconds.</div>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <p class="menu-eyebrow">The list</p>
+  <h2>What we make.</h2>
+  <div class="menu-list">
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Al pastor taco plate</div>
+        <div class="menu-item-leader"></div>
       </div>
+      <p class="menu-item-detail">Three corn tortillas, marinated pork off the trompo, pineapple, onion, cilantro, salsa verde, lime.</p>
     </div>
-  </section>
-
-  <div class="trust-bar"><div class="trust-inner">
-        <div class="trust-item">
-          <div class="trust-value">Riverview</div>
-          <div class="trust-label">Locally owned &amp; operated</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Same-day response</div>
-          <div class="trust-label">Texts and calls answered fast</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Free quotes</div>
-          <div class="trust-label">Tell us what you need, we will quote it</div>
-        </div>
-  </div></div>
-
-  <section>
-    <p class="eyebrow">What we do</p>
-    <h2>Services</h2>
-    <div class="services-grid">
-        <div class="card fx-up">
-          <div class="card-badge">1</div>
-          <h3>Truck service</h3>
-          <p>Pull up, order at the window, eat at the picnic tables. Cash or card. Most plates out in under six minutes.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">2</div>
-          <h3>Catering trays</h3>
-          <p>Half and full pans of carnitas, al pastor, rice, beans, and the full salsa lineup. Drop-off across south Hillsborough.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">3</div>
-          <h3>Truck on site</h3>
-          <p>We park the truck at your event and serve guests off the window. Birthdays, work lunches, weddings, quinces.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">4</div>
-          <h3>Taco bar package</h3>
-          <p>Build-your-own setup with two meats, warm tortillas, onion, cilantro, lime, and three salsas held hot for two hours.</p>
-        </div>
-    </div>
-  </section>
-
-  <section class="specialties">
-    <p class="eyebrow">What we're known for</p>
-    <h2>Specialties</h2>
-    <div class="specialty-list">
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Al pastor tacos</div>
-          <div class="specialty-detail">Marinated pork off the trompo, pineapple, onion, cilantro, double corn tortilla. Three per order with lime and salsa verde.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Birria quesatacos</div>
-          <div class="specialty-detail">Slow-braised beef, melted Oaxaca, tortilla dipped in consomé and crisped on the plancha. Served with a cup of broth.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Carnitas plate</div>
-          <div class="specialty-detail">Michoacan-style pork, rice, refried beans, four tortillas, pickled onion. Choice of red or green salsa on the side.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Elote loco</div>
-          <div class="specialty-detail">Grilled corn off the cob, mayo, cotija, tajin, lime, hot sauce. Sized as a cup, eat it with a spoon.</div>
-        </div>
-        <div class="specialty-row fx-up">
-          <div class="specialty-name">Family pack of ten</div>
-          <div class="specialty-detail">Ten tacos any meat, large rice, large beans, chips, and sixteen ounces of salsa. Feeds three to four hungry adults.</div>
-        </div>
-    </div>
-  </section>
-
-  <section class="process">
-    <p class="eyebrow">How it works</p>
-    <h2>What happens when you call</h2>
-    <div class="process-list">
-        <div class="process-step fx-up">
-          <div class="process-num">1</div>
-          <div class="process-body">
-            <div class="process-name">Find the truck</div>
-            <div class="process-detail">Check the location for the day, pull up, walk to the window, order off the board.</div>
-          </div>
-        </div>
-        <div class="process-step fx-up">
-          <div class="process-num">2</div>
-          <div class="process-body">
-            <div class="process-name">We cook to order</div>
-            <div class="process-detail">Meat off the plancha or trompo, tortillas warmed fresh, plate built while you wait.</div>
-          </div>
-        </div>
-        <div class="process-step fx-up">
-          <div class="process-num">3</div>
-          <div class="process-body">
-            <div class="process-name">Hit the salsa bar</div>
-            <div class="process-detail">Five salsas from mild to actually hot, plus onion, cilantro, lime, and pickled jalapeños.</div>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <section>
-    <p class="eyebrow">The work</p>
-    <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
-    </div>
-  </section>
-
-  <section class="reviews">
-    <p class="eyebrow">Reviews</p>
-    <h2>What Riverview says</h2>
-    <div class="review-empty">
-      <p>Real reviews from your customers will appear here.</p>
-      <span>Connect your Google Business Profile to pull live ratings into this section.</span>
-    </div>
-  </section>
-
-  <section class="about">
-    <p class="eyebrow">About</p>
-    <h2>How we run the truck in Riverview</h2>
-    <p>We started Taqueria Maty because Riverview kept growing and there still wasn&#39;t a spot serving the kind of tacos you&#39;d find on a corner in Mexico. Every meat is cooked the morning of, every tortilla is pressed in the truck, and the salsas are made by hand. If we run out, we close for the day and start over tomorrow.</p>
-    <div class="owner-note">
-      <div class="owner-eyebrow">Meet Maty</div>
-      <p>Maty grew up cooking the recipes her mom ran out of a kitchen in Puebla, then spent years feeding crews on job sites around south Hillsborough before putting her name on a truck. She presses the tortillas, runs the trompo, and answers the catering calls herself.</p>
-    </div>
-  </section>
-
-  <section class="service-area">
-    <p class="eyebrow">Service area</p>
-    <h2>We serve Riverview + nearby</h2>
-    <div class="area-pills">
-      <span class="pill primary">Riverview</span>
-      <span class="pill">Riverview</span><span class="pill">Brandon</span><span class="pill">Apollo Beach</span><span class="pill">Gibsonton</span><span class="pill">Ruskin</span><span class="pill">Valrico</span>
-      <span class="pill">Same-day quotes inside city limits</span>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <p class="eyebrow">Contact</p>
-    <h2>Get in touch</h2>
-    <a href="tel:+18133597264" class="phone">(813) 359-7264</a>
-    <div class="hours">
-        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">11 AM - 8 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">11 AM - 9 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sun-Mon</span><span class="hours-time">Closed, catering by request</span></div>
-    </div>
-    <div class="contact-fallback">
-        <p>The fastest way to reach us is by phone.</p>
-        <a href="tel:+18133597264" class="cta-primary" style="margin-top:12px;">Call (813) 359-7264</a>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Quesabirria trio</div>
+        <div class="menu-item-leader"></div>
       </div>
-  </section>
+      <p class="menu-item-detail">Three tacos dipped in birria fat, crisped on the plancha, oaxaca cheese inside, cup of consome for dipping.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Carne asada torta</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Telera roll, grilled skirt steak, refried beans, avocado, tomato, jalapeno, queso fresco, chipotle mayo.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Elote in a cup</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Sweet corn off the cob, butter, mayo, cotija, tajin, lime, served hot with a spoon.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Family carnitas pack</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">One pound carnitas, rice, beans, twenty tortillas, pickled onions, two salsas, feeds a family of four.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <div class="brand-foot">
-      <div class="logo">T</div>
-      <span class="brand-foot-name">Taqueria Maty</span>
-    </div>
-    <p>Riverview, FL  ·  <a href="tel:+18133597264">(813) 359-7264</a></p>
-    <div class="footer-cta">
-      <a href="tel:+18133597264">Call</a>
-      <a href="#contact">Get a quote</a>
-    </div>
-    <p style="margin-top:24px; color:#5a5a5a;">© 2026 Taqueria Maty · Custom website preview built by <a href="https://chleb.ai">Chleb AI</a></p>
-  </footer>
+<section class="cluster">
+  <div class="cluster-tile big" style="background-image: url('https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1612366486547-ae00f64f87b6?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1572448862527-d3c904757de6?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+</section>
+
+<section class="note">
+  <p class="note-eyebrow">A short note</p>
+  <h2>From Maty.</h2>
+  <p>Maty grew up cooking from her mom&#39;s recipes and started the truck after years of doing taco nights for friends and church functions. She still preps the salsas every morning, runs the register herself, and won&#39;t sub canned beans for the pot she soaks overnight.</p>
+  <p class="signature">— Maty</p>
+</section>
+
+<section class="catering">
+  <h2>Book Taqueria Maty.</h2>
+  <p>We started Taqueria Maty because Riverview deserved tacos that taste like somebody&#39;s abuela actually made them, not a chain. Every taqueria in town runs on a long line and a hand-painted menu, and we are happy to be one more. Come hungry, the consome is hot, the tortillas are fresh.</p>
+  <a href="tel:+18133597264" class="catering-btn">(813) 359-7264 · Call to book</a>
+</section>
+
+<section class="area">
+  <p>Where we roll</p>
+  <p class="area-cities">Riverview · Gibsonton · Apollo Beach · Brandon · Ruskin · Valrico</p>
+</section>
+
+<footer class="foot">
+  <h3 class="foot-name">Taqueria Maty</h3>
+  <p class="foot-phone"><a href="tel:+18133597264">(813) 359-7264</a></p>
+  <p class="foot-meta">Riverview, FL · Run by Maty</p>
+</footer>
 
 </body>
 </html>
