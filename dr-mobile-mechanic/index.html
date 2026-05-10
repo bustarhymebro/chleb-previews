@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Mobile Mechanic · Port Richey, FL</title>
-  <meta name="description" content="Port Richey based mobile mechanic running diagnostics and repairs in your driveway, so your car gets fixed without the tow bill or the lobby coffee." />
+  <meta name="description" content="Port Richey based mobile repair for folks who would rather not push a dead car onto a tow truck on a Tuesday morning." />
   <meta property="og:title" content="Dr. Mobile Mechanic · Port Richey, FL" />
-  <meta property="og:description" content="Port Richey based mobile mechanic running diagnostics and repairs in your driveway, so your car gets fixed without the tow bill or the lobby coffee." />
+  <meta property="og:description" content="Port Richey based mobile repair for folks who would rather not push a dead car onto a tow truck on a Tuesday morning." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3ED%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Port Richey · FL</p>
-      <h1>Mobile mechanic. We come to you.</h1>
-      <p class="tagline">Port Richey based mobile mechanic running diagnostics and repairs in your driveway, so your car gets fixed without the tow bill or the lobby coffee.</p>
+      <h1>Mobile mechanic work, done in your Port Richey driveway.</h1>
+      <p class="tagline">Port Richey based mobile repair for folks who would rather not push a dead car onto a tow truck on a Tuesday morning.</p>
       <div class="ctas">
         <a href="tel:+17273645353" class="cta-primary">Call (727) 364-5353</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Driveway diagnostics</h3>
-          <p>We pull codes, road test, and tell you what is actually wrong. No upsell, no shop fee, just a straight quote before any wrench turns.</p>
+          <h3>Roadside diagnostics</h3>
+          <p>Scan the codes, walk you through what they mean, and quote the fix before any wrench comes out of the van.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
           <h3>Brakes and rotors</h3>
-          <p>Pads, rotors, calipers, and fluid done at your house or office. Most jobs wrap in a couple hours and we haul the old parts off.</p>
+          <p>Pads, rotors, calipers if needed. Done in your driveway or office lot, road tested before we leave.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
           <h3>Starters and alternators</h3>
-          <p>Car will not turn over in the driveway. We test the system on site, swap the bad part, and get you running the same visit when stock allows.</p>
+          <p>Bring the part, swap it on site, charge the battery, confirm the charging system is reading clean before pack up.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Maintenance visits</h3>
-          <p>Oil, filters, belts, hoses, and fluid flushes on a schedule you set. We text reminders and bring everything needed in the van.</p>
+          <h3>Pre purchase inspections</h3>
+          <p>Meet you at the seller, pull codes, check fluids, frame, brakes, and tires, send you a written go or no go.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Brake pad and rotor swap</div>
+          <div class="specialty-detail">Front or rear axle, ceramic pads, new rotors, hardware, fluid top off, road test on Ridge Road before we leave.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Starter replacement</div>
+          <div class="specialty-detail">OE grade starter, terminal cleanup, ground check, three crank confirmations, old unit hauled off at no extra charge.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Alternator and battery combo</div>
+          <div class="specialty-detail">New alternator, load tested battery, belt inspection, charging output verified at idle and at twenty five hundred RPM.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Oil and filter service</div>
+          <div class="specialty-detail">Full synthetic or blend, OE filter, drain pan caught clean, sticker on the windshield, used oil recycled off site.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Pre purchase used car check</div>
+          <div class="specialty-detail">Forty point look over, OBD scan, lift check on suspect joints, photos and a written verdict sent the same hour.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">You call</div>
+            <div class="process-detail">Tell us the year, make, model, and what the car is doing. Quick quote over the phone.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">We roll out</div>
+            <div class="process-detail">Van shows up at your house or job site with the parts and the diagnostic gear already loaded.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">Fixed on site</div>
+            <div class="process-detail">Repair done in the driveway, road tested on local roads, payment after the car runs right.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e2b?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -226,16 +301,20 @@
 
   <section class="about">
     <p class="eyebrow">About</p>
-    <h2>How we work in Port Richey</h2>
-    <p>We started Dr. Mobile Mechanic because every shop in Port Richey runs on a wait list and a voicemail, and people kept paying for tows just to sit in a lobby. We bring the bay to your driveway with the same tools and scanners. Honest quote, clean work, and your car back the same day when the part is on the van.</p>
+    <h2>How we run repairs in Port Richey</h2>
+    <p>We started Dr. Mobile Mechanic because every shop in town runs on a wait list and a voicemail box. We come to your driveway in Port Richey, quote the job before we touch it, and finish the work the same visit when the parts allow. No bay fees, no shuttle, no surprise add ons.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Owner</div>
+      <p>The owner has been turning wrenches around west Pasco for years, started running mobile after watching local shops book three weeks out for a brake job. He picks up his own phone, brings the parts in the van, and will not start a job he cannot finish that day.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Port Richey + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Port Richey</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Port Richey</span><span class="pill">New Port Richey</span><span class="pill">Hudson</span><span class="pill">Holiday</span><span class="pill">Trinity</span><span class="pill">Bayonet Point</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
@@ -245,9 +324,9 @@
     <h2>Get in touch</h2>
     <a href="tel:+17273645353" class="phone">(727) 364-5353</a>
     <div class="hours">
-        <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">7 AM - 6 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8 AM - 2 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Closed</span></div>
+        <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">8 AM - 6 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Sat</span><span class="hours-time">9 AM - 3 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Sun</span><span class="hours-time">Emergency calls only</span></div>
     </div>
     <div class="contact-fallback">
         <p>The fastest way to reach us is by phone.</p>
