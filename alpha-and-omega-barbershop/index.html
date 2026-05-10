@@ -1,281 +1,188 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alpha &amp; Omega Barbershop · Plant City, FL</title>
-  <meta name="description" content="A neighborhood barbershop in Plant City built around clean fades, sharp lines, and a chair that runs on time, not on hope." />
-  <meta property="og:title" content="Alpha &amp; Omega Barbershop · Plant City, FL" />
-  <meta property="og:description" content="A neighborhood barbershop in Plant City built around clean fades, sharp lines, and a chair that runs on time, not on hope." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
-  <meta name="theme-color" content="#1f3a5f" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EA%3C%2Ftext%3E%3C%2Fsvg%3E" />
-  <meta name="robots" content="noindex,nofollow" />
-  <style>
-    *,*::before,*::after { box-sizing: border-box; }
-    :root { --accent: #1f3a5f; }
-    body { margin:0; background:#0a0a0a; color:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif; line-height:1.5; }
-    img { max-width:100%; display:block; }
-    a { color: inherit; }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alpha &amp; Omega Barbershop — Plant City barbershop</title>
+<meta name="description" content="A neighborhood barbershop in Plant City for guys who want a clean fade, a sharp line, and a barber who remembers their name." />
+<meta name="robots" content="noindex,nofollow" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --noir: #0c0a09; --bone: #ece1cd; --rouge: #9b1f2c; --sand: #c4a87a; --line: #2a2421; }
+body { margin: 0; background: var(--noir); color: var(--bone); font-family: "Cormorant Garamond", "Garamond", "Georgia", serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
 
-    /* Reveal-on-scroll, lightweight (no JS — uses prefers-reduced-motion) */
-    .fx-up { opacity:0; transform: translateY(18px); animation: fxUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s forwards; }
-    .fx-up:nth-child(2) { animation-delay: 0.18s; }
-    .fx-up:nth-child(3) { animation-delay: 0.26s; }
-    .fx-up:nth-child(4) { animation-delay: 0.34s; }
-    .fx-up:nth-child(5) { animation-delay: 0.42s; }
-    .fx-up:nth-child(6) { animation-delay: 0.5s; }
-    @keyframes fxUp { to { opacity:1; transform: translateY(0); } }
-    @media (prefers-reduced-motion: reduce) { .fx-up { animation: none; opacity:1; transform: none; } }
+.stripe { height: 6px; background: repeating-linear-gradient(45deg, var(--rouge) 0px, var(--rouge) 16px, var(--bone) 16px, var(--bone) 32px, var(--noir) 32px, var(--noir) 48px); }
 
-    /* Sticky header */
-    header.site { display:flex; align-items:center; justify-content:space-between; padding:18px 32px; border-bottom:1px solid #1f1f1f; position:sticky; top:0; background:rgba(10,10,10,0.85); backdrop-filter:blur(8px); z-index:10; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:38px; height:38px; border-radius:9px; background:var(--accent); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; color:#f5f5f5; }
-    .brand-name { font-size:16px; font-weight:700; color:#f5f5f5; letter-spacing:-0.01em; }
-    .header-cta { display:flex; gap:10px; align-items:center; }
-    .header-phone { color:#cfcfcf; text-decoration:none; font-weight:600; font-size:15px; }
-    .header-cta-btn { padding:10px 18px; border-radius:999px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:14px; }
+.nav-ep { display: flex; align-items: center; justify-content: space-between; padding: 22px 32px; border-bottom: 1px solid var(--line); }
+.nav-ep-mark { font-family: "Cormorant Garamond", serif; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+.nav-ep-mark .est { color: var(--sand); font-style: italic; font-size: 14px; margin-left: 12px; font-weight: 400; }
+.nav-ep-call { background: var(--rouge); color: var(--bone); padding: 10px 18px; font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
 
-    /* Hero */
-    .hero {
-      position:relative;
-      min-height:680px;
-      display:flex; flex-direction:column; justify-content:flex-end;
-      padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
-      background-size: cover;
-      background-position: center;
-    }
-    .hero::after { content:""; position:absolute; inset:auto 0 0 0; height:140px; background: linear-gradient(180deg, transparent, #0a0a0a); pointer-events:none; }
-    .hero-inner { max-width:980px; width:100%; margin:0 auto; position:relative; z-index:2; }
-    .eyebrow { margin:0; font-size:13px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); }
-    .hero h1 { margin:14px 0 18px; font-size:74px; font-weight:900; line-height:1.04; letter-spacing:-0.025em; color:#f5f5f5; }
-    .hero p.tagline { margin:0 0 32px; font-size:22px; color:#dcdcdc; max-width:720px; line-height:1.45; }
-    .ctas { display:flex; gap:12px; flex-wrap:wrap; }
-    .cta-primary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:16px; }
-    .cta-secondary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; color:#f5f5f5; text-decoration:none; font-weight:600; font-size:16px; border:1px solid rgba(245,245,245,0.25); background: rgba(255,255,255,0.04); }
+.hero-ep { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 88vh; }
+.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
+.hero-ep-text { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; background: var(--noir); }
+.hero-ep-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 22px; font-weight: 600; }
+.hero-ep-name { font-family: "Cormorant Garamond", serif; font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 0.96; letter-spacing: -0.012em; margin: 0; font-style: italic; color: var(--bone); }
+.hero-ep-tag { margin: 28px 0 36px; font-size: 22px; line-height: 1.5; color: rgba(236,225,205,0.78); font-style: italic; }
+.hero-ep-flourish { margin: 0 0 28px; height: 1px; width: 88px; background: var(--sand); }
+.hero-ep-cta { display: inline-block; padding: 18px 30px; background: var(--rouge); color: var(--bone); font-family: "Inter", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; align-self: flex-start; }
 
-    /* Trust bar */
-    .trust-bar { background:#101010; border-top:1px solid #1f1f1f; border-bottom:1px solid #1f1f1f; }
-    .trust-inner { max-width:1080px; margin:0 auto; padding:32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; text-align:center; }
-    .trust-item { padding:8px 12px; }
-    .trust-value { font-size:22px; font-weight:800; color:#f5f5f5; letter-spacing:-0.01em; }
-    .trust-label { margin-top:6px; font-size:13px; color:#9a9a9a; line-height:1.45; }
+.menu-ep { padding: 100px 32px 60px; max-width: 920px; margin: 0 auto; text-align: center; }
+.menu-ep-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 14px; font-weight: 600; }
+.menu-ep-title { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; line-height: 1; margin: 0 0 8px; }
+.menu-ep-sub { font-family: "Inter", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(236,225,205,0.55); margin: 0 0 48px; }
+.cut-list { text-align: left; max-width: 720px; margin: 0 auto; }
+.cut-row { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.cut-row:last-child { border-bottom: 0; }
+.cut-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 6px; color: var(--bone); }
+.cut-detail { font-size: 16px; color: rgba(236,225,205,0.65); line-height: 1.6; }
 
-    /* Generic sections */
-    section { padding:80px 32px; max-width:1080px; margin:0 auto; }
-    section + section { border-top:1px solid #1f1f1f; }
-    h2 { margin:12px 0 36px; font-size:42px; font-weight:800; letter-spacing:-0.015em; }
+.ritual-section { padding: 100px 32px; background: linear-gradient(180deg, var(--noir) 0%, #1a1410 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.ritual-section .menu-ep-eyebrow { text-align: center; }
+.ritual-section .menu-ep-title { text-align: center; }
+.ritual-grid { max-width: 1080px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.ritual { padding: 40px 32px; border-right: 1px solid var(--line); position: relative; }
+.ritual:last-child { border-right: 0; }
+.ritual-num { font-family: "Cormorant Garamond", serif; font-size: 80px; font-weight: 600; color: var(--rouge); line-height: 1; margin-bottom: 18px; font-style: italic; }
+.ritual-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 12px; }
+.ritual-detail { font-size: 16px; color: rgba(236,225,205,0.7); line-height: 1.65; margin: 0; }
 
-    /* Services */
-    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
-    .card { padding:28px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; transition: transform 200ms ease, border-color 200ms ease; }
-    .card:hover { transform: translateY(-4px); border-color:#2a2a2a; }
-    .card-badge { width:38px; height:38px; border-radius:9px; background:var(--accent); color:#f5f5f5; font-weight:800; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
-    .card h3 { margin:0 0 8px; font-size:20px; font-weight:700; }
-    .card p { margin:0; font-size:15px; color:#a8a8a8; line-height:1.6; }
+.portraits { padding: 100px 32px; max-width: 1200px; margin: 0 auto; }
+.portraits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.portrait { aspect-ratio: 3 / 4; background-size: cover; background-position: center; filter: contrast(1.06) saturate(0.92); }
 
-    /* Gallery */
-    .gallery { display:grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 220px; gap:12px; }
-    .gallery-tile { background-size:cover; background-position:center; border-radius:10px; filter: saturate(0.95); transition: transform 250ms ease, filter 250ms ease; }
-    .gallery-tile:hover { transform: scale(1.02); filter: saturate(1.05); }
-    .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.owner-ep { padding: 100px 32px; max-width: 720px; margin: 0 auto; text-align: center; }
+.owner-ep-name { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 28px; line-height: 1; color: var(--bone); }
+.owner-ep-name .of { font-size: 0.7em; font-style: normal; color: var(--sand); }
+.owner-ep p { font-size: 19px; line-height: 1.75; color: rgba(236,225,205,0.85); }
+.owner-ep .signature-ep { margin-top: 28px; font-family: "Cormorant Garamond", serif; font-size: 26px; color: var(--rouge); font-style: italic; }
 
-    /* Reviews / social proof */
-    .reviews { text-align:left; }
-    .reviews-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:24px; }
-    .review { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-    .review-stars { color: #ffc44d; font-size:18px; letter-spacing:0.05em; margin-bottom:10px; }
-    .review p { margin:0 0 14px; color:#cfcfcf; font-size:15px; line-height:1.6; }
-    .review-attr { font-size:13px; color:#9a9a9a; }
-    .review-empty { padding:40px 28px; background:#0f0f0f; border:1px dashed #2a2a2a; border-radius:14px; text-align:center; }
-    .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
-    .review-empty span { color:#7a7a7a; font-size:13px; }
+.book-ep { padding: 100px 32px; background: var(--rouge); color: var(--bone); text-align: center; }
+.book-ep h2 { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 16px; line-height: 1; }
+.book-ep p { margin: 0 auto 32px; max-width: 540px; font-size: 18px; line-height: 1.6; }
+.book-ep a { background: var(--noir); color: var(--bone); padding: 22px 36px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
 
-    /* About */
-    .about { max-width:820px; }
-    .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+.area-ep { padding: 64px 32px; max-width: 920px; margin: 0 auto; text-align: center; }
+.area-ep p { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0; font-weight: 600; }
+.area-ep-cities { margin-top: 14px; font-family: "Cormorant Garamond", serif; font-size: 24px; color: var(--bone); line-height: 1.6; font-style: italic; }
 
-    /* Service area */
-    .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
-    .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+.foot-ep { padding: 36px 32px; background: var(--noir); color: var(--sand); text-align: center; font-family: "Inter", sans-serif; border-top: 1px solid var(--line); }
+.foot-ep-name { font-family: "Cormorant Garamond", serif; font-size: 28px; color: var(--bone); margin-bottom: 8px; font-style: italic; }
+.foot-ep-meta { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; }
 
-    /* Contact */
-    .contact { max-width:820px; }
-    .contact .phone { display:inline-block; margin:14px 0 28px; font-size:32px; font-weight:800; color:#f5f5f5; text-decoration:none; letter-spacing:-0.01em; }
-    .hours { display:grid; gap:8px; margin-bottom:28px; max-width:380px; }
-    .hours-row { display:flex; justify-content:space-between; color:#cfcfcf; font-size:15px; padding:8px 0; border-bottom:1px solid #1a1a1a; }
-    .hours-day { font-weight:600; }
-    .hours-time { color:#9a9a9a; }
-    form { display:flex; flex-direction:column; gap:12px; max-width:540px; }
-    input, textarea { padding:14px; font-size:15px; background:#141414; border:1px solid #2a2a2a; border-radius:10px; color:#f5f5f5; font-family:inherit; }
-    input:focus, textarea:focus { outline:none; border-color: var(--accent); }
-    button { padding:14px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; border:none; cursor:pointer; font-weight:700; font-size:16px; }
-    button:hover { filter: brightness(1.08); }
-    .form-note { margin:12px 0 0; font-size:13px; color:#9a9a9a; }
-    .contact-fallback { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-
-    /* Footer */
-    footer { padding:56px 32px 36px; text-align:center; border-top:1px solid #1f1f1f; background:#080808; }
-    footer .brand-foot { display:inline-flex; align-items:center; gap:10px; margin-bottom:14px; }
-    footer .logo { width:32px; height:32px; font-size:16px; }
-    footer .brand-foot-name { font-size:15px; font-weight:700; color:#f5f5f5; }
-    footer p { margin:6px 0; font-size:13px; color:#7a7a7a; }
-    footer p + p { margin-top:6px; }
-    footer a { color:#cfcfcf; text-decoration:underline; }
-    .footer-cta { display:inline-flex; gap:14px; margin-top:14px; }
-    .footer-cta a { color:#cfcfcf; text-decoration:none; padding:8px 14px; border-radius:999px; border:1px solid #1f1f1f; font-size:13px; }
-
-    /* Responsive */
-    @media (max-width: 720px) {
-      .hero { min-height:540px; padding:48px 22px 40px; }
-      .hero h1 { font-size:46px; }
-      .hero p.tagline { font-size:18px; }
-      h2 { font-size:30px; }
-      section { padding:56px 22px; }
-      .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
-      .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
-      .header-cta-btn { display:none; }
-    }
-  </style>
+@media (max-width: 700px) {
+  .hero-ep { grid-template-columns: 1fr; }
+  .hero-ep-photo { min-height: 480px; }
+  .hero-ep-text { padding: 48px 28px; }
+  .ritual-grid { grid-template-columns: 1fr; }
+  .ritual { border-right: 0; border-bottom: 1px solid var(--line); }
+  .ritual:last-child { border-bottom: 0; }
+  .portraits-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+}
+</style>
 </head>
 <body>
 
-  <header class="site">
-    <div class="brand">
-      <div class="logo">A</div>
-      <div class="brand-name">Alpha &amp; Omega Barbershop</div>
-    </div>
-    <div class="header-cta">
-      <a href="tel:+18138433943" class="header-phone">(813) 843-3943</a>
-      <a href="tel:+18138433943" class="header-cta-btn">Call now</a>
-    </div>
-  </header>
+<div class="stripe"></div>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Plant City · FL</p>
-      <h1>Plant City cuts, done right.</h1>
-      <p class="tagline">A neighborhood barbershop in Plant City built around clean fades, sharp lines, and a chair that runs on time, not on hope.</p>
-      <div class="ctas">
-        <a href="tel:+18138433943" class="cta-primary">Call (813) 843-3943</a>
-        <a href="#contact" class="cta-secondary">Book a quote</a>
-      </div>
-    </div>
-  </section>
+<nav class="nav-ep">
+  <div class="nav-ep-mark">Alpha &amp; Omega Barbershop<span class="est">est. Plant City</span></div>
+  <a href="tel:+18138433943" class="nav-ep-call">(813) 843-3943</a>
+</nav>
 
-  <div class="trust-bar"><div class="trust-inner">
-        <div class="trust-item">
-          <div class="trust-value">Plant City</div>
-          <div class="trust-label">Locally owned &amp; operated</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Walk-ins welcome</div>
-          <div class="trust-label">Plus appointments by phone</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Real chairs, real coffee</div>
-          <div class="trust-label">No app-only nonsense</div>
-        </div>
-  </div></div>
+<section class="hero-ep">
+  <div class="hero-ep-photo"></div>
+  <div class="hero-ep-text">
+    <p class="hero-ep-eyebrow">Plant City, FL · Owner</p>
+    <h1 class="hero-ep-name">A proper chair in Plant City.</h1>
+    <p class="hero-ep-tag">A neighborhood barbershop in Plant City for guys who want a clean fade, a sharp line, and a barber who remembers their name.</p>
+    <div class="hero-ep-flourish"></div>
+    <a href="tel:+18138433943" class="hero-ep-cta">Book your seat</a>
+  </div>
+</section>
 
-  <section>
-    <p class="eyebrow">What we do</p>
-    <h2>Services</h2>
-    <div class="services-grid">
-        <div class="card fx-up">
-          <div class="card-badge">1</div>
-          <h3>Skin fades</h3>
-          <p>Bald, low, mid, or high. Tight blend, clean neckline, hot towel finish. Walk in looking shaggy, leave looking like you mean business.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">2</div>
-          <h3>Beard work</h3>
-          <p>Shape up, line up, or full straight razor with hot lather. We map the beard to your face, not to a stock photo on the wall.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">3</div>
-          <h3>Father and son</h3>
-          <p>Two chairs, back to back, one appointment. Good way to break a kid into the chair without dragging out a Saturday morning.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">4</div>
-          <h3>Standing chair</h3>
-          <p>Same barber, same time, every two or four weeks. Book it once, stop thinking about it. Walk-ins still welcome when the chair opens.</p>
-        </div>
+<section class="menu-ep">
+  <p class="menu-ep-eyebrow">The menu</p>
+  <h2 class="menu-ep-title">How we run the chair in Plant City</h2>
+  <p class="menu-ep-sub">Walk-ins welcome · Calls preferred</p>
+  <div class="cut-list">
+    <div class="cut-row">
+      <div class="cut-name">Skin fade + beard line-up</div>
+      <div class="cut-detail">Bald fade blended through the sides, beard squared with a straight razor, hot towel, and a light style finish.</div>
     </div>
-  </section>
+    <div class="cut-row">
+      <div class="cut-name">Classic taper + hot towel shave</div>
+      <div class="cut-detail">Scissor taper on top, clipper taper on the sides, full straight razor shave with hot lather and aftershave balm.</div>
+    </div>
+    <div class="cut-row">
+      <div class="cut-name">Kid&#39;s cut (12 and under)</div>
+      <div class="cut-detail">Patient cut for the young guys, fade or scissor, neck cleanup, and a lollipop on the way out.</div>
+    </div>
+    <div class="cut-row">
+      <div class="cut-name">Senior trim</div>
+      <div class="cut-detail">Quiet chair, classic cut, ear and brow detail, hot towel on the neck. In and out without a wait.</div>
+    </div>
+    <div class="cut-row">
+      <div class="cut-name">Line-up only</div>
+      <div class="cut-detail">Edge-up around the hairline, temples, and neck between cuts. Ten minute appointment to keep your shape tight.</div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <p class="eyebrow">The work</p>
-    <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+<section class="ritual-section">
+  <p class="menu-ep-eyebrow">The visit</p>
+  <h2 class="menu-ep-title">A seat in the chair.</h2>
+  <div class="ritual-grid">
+    <div class="ritual">
+      <div class="ritual-num">01</div>
+      <div class="ritual-name">Book a chair</div>
+      <p class="ritual-detail">Call the shop or walk in. We hold the slot, no double-booking, no app shuffle.</p>
     </div>
-  </section>
+    <div class="ritual">
+      <div class="ritual-num">02</div>
+      <div class="ritual-name">Talk it through</div>
+      <p class="ritual-detail">Quick read on what you want, what grew out wrong, and how you wear it day to day.</p>
+    </div>
+    <div class="ritual">
+      <div class="ritual-num">03</div>
+      <div class="ritual-name">Cut and finish</div>
+      <p class="ritual-detail">Fade or scissor work, beard detail, hot towel on the neck, and a clean brush down.</p>
+    </div>
+  </div>
+</section>
 
-  <section class="reviews">
-    <p class="eyebrow">Reviews</p>
-    <h2>What Plant City says</h2>
-    <div class="review-empty">
-      <p>Real reviews from your customers will appear here.</p>
-      <span>Connect your Google Business Profile to pull live ratings into this section.</span>
-    </div>
-  </section>
+<section class="portraits">
+  <div class="portraits-grid">
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+  </div>
+</section>
 
-  <section class="about">
-    <p class="eyebrow">About</p>
-    <h2>How we run the chair in Plant City</h2>
-    <p>We opened Alpha and Omega because every shop in town runs on a wait list and a voicemail, and grown men deserve better than an hour in a folding chair. We keep the room clean, the clippers sharp, and the schedule honest. A few hundred regulars come through a month and most of them booked the next cut before they paid for this one.</p>
-  </section>
+<section class="owner-ep">
+  <h2 class="owner-ep-name">A note <span class="of">from</span> Owner</h2>
+  <p>The shop runs on the old rules. Owner opened Alpha &amp; Omega because Plant City needed a chair where you book your guy, sit down, and get the same cut you got last month. No app churn, no rushing the line-up.</p>
+  <p class="signature-ep">— Owner</p>
+</section>
 
-  <section class="service-area">
-    <p class="eyebrow">Service area</p>
-    <h2>We serve Plant City + nearby</h2>
-    <div>
-      <span class="pill primary">Plant City</span>
-      <span class="pill">Surrounding FL towns</span>
-      <span class="pill">Same-day quotes inside city limits</span>
-    </div>
-  </section>
+<section class="area-ep">
+  <p>Where Owner cuts</p>
+  <p class="area-ep-cities">Downtown Plant City · Walden Lake · Dover · Turkey Creek · Cork · Lakeland</p>
+</section>
 
-  <section id="contact" class="contact">
-    <p class="eyebrow">Contact</p>
-    <h2>Get in touch</h2>
-    <a href="tel:+18138433943" class="phone">(813) 843-3943</a>
-    <div class="hours">
-        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">9 AM - 7 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8 AM - 5 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sunday-Monday</span><span class="hours-time">Closed</span></div>
-    </div>
-    <form action="https://formsubmit.co/alphaomega.barbershop@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New lead from Alpha &amp; Omega Barbershop site preview" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_cc" value="chlebholdings@gmail.com" />
-        <input type="text" name="_honey" tabIndex="-1" autoComplete="off" style="display:none" />
-        <input name="name" required placeholder="Full name" autocomplete="name" />
-        <input name="email" type="email" required placeholder="Email" autocomplete="email" />
-        <input name="phone" type="tel" required placeholder="Phone" autocomplete="tel" inputmode="tel" />
-        <textarea name="message" rows="4" required placeholder="What do you need?"></textarea>
-        <button type="submit">Send</button>
-        <p class="form-note">We reply same day during open hours.</p>
-      </form>
-  </section>
+<section class="book-ep">
+  <h2>Book the chair.</h2>
+  <p>We started Alpha &amp; Omega because every shop around Plant City runs on a wait list and a missed phone call. We wanted a place where regulars get the same cut every visit and a first-timer leaves knowing whose chair to ask for next time. The work is slow on purpose. That is the whole point.</p>
+  <a href="tel:+18138433943">(813) 843-3943 · Call Owner</a>
+</section>
 
-  <footer>
-    <div class="brand-foot">
-      <div class="logo">A</div>
-      <span class="brand-foot-name">Alpha &amp; Omega Barbershop</span>
-    </div>
-    <p>Plant City, FL  ·  <a href="tel:+18138433943">(813) 843-3943</a></p>
-    <div class="footer-cta">
-      <a href="tel:+18138433943">Call</a>
-      <a href="#contact">Get a quote</a>
-    </div>
-    <p style="margin-top:24px; color:#5a5a5a;">© 2026 Alpha &amp; Omega Barbershop · Custom website preview built by <a href="https://chleb.ai">Chleb AI</a></p>
-  </footer>
+<footer class="foot-ep">
+  <div class="foot-ep-name">Alpha &amp; Omega Barbershop</div>
+  <p class="foot-ep-meta">Plant City, FL · Run by Owner</p>
+</footer>
 
 </body>
 </html>
