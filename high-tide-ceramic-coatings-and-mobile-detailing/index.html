@@ -1,281 +1,153 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>High Tide Ceramic Coatings and Mobile Detailing · Savannah, GA</title>
-  <meta name="description" content="We bring the full detail bay to your driveway in Savannah, ceramic work done right and finished the day we said it would be." />
-  <meta property="og:title" content="High Tide Ceramic Coatings and Mobile Detailing · Savannah, GA" />
-  <meta property="og:description" content="We bring the full detail bay to your driveway in Savannah, ceramic work done right and finished the day we said it would be." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
-  <meta name="theme-color" content="#1f3a5f" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EH%3C%2Ftext%3E%3C%2Fsvg%3E" />
-  <meta name="robots" content="noindex,nofollow" />
-  <style>
-    *,*::before,*::after { box-sizing: border-box; }
-    :root { --accent: #1f3a5f; }
-    body { margin:0; background:#0a0a0a; color:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif; line-height:1.5; }
-    img { max-width:100%; display:block; }
-    a { color: inherit; }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>High Tide Ceramic Coatings and Mobile Detailing — Savannah, GA</title>
+<meta name="description" content="High Tide is a one-truck mobile detail and coating shop covering Savannah and the islands, booked direct with the person doing the work." />
+<meta name="robots" content="noindex,nofollow" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --black: #0c0c0c; --yellow: #ffd60a; --red: #e63946; --cream: #fffbe9; }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
 
-    /* Reveal-on-scroll, lightweight (no JS — uses prefers-reduced-motion) */
-    .fx-up { opacity:0; transform: translateY(18px); animation: fxUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s forwards; }
-    .fx-up:nth-child(2) { animation-delay: 0.18s; }
-    .fx-up:nth-child(3) { animation-delay: 0.26s; }
-    .fx-up:nth-child(4) { animation-delay: 0.34s; }
-    .fx-up:nth-child(5) { animation-delay: 0.42s; }
-    .fx-up:nth-child(6) { animation-delay: 0.5s; }
-    @keyframes fxUp { to { opacity:1; transform: translateY(0); } }
-    @media (prefers-reduced-motion: reduce) { .fx-up { animation: none; opacity:1; transform: none; } }
+.nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
+.nav-mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
 
-    /* Sticky header */
-    header.site { display:flex; align-items:center; justify-content:space-between; padding:18px 32px; border-bottom:1px solid #1f1f1f; position:sticky; top:0; background:rgba(10,10,10,0.85); backdrop-filter:blur(8px); z-index:10; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:38px; height:38px; border-radius:9px; background:var(--accent); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; color:#f5f5f5; }
-    .brand-name { font-size:16px; font-weight:700; color:#f5f5f5; letter-spacing:-0.01em; }
-    .header-cta { display:flex; gap:10px; align-items:center; }
-    .header-phone { color:#cfcfcf; text-decoration:none; font-weight:600; font-size:15px; }
-    .header-cta-btn { padding:10px 18px; border-radius:999px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:14px; }
+.today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
+.today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
+@keyframes blink { 50% { opacity: 0.35; } }
+.today-sep { color: rgba(0,0,0,0.4); }
 
-    /* Hero */
-    .hero {
-      position:relative;
-      min-height:680px;
-      display:flex; flex-direction:column; justify-content:flex-end;
-      padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
-      background-size: cover;
-      background-position: center;
-    }
-    .hero::after { content:""; position:absolute; inset:auto 0 0 0; height:140px; background: linear-gradient(180deg, transparent, #0a0a0a); pointer-events:none; }
-    .hero-inner { max-width:980px; width:100%; margin:0 auto; position:relative; z-index:2; }
-    .eyebrow { margin:0; font-size:13px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); }
-    .hero h1 { margin:14px 0 18px; font-size:74px; font-weight:900; line-height:1.04; letter-spacing:-0.025em; color:#f5f5f5; }
-    .hero p.tagline { margin:0 0 32px; font-size:22px; color:#dcdcdc; max-width:720px; line-height:1.45; }
-    .ctas { display:flex; gap:12px; flex-wrap:wrap; }
-    .cta-primary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; text-decoration:none; font-weight:700; font-size:16px; }
-    .cta-secondary { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:10px; color:#f5f5f5; text-decoration:none; font-weight:600; font-size:16px; border:1px solid rgba(245,245,245,0.25); background: rgba(255,255,255,0.04); }
+.hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
+.hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
+.hero h1 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 .yellow { color: var(--yellow); }
+.hero h1 .red { color: var(--red); }
+.hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
+.hero-cta-row { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-loud { background: var(--yellow); color: var(--black); padding: 18px 28px; font-weight: 900; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; }
+.btn-ghost { background: transparent; color: var(--cream); padding: 18px 28px; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid var(--cream); }
 
-    /* Trust bar */
-    .trust-bar { background:#101010; border-top:1px solid #1f1f1f; border-bottom:1px solid #1f1f1f; }
-    .trust-inner { max-width:1080px; margin:0 auto; padding:32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; text-align:center; }
-    .trust-item { padding:8px 12px; }
-    .trust-value { font-size:22px; font-weight:800; color:#f5f5f5; letter-spacing:-0.01em; }
-    .trust-label { margin-top:6px; font-size:13px; color:#9a9a9a; line-height:1.45; }
+.menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
+.menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.menu-h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 .red { color: var(--red); }
+.menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
+.menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
+.menu-card-name { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
+.menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
 
-    /* Generic sections */
-    section { padding:80px 32px; max-width:1080px; margin:0 auto; }
-    section + section { border-top:1px solid #1f1f1f; }
-    h2 { margin:12px 0 36px; font-size:42px; font-weight:800; letter-spacing:-0.015em; }
+.quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
+.quote-mark { font-family: "Bungee", "Inter", sans-serif; font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: "Inter", sans-serif; font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-body .yellow { color: var(--yellow); }
+.quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
 
-    /* Services */
-    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
-    .card { padding:28px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; transition: transform 200ms ease, border-color 200ms ease; }
-    .card:hover { transform: translateY(-4px); border-color:#2a2a2a; }
-    .card-badge { width:38px; height:38px; border-radius:9px; background:var(--accent); color:#f5f5f5; font-weight:800; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
-    .card h3 { margin:0 0 8px; font-size:20px; font-weight:700; }
-    .card p { margin:0; font-size:15px; color:#a8a8a8; line-height:1.6; }
+.book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
+.book h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
+.book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
 
-    /* Gallery */
-    .gallery { display:grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 220px; gap:12px; }
-    .gallery-tile { background-size:cover; background-position:center; border-radius:10px; filter: saturate(0.95); transition: transform 250ms ease, filter 250ms ease; }
-    .gallery-tile:hover { transform: scale(1.02); filter: saturate(1.05); }
-    .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.find { padding: 60px 22px; background: var(--black); text-align: center; }
+.find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
+.find-list { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list .dot { color: var(--red); margin: 0 14px; }
 
-    /* Reviews / social proof */
-    .reviews { text-align:left; }
-    .reviews-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:24px; }
-    .review { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-    .review-stars { color: #ffc44d; font-size:18px; letter-spacing:0.05em; margin-bottom:10px; }
-    .review p { margin:0 0 14px; color:#cfcfcf; font-size:15px; line-height:1.6; }
-    .review-attr { font-size:13px; color:#9a9a9a; }
-    .review-empty { padding:40px 28px; background:#0f0f0f; border:1px dashed #2a2a2a; border-radius:14px; text-align:center; }
-    .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
-    .review-empty span { color:#7a7a7a; font-size:13px; }
-
-    /* About */
-    .about { max-width:820px; }
-    .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
-
-    /* Service area */
-    .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
-    .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
-
-    /* Contact */
-    .contact { max-width:820px; }
-    .contact .phone { display:inline-block; margin:14px 0 28px; font-size:32px; font-weight:800; color:#f5f5f5; text-decoration:none; letter-spacing:-0.01em; }
-    .hours { display:grid; gap:8px; margin-bottom:28px; max-width:380px; }
-    .hours-row { display:flex; justify-content:space-between; color:#cfcfcf; font-size:15px; padding:8px 0; border-bottom:1px solid #1a1a1a; }
-    .hours-day { font-weight:600; }
-    .hours-time { color:#9a9a9a; }
-    form { display:flex; flex-direction:column; gap:12px; max-width:540px; }
-    input, textarea { padding:14px; font-size:15px; background:#141414; border:1px solid #2a2a2a; border-radius:10px; color:#f5f5f5; font-family:inherit; }
-    input:focus, textarea:focus { outline:none; border-color: var(--accent); }
-    button { padding:14px 28px; border-radius:10px; background:var(--accent); color:#f5f5f5; border:none; cursor:pointer; font-weight:700; font-size:16px; }
-    button:hover { filter: brightness(1.08); }
-    .form-note { margin:12px 0 0; font-size:13px; color:#9a9a9a; }
-    .contact-fallback { padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
-
-    /* Footer */
-    footer { padding:56px 32px 36px; text-align:center; border-top:1px solid #1f1f1f; background:#080808; }
-    footer .brand-foot { display:inline-flex; align-items:center; gap:10px; margin-bottom:14px; }
-    footer .logo { width:32px; height:32px; font-size:16px; }
-    footer .brand-foot-name { font-size:15px; font-weight:700; color:#f5f5f5; }
-    footer p { margin:6px 0; font-size:13px; color:#7a7a7a; }
-    footer p + p { margin-top:6px; }
-    footer a { color:#cfcfcf; text-decoration:underline; }
-    .footer-cta { display:inline-flex; gap:14px; margin-top:14px; }
-    .footer-cta a { color:#cfcfcf; text-decoration:none; padding:8px 14px; border-radius:999px; border:1px solid #1f1f1f; font-size:13px; }
-
-    /* Responsive */
-    @media (max-width: 720px) {
-      .hero { min-height:540px; padding:48px 22px 40px; }
-      .hero h1 { font-size:46px; }
-      .hero p.tagline { font-size:18px; }
-      h2 { font-size:30px; }
-      section { padding:56px 22px; }
-      .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
-      .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
-      .header-cta-btn { display:none; }
-    }
-  </style>
+.foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
+.foot .mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
+.foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
+</style>
 </head>
 <body>
 
-  <header class="site">
-    <div class="brand">
-      <div class="logo">H</div>
-      <div class="brand-name">High Tide Ceramic Coatings and Mobile Detailing</div>
-    </div>
-    <div class="header-cta">
-      <a href="tel:+19126675690" class="header-phone">(912) 667-5690</a>
-      <a href="tel:+19126675690" class="header-cta-btn">Call now</a>
-    </div>
-  </header>
+<nav class="nav">
+  <div class="nav-mark">High Tide Ceramic Coatings and Mobile Detailing</div>
+  <a href="tel:+19126675690" class="nav-cta">Call (912) 667-5690</a>
+</nav>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Savannah · GA</p>
-      <h1>Ceramic coatings and mobile detailing in Savannah.</h1>
-      <p class="tagline">We bring the full detail bay to your driveway in Savannah, ceramic work done right and finished the day we said it would be.</p>
-      <div class="ctas">
-        <a href="tel:+19126675690" class="cta-primary">Call (912) 667-5690</a>
-        <a href="#contact" class="cta-secondary">Book a quote</a>
-      </div>
-    </div>
-  </section>
+<div class="today">
+  <span class="today-dot"></span>
+  <span>You text · Send a couple photos of the vehicle and </span>
+  <span class="today-sep">/</span>
+  <span>We roll up · Van pulls in with water, power, and ligh</span>
+  <span class="today-sep">/</span>
+  <span>You inspect · Walk around together under the lights be</span>
+</div>
 
-  <div class="trust-bar"><div class="trust-inner">
-        <div class="trust-item">
-          <div class="trust-value">Savannah</div>
-          <div class="trust-label">Locally owned &amp; operated</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Same-day response</div>
-          <div class="trust-label">Texts and calls answered fast</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-value">Free quotes</div>
-          <div class="trust-label">Tell us what you need, we will quote it</div>
-        </div>
-  </div></div>
+<header class="hero">
+  <p class="hero-eyebrow">Savannah, GA · Run by Owner</p>
+  <h1>Ceramic coatings, done in your Savannah driveway.</h1>
+  <p class="hero-sub">High Tide is a one-truck mobile detail and coating shop covering Savannah and the islands, booked direct with the person doing the work.</p>
+  <div class="hero-cta-row">
+    <a href="tel:+19126675690" class="btn-loud">Call · book the truck</a>
+    <a href="#menu" class="btn-ghost">See the menu</a>
+  </div>
+</header>
 
-  <section>
-    <p class="eyebrow">What we do</p>
-    <h2>Services</h2>
-    <div class="services-grid">
-        <div class="card fx-up">
-          <div class="card-badge">1</div>
-          <h3>Ceramic coatings</h3>
-          <p>Multi-stage paint correction, then a proper ceramic application cured on site. We block out a full day per vehicle so the prep is done right.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">2</div>
-          <h3>Full exterior detail</h3>
-          <p>Foam wash, decon, clay, wheels and barrels, tires dressed, windows finished. Trim restored where it needs it. No swirl marks left behind.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">3</div>
-          <h3>Interior reset</h3>
-          <p>Full vacuum, shampoo on carpets and seats, leather cleaned and conditioned, plastics wiped, vents and crevices done. Salt air and sand handled.</p>
-        </div>
-        <div class="card fx-up">
-          <div class="card-badge">4</div>
-          <h3>Maintenance washes</h3>
-          <p>Recurring touch-up wash for coated and uncoated cars. Keeps the finish honest between full details. Monthly slot held on your calendar.</p>
-        </div>
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <h2 class="menu-h2">The <span class="red">Menu</span></h2>
+    <div class="menu-meta">5 services · Fast turnaround</div>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <span class="menu-card-tag">Most ordered</span>
+      <h3 class="menu-card-name">Two-year ceramic package</h3>
+      <p class="menu-card-detail">Single-stage correction, panel wipe, two layers of coating on paint, glass, and wheels. Cure overnight under cover.</p>
     </div>
-  </section>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Five-year ceramic package</h3>
+      <p class="menu-card-detail">Two-stage correction, full decon, coating on paint, trim, glass, wheels and calipers. Maintenance wash included at six months.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Salt-air decon wash</h3>
+      <p class="menu-card-detail">Foam, iron remover, clay mitt, and a spray sealant. Built for trucks and daily drivers parked near Tybee.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Pet hair interior</h3>
+      <p class="menu-card-detail">Targeted hair lift on carpet and seats, full vacuum, steam, fabric shampoo, and an enzyme treatment for odor.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Headlight restoration</h3>
+      <p class="menu-card-detail">Sand the yellowing off, polish back to clear, then seal with a UV coating so they stay clear for the year.</p>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <p class="eyebrow">The work</p>
-    <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
-    </div>
-  </section>
+<section class="quote-wrap">
+  <p class="quote-mark">"</p>
+  <p class="quote-body">Owner runs High Tide solo out of one fully kitted van, water and power on board, no shop drop-off. Started the business after watching coastal trucks rust out from salt and skipped washes, and won&#39;t sell a coating without doing the correction work first.</p>
+  <p class="quote-attr">— Owner · High Tide Ceramic Coatings and Mobile Detailing</p>
+</section>
 
-  <section class="reviews">
-    <p class="eyebrow">Reviews</p>
-    <h2>What Savannah says</h2>
-    <div class="review-empty">
-      <p>Real reviews from your customers will appear here.</p>
-      <span>Connect your Google Business Profile to pull live ratings into this section.</span>
-    </div>
-  </section>
+<section class="book">
+  <h2>Book Owner.</h2>
+  <p>We started High Tide because every detailer in town either works out of a strip-mall bay with a two-week wait or shows up with a pressure washer and a bucket. We bring the full setup to your driveway, do the correction work before any coating goes on, and pick up the phone ourselves. Built for the salt air and the live-oak pollen.</p>
+  <a href="tel:+19126675690">(912) 667-5690 · Call to book</a>
+</section>
 
-  <section class="about">
-    <p class="eyebrow">About</p>
-    <h2>How we run details in Savannah</h2>
-    <p>We started High Tide because every detailer in town either runs on a months-out wait list or shows up with a pressure washer and a prayer. We come to you, we work clean, and we do not leave until the car looks the way we would want our own to look. Coastal Georgia is hard on paint, and we built this around that fact.</p>
-  </section>
+<section class="find">
+  <p class="find-eyebrow">Where Owner rolls</p>
+  <p class="find-list">Ardsley Park<span class="dot">·</span>Isle of Hope<span class="dot">·</span>Wilmington Island<span class="dot">·</span>Tybee Island<span class="dot">·</span>Pooler<span class="dot">·</span>Richmond Hill</p>
+</section>
 
-  <section class="service-area">
-    <p class="eyebrow">Service area</p>
-    <h2>We serve Savannah + nearby</h2>
-    <div>
-      <span class="pill primary">Savannah</span>
-      <span class="pill">Surrounding GA towns</span>
-      <span class="pill">Same-day quotes inside city limits</span>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <p class="eyebrow">Contact</p>
-    <h2>Get in touch</h2>
-    <a href="tel:+19126675690" class="phone">(912) 667-5690</a>
-    <div class="hours">
-        <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">8 AM - 6 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">9 AM - 3 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Closed</span></div>
-    </div>
-    <form action="https://formsubmit.co/americanmobiledetailing@yahoo.com" method="POST">
-        <input type="hidden" name="_subject" value="New lead from High Tide Ceramic Coatings and Mobile Detailing site preview" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_cc" value="chlebholdings@gmail.com" />
-        <input type="text" name="_honey" tabIndex="-1" autoComplete="off" style="display:none" />
-        <input name="name" required placeholder="Full name" autocomplete="name" />
-        <input name="email" type="email" required placeholder="Email" autocomplete="email" />
-        <input name="phone" type="tel" required placeholder="Phone" autocomplete="tel" inputmode="tel" />
-        <textarea name="message" rows="4" required placeholder="What do you need?"></textarea>
-        <button type="submit">Send</button>
-        <p class="form-note">We reply same day during open hours.</p>
-      </form>
-  </section>
-
-  <footer>
-    <div class="brand-foot">
-      <div class="logo">H</div>
-      <span class="brand-foot-name">High Tide Ceramic Coatings and Mobile Detailing</span>
-    </div>
-    <p>Savannah, GA  ·  <a href="tel:+19126675690">(912) 667-5690</a></p>
-    <div class="footer-cta">
-      <a href="tel:+19126675690">Call</a>
-      <a href="#contact">Get a quote</a>
-    </div>
-    <p style="margin-top:24px; color:#5a5a5a;">© 2026 High Tide Ceramic Coatings and Mobile Detailing · Custom website preview built by <a href="https://chleb.ai">Chleb AI</a></p>
-  </footer>
+<footer class="foot">
+  <div class="mark">High Tide Ceramic Coatings and Mobile Detailing</div>
+  <a href="tel:+19126675690" class="phone">(912) 667-5690</a>
+  <p class="foot-meta">Savannah, GA · Run by Owner</p>
+</footer>
 
 </body>
 </html>
