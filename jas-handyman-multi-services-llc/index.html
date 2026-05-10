@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>JAS Handyman Multi Services LLC · Tampa, FL</title>
-  <meta name="description" content="Small repairs and bigger fix-it jobs across Tampa, handled by an owner-run crew that shows up when they say they will and finishes the punch list." />
+  <meta name="description" content="JAS Handyman Multi Services covers the small jobs Tampa contractors won&#39;t touch and the medium jobs that keep getting pushed to next month." />
   <meta property="og:title" content="JAS Handyman Multi Services LLC · Tampa, FL" />
-  <meta property="og:description" content="Small repairs and bigger fix-it jobs across Tampa, handled by an owner-run crew that shows up when they say they will and finishes the punch list." />
+  <meta property="og:description" content="JAS Handyman Multi Services covers the small jobs Tampa contractors won&#39;t touch and the medium jobs that keep getting pushed to next month." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EJ%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Tampa · FL</p>
-      <h1>Tampa handyman work, done right the first time.</h1>
-      <p class="tagline">Small repairs and bigger fix-it jobs across Tampa, handled by an owner-run crew that shows up when they say they will and finishes the punch list.</p>
+      <h1>Handyman work, done right the first time in Tampa.</h1>
+      <p class="tagline">JAS Handyman Multi Services covers the small jobs Tampa contractors won&#39;t touch and the medium jobs that keep getting pushed to next month.</p>
       <div class="ctas">
         <a href="tel:+18138636124" class="cta-primary">Call (813) 863-6124</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Drywall and paint</h3>
-          <p>Patch holes, fix water damage, retexture, and repaint to match. Clean lines, no roller marks, furniture covered before we start.</p>
+          <h3>Drywall + paint</h3>
+          <p>Patch holes from doorknobs, leaks, and TV mounts. Match texture, prime, and roll the wall so you cannot find the repair.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
-          <h3>Doors and locks</h3>
-          <p>Hang new interior doors, plane sticking ones, swap deadbolts, fix strike plates. We bring the shims, screws, and a real chisel.</p>
+          <h3>Carpentry repairs</h3>
+          <p>Rotted fascia, soft door jambs, sagging shelves, loose railings. We pull the bad wood, fit new stock, and seal it before we leave.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Mounting and assembly</h3>
-          <p>TVs, shelves, mirrors, cabinets, and flat-pack furniture mounted level and into studs. We haul out the boxes when we leave.</p>
+          <h3>Bath + kitchen fixes</h3>
+          <p>Re-caulk tubs, swap vanities, reseat toilets, hang cabinet doors that stopped closing right. Small bathroom jobs handled in one visit.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Small repairs list</h3>
-          <p>Leaky faucets, running toilets, busted blinds, loose railings. Send the photo, get a flat quote, pick a day this week.</p>
+          <h3>Mounting + assembly</h3>
+          <p>TVs into stud or concrete, shelves leveled, ceiling fans wired, flat-pack furniture built without leftover screws or wobble.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Drywall patch + repaint</div>
+          <div class="specialty-detail">Up to four holes patched, sanded, primed, and repainted with your existing color match. Two-hour visit, no dust trail.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Door rehang + hardware</div>
+          <div class="specialty-detail">Interior door planed, rehung square, new hinges and knob installed. Closes with a single push, latch lines up clean.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Bathroom refresh</div>
+          <div class="specialty-detail">New caulk lines, fresh toilet seal, faucet swap, exhaust fan replaced. Half-day job, bathroom usable that night.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Fence + gate repair</div>
+          <div class="specialty-detail">Reset leaning posts in concrete, replace cracked pickets, rehang sagging gates with new hinges and a proper latch.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Storm prep punch list</div>
+          <div class="specialty-detail">Re-secure soffit panels, tighten shutters, clear gutters, swap rotted exterior trim. Walk the property and knock the list out in one visit.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">You call</div>
+            <div class="process-detail">Tell us the address and what&#39;s broken. Photos by text help us load the right materials.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">We quote on site</div>
+            <div class="process-detail">Walk the job with you, give a flat number before any tool comes off the truck.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">We finish it</div>
+            <div class="process-detail">Most jobs wrap same visit. Bigger ones get a firm date, not a maybe.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1503387762-cbe48f1f8c66?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -227,15 +302,19 @@
   <section class="about">
     <p class="eyebrow">About</p>
     <h2>How we run jobs in Tampa</h2>
-    <p>We started JAS because every handyman in Tampa runs on a voicemail box and a maybe. Calls go answered, quotes go out the same day, and we show up in the window we promised. If a job is bigger than a handyman job, we tell you up front and point you at the right trade.</p>
+    <p>We started JAS because every handyman in Tampa runs on a voicemail and a two-week wait, and most of them ghost the small jobs entirely. We answer the phone, we quote honest, and we show up the day we said we would. A few hundred regulars across Hillsborough keep us booked, and word of mouth keeps us picky about the work we take.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Owner</div>
+      <p>JAS is run hands-on, the owner picks up the phone, quotes the job in plain numbers, and shows up with the tools already loaded. No sub-crews, no surprise upcharges, no jobs left at ninety percent. If it can be done in a day, it gets done in a day.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Tampa + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Tampa</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Seminole Heights</span><span class="pill">South Tampa</span><span class="pill">Brandon</span><span class="pill">Carrollwood</span><span class="pill">Westchase</span><span class="pill">Riverview</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
