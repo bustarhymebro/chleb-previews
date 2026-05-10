@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>David&#39;s Lawn Care and Maintenance LLC · Tampa, FL</title>
-  <meta name="description" content="David&#39;s runs a tight weekly route through Tampa for homeowners who want the yard handled and the texts answered without a chase." />
+  <meta name="description" content="Weekly mowing, edging, and yard cleanups across Tampa and the surrounding bay neighborhoods, run by the same crew you met on day one." />
   <meta property="og:title" content="David&#39;s Lawn Care and Maintenance LLC · Tampa, FL" />
-  <meta property="og:description" content="David&#39;s runs a tight weekly route through Tampa for homeowners who want the yard handled and the texts answered without a chase." />
+  <meta property="og:description" content="Weekly mowing, edging, and yard cleanups across Tampa and the surrounding bay neighborhoods, run by the same crew you met on day one." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f5f3a" />
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Tampa · FL</p>
-      <h1>Lawns kept sharp across Tampa.</h1>
-      <p class="tagline">David&#39;s runs a tight weekly route through Tampa for homeowners who want the yard handled and the texts answered without a chase.</p>
+      <h1>Lawn care that shows up in Tampa.</h1>
+      <p class="tagline">Weekly mowing, edging, and yard cleanups across Tampa and the surrounding bay neighborhoods, run by the same crew you met on day one.</p>
       <div class="ctas">
         <a href="tel:+18133344097" class="cta-primary">Call (813) 334-4097</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Weekly mowing</h3>
-          <p>Mow, line trim, edge the walks and drive, blow off hard surfaces. Same crew, same day each week, gate latched on the way out.</p>
+          <h3>Weekly mow service</h3>
+          <p>Standard weekly route: mow, string-trim fence lines, edge the walks and drive, blow off hard surfaces before we leave.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
-          <h3>Hedge and shrub work</h3>
-          <p>Hand shape hedges, thin overgrown shrubs, clean out beds, and haul the clippings. Done as a one off or rolled into your route.</p>
+          <h3>Hedge and shrub trim</h3>
+          <p>Shape hedges, thin out overgrown shrubs, clear back anything blocking windows or pathways. Clippings hauled off, not left in beds.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Seasonal cleanups</h3>
-          <p>Spring and fall reset for yards that got away from you. Beds cleared, edges recut, lawn cut down to a clean baseline before the next season.</p>
+          <h3>Yard cleanups</h3>
+          <p>One-time reset for overgrown yards, post-storm debris, or move-in properties. Cut down, raked out, hauled in one visit.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Fertilizer and weed control</h3>
-          <p>Scheduled feedings and spot treatments matched to Florida turf. We track what went down and when so the lawn actually responds.</p>
+          <h3>Mulch and bed work</h3>
+          <p>Pull weeds, redefine bed edges with a clean spade line, lay fresh pine bark or cypress to the depth the beds actually need.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Weekly mow + edge package</div>
+          <div class="specialty-detail">Mow, line-trim, edge driveway and walks, blow off hardscapes. Standard 7 day cycle, 14 days in winter months.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">St. Augustine treatment</div>
+          <div class="specialty-detail">Set blade height for Floratam, spot-check for chinch bug damage and brown patch, flag issues before they spread across the yard.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Palm frond removal</div>
+          <div class="specialty-detail">Cut and haul dead fronds and seed pods from sabal, queen, and washingtonia palms up to standard pole-saw reach. Bagged and gone.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Hurricane prep cleanup</div>
+          <div class="specialty-detail">Pre-storm trim back of weak limbs and loose fronds, post-storm yard clear of branches and debris, stacked curbside or hauled.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Sod patch and reseed</div>
+          <div class="specialty-detail">Cut out dead sections, lay matching St. Augustine or Bahia squares, water-in instructions left at the door so it actually takes.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">You call</div>
+            <div class="process-detail">David picks up, asks about the yard, sets a time to walk the property and quote it.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">Walk and quote</div>
+            <div class="process-detail">On-site look at lot size, grass type, and bed work, then a flat weekly or one-time price.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">We run the route</div>
+            <div class="process-detail">Same crew, same day each week, mow, edge, blow, gone in under an hour on most yards.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -227,15 +302,19 @@
   <section class="about">
     <p class="eyebrow">About</p>
     <h2>How we run yards in Tampa</h2>
-    <p>We started David&#39;s because every lawn guy in Tampa runs on a voicemail and a maybe. We show up the day we said, cut to the height your grass actually wants in this heat, and pick up the phone when you call. A few hundred yards on the route, all of them treated like the only one.</p>
+    <p>We started David&#39;s because every lawn guy in Tampa runs on a wait list and a missed text, and customers were tired of chasing crews that ghosted them after a month. We answer the phone, show up the day we said we would, and keep our route tight enough that the same faces are on your yard week after week. Nothing fancy, just a clean cut and a clean exit.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet David</div>
+      <p>David has been cutting grass around Tampa for over a decade, started the company after years of running someone else&#39;s truck. He picks up his own phone, runs his own route, and won&#39;t quote a yard he hasn&#39;t walked.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Tampa + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Tampa</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">South Tampa</span><span class="pill">Hyde Park</span><span class="pill">Seminole Heights</span><span class="pill">Carrollwood</span><span class="pill">Westchase</span><span class="pill">Brandon</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
