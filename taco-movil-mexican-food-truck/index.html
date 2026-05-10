@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Taco Movil Mexican Food Truck · New Port Richey, FL</title>
-  <meta name="description" content="Family recipes, a clean truck, and a short menu we actually cook well, serving New Port Richey lots, lunch rushes, and private events across Pasco County." />
+  <meta name="description" content="A New Port Richey food truck running tacos, tortas, and weekend specials off a small menu we actually cook to order." />
   <meta property="og:title" content="Taco Movil Mexican Food Truck · New Port Richey, FL" />
-  <meta property="og:description" content="Family recipes, a clean truck, and a short menu we actually cook well, serving New Port Richey lots, lunch rushes, and private events across Pasco County." />
+  <meta property="og:description" content="A New Port Richey food truck running tacos, tortas, and weekend specials off a small menu we actually cook to order." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3ET%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">New Port Richey · FL</p>
-      <h1>Real tacos, parked in New Port Richey.</h1>
-      <p class="tagline">Family recipes, a clean truck, and a short menu we actually cook well, serving New Port Richey lots, lunch rushes, and private events across Pasco County.</p>
+      <h1>Real Mexican street food, parked in New Port Richey.</h1>
+      <p class="tagline">A New Port Richey food truck running tacos, tortas, and weekend specials off a small menu we actually cook to order.</p>
       <div class="ctas">
         <a href="tel:+17278152814" class="cta-primary">Call (727) 815-2814</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Daily lunch service</h3>
-          <p>Find the truck on the rotation map most weekdays. Tacos, burritos, quesadillas, agua fresca. In and out under ten minutes for most orders.</p>
+          <h3>Lunch service</h3>
+          <p>We park the truck weekday afternoons, run a tight menu, and turn orders around in a few minutes so you can eat and get back.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
-          <h3>Catering and events</h3>
-          <p>We pull up, set up, and feed your crew. Weddings, birthdays, job sites, office lots. Per head pricing, no surprise fees, deposit holds the date.</p>
+          <h3>Catering pickups</h3>
+          <p>Trays of tacos, rice, beans, and salsas built for office lunches, birthdays, and small jobsite crews. Order a day ahead.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Office lot stops</h3>
-          <p>Recurring weekly stops for office parks and shops. Your team pre-orders by text the morning of, food is hot and ready at the curb.</p>
+          <h3>Private events</h3>
+          <p>We bring the truck to your driveway, backyard, or shop lot and cook on site for the headcount you give us.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Private taco bars</h3>
-          <p>Build your own taco setup for parties of twenty and up. Three proteins, salsas made that morning, fresh tortillas pressed to order on site.</p>
+          <h3>Weekend specials</h3>
+          <p>Friday and Saturday we add birria, barbacoa, or whatever the cooks want to run that week. Posted on the window.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Al pastor taco plate</div>
+          <div class="specialty-detail">Three corn tortillas, marinated pork off the trompo, onion, cilantro, pineapple, with rice, beans, and two salsas.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Birria quesatacos</div>
+          <div class="specialty-detail">Three cheese-crisped tortillas dipped in consome, slow-cooked beef, onion, cilantro, with a cup of consome for dipping.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Carne asada torta</div>
+          <div class="specialty-detail">Grilled steak on a telera roll with refried beans, avocado, lettuce, tomato, queso fresco, and chipotle mayo.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Family taco pack</div>
+          <div class="specialty-detail">Twelve tacos, your pick of meats, rice and beans on the side, tortillas, onion, cilantro, and three salsas.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Elote and aguas</div>
+          <div class="specialty-detail">Grilled corn with crema, cotija, lime, chili, plus horchata or jamaica by the cup or gallon for the table.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">Find the truck</div>
+            <div class="process-detail">Check the schedule on the window or call to confirm where we&#39;re parked that day.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">Order at the window</div>
+            <div class="process-detail">Tell us your meats, your salsa heat, and we ring it up on the spot.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">Eat fresh</div>
+            <div class="process-detail">Tortillas pressed and meat off the plancha, handed over in a few minutes.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1572448862527-d3c904757de6?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -227,15 +302,19 @@
   <section class="about">
     <p class="eyebrow">About</p>
     <h2>How we run the truck in New Port Richey</h2>
-    <p>We started Taco Movil to serve the New Port Richey crowd the kind of tacos we grew up eating, not the version built for a drive-thru. Every food truck in town gets judged on three things, is the meat right, is the salsa real, and did you answer the phone when someone wanted to book you. We try to get all three right, every shift. If you catch us at a lot or want us at your event, give us a call and we will tell you straight if we can do the date.</p>
+    <p>We started Taco Movil because most of New Port Richey was getting Mexican food out of a steam tray or a chain. We run a small menu off the truck so every taco gets pressed tortillas and meat off the plancha. A few hundred regulars know our schedule by now, and most weeks we sell out by closing.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Owner</div>
+      <p>The Owner has been cooking off this truck around Pasco County for years, started with a small trompo and a folding table at weekend events. Recipes come straight from family, no shortcuts. They pick up the phone for catering orders themselves.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve New Port Richey + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">New Port Richey</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Downtown New Port Richey</span><span class="pill">Port Richey</span><span class="pill">Holiday</span><span class="pill">Trinity</span><span class="pill">Hudson</span><span class="pill">Odessa</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
@@ -245,9 +324,9 @@
     <h2>Get in touch</h2>
     <a href="tel:+17278152814" class="phone">(727) 815-2814</a>
     <div class="hours">
-        <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">11 AM - 8 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">12 PM - 9 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Closed, catering by request</span></div>
+        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">11 AM - 8 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">11 AM - 9 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">12 PM - 6 PM</span></div>
     </div>
     <div class="contact-fallback">
         <p>The fastest way to reach us is by phone.</p>
