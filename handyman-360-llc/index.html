@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Handyman 360 LLC · Riverview, FL</title>
-  <meta name="description" content="Chad and a small Riverview crew handling the punch list nobody else will touch, from dripping faucets to the half-finished projects sitting in your garage." />
+  <meta name="description" content="Chad runs a small handyman crew out of Riverview, taking on the punch-list jobs other contractors keep pushing to next month." />
   <meta property="og:title" content="Handyman 360 LLC · Riverview, FL" />
-  <meta property="og:description" content="Chad and a small Riverview crew handling the punch list nobody else will touch, from dripping faucets to the half-finished projects sitting in your garage." />
+  <meta property="og:description" content="Chad runs a small handyman crew out of Riverview, taking on the punch-list jobs other contractors keep pushing to next month." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EH%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Riverview · FL</p>
-      <h1>Riverview handyman work, done right the first time.</h1>
-      <p class="tagline">Chad and a small Riverview crew handling the punch list nobody else will touch, from dripping faucets to the half-finished projects sitting in your garage.</p>
+      <h1>Honest handyman work, done right in Riverview.</h1>
+      <p class="tagline">Chad runs a small handyman crew out of Riverview, taking on the punch-list jobs other contractors keep pushing to next month.</p>
       <div class="ctas">
         <a href="tel:+18134844914" class="cta-primary">Call (813) 484-4914</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Repairs and fixes</h3>
-          <p>Drywall patches, door realignments, leaky faucets, running toilets, busted outlets. The small stuff that piles up until somebody actually shows up.</p>
+          <h3>Drywall + paint</h3>
+          <p>Patch holes from doorknobs, anchors, or water damage. Skim, sand, prime, and feather paint so the repair disappears into the wall.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
-          <h3>Mounting and assembly</h3>
-          <p>TVs, shelves, mirrors, ceiling fans, flat-pack furniture. We bring the anchors, the stud finder, and the level so it sits flush and stays put.</p>
+          <h3>Interior carpentry</h3>
+          <p>Hang doors that actually latch, swap baseboard and trim, build out closet shelving. Clean miters, caulked seams, no gaps left behind.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Interior carpentry</h3>
-          <p>Trim work, baseboards, door swaps, cabinet adjustments, deck board replacements. Clean cuts, tight joints, paint-ready when we leave.</p>
+          <h3>Fixture swaps</h3>
+          <p>Ceiling fans, vanities, faucets, garbage disposals, light fixtures. Bring the part or work off yours, haul the old one out.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Punch list days</h3>
-          <p>Half-day or full-day blocks for the running list on your fridge. One trip, one invoice, one less weekend lost to errands at the hardware store.</p>
+          <h3>Exterior repairs</h3>
+          <p>Soffit and fascia patches, fence board replacement, pressure washing the driveway, rehanging a screen door that the wind caught.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Drywall patch + repaint</div>
+          <div class="specialty-detail">Up to four patches in one room, sanded smooth, primed, and color matched to your existing wall in one visit.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Ceiling fan install</div>
+          <div class="specialty-detail">Pull the old fixture, brace the box if needed, mount and balance the new fan, test every speed and the light kit.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Bathroom refresh</div>
+          <div class="specialty-detail">Swap vanity, faucet, toilet, and towel bars in a single day. Caulk lines redone, old fixtures hauled out.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Door rehang + hardware</div>
+          <div class="specialty-detail">Plane the slab, reset hinges, install a new knob or deadbolt. Door closes and latches without a shove.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Honey-do day rate</div>
+          <div class="specialty-detail">Full day on site working a punch list you wrote on the fridge. Most lists clear in six to eight hours.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">You call</div>
+            <div class="process-detail">Chad answers or calls back same day. Quick rundown of the job, rough quote on the phone.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">We schedule</div>
+            <div class="process-detail">Pick a window that works. Most small jobs land within the week, bigger lists get a half or full day.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">We finish it</div>
+            <div class="process-detail">Show up with the tools and parts, fix every item on the list, clean up before leaving.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1572111294831-cf3a36b6ea51?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -227,15 +302,19 @@
   <section class="about">
     <p class="eyebrow">About</p>
     <h2>How we run jobs in Riverview</h2>
-    <p>We started Handyman 360 because every homeowner in Riverview has the same story: a list of small jobs that no contractor will return a call about. We show up when we say we will, quote before we start, and clean up before we leave. If it takes longer than expected, that is on us, not the invoice.</p>
+    <p>We started Handyman 360 because every homeowner in Riverview has the same story: the big contractors won&#39;t return a call for a small list, and the cheap guys never finish the job. We handle the in-between work, the kind a house actually needs. One crew, one truck, one number to call, and the work gets done the way we&#39;d want it done in our own homes.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Chad</div>
+      <p>Chad has spent close to two decades swinging a hammer around south Hillsborough, starting in new construction before going out on his own. He picks up his own phone, shows up when he says he will, and will not leave a job half finished to chase the next one.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Riverview + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Riverview</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Riverview</span><span class="pill">Brandon</span><span class="pill">Apollo Beach</span><span class="pill">Gibsonton</span><span class="pill">Valrico</span><span class="pill">Ruskin</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
