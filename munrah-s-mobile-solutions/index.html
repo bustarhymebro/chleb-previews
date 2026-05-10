@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Munrah&#39;s Mobile Solutions · Tampa, FL</title>
-  <meta name="description" content="Daniel runs a mobile shop across Tampa, fixing daily drivers on site so you skip the tow, the wait room, and the rideshare home." />
+  <meta name="description" content="Munrah&#39;s Mobile Solutions handles repairs and diagnostics on site across Tampa, so you skip the tow truck and the week-long shop wait." />
   <meta property="og:title" content="Munrah&#39;s Mobile Solutions · Tampa, FL" />
-  <meta property="og:description" content="Daniel runs a mobile shop across Tampa, fixing daily drivers on site so you skip the tow, the wait room, and the rideshare home." />
+  <meta property="og:description" content="Munrah&#39;s Mobile Solutions handles repairs and diagnostics on site across Tampa, so you skip the tow truck and the week-long shop wait." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e2b?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EM%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e2b?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Tampa · FL</p>
-      <h1>Mobile mechanic, parked at your driveway.</h1>
-      <p class="tagline">Daniel runs a mobile shop across Tampa, fixing daily drivers on site so you skip the tow, the wait room, and the rideshare home.</p>
+      <h1>Mobile mechanic that comes to your driveway in Tampa.</h1>
+      <p class="tagline">Munrah&#39;s Mobile Solutions handles repairs and diagnostics on site across Tampa, so you skip the tow truck and the week-long shop wait.</p>
       <div class="ctas">
         <a href="tel:+13527025462" class="cta-primary">Call (352) 702-5462</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Diagnostics on site</h3>
-          <p>Check engine light, no start, weird noise. We bring the scan tools to your driveway and tell you straight what it needs.</p>
+          <h3>On-site diagnostics</h3>
+          <p>Daniel pulls codes, road tests if it&#39;ll move, and gives you a written quote before any wrench turns. No mystery bench fees.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
           <h3>Brakes and rotors</h3>
-          <p>Pads, rotors, calipers, fluid flush. Done in your driveway in a couple hours, with the old parts left for you to see.</p>
+          <p>Pad and rotor replacement done in your driveway or office lot. OE-grade parts, torque to spec, bedded in before he leaves.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Starters and alternators</h3>
-          <p>Dead in a parking lot or won&#39;t crank in the morning. We come to the car, test the system, and swap the part that day.</p>
+          <h3>Starting and charging</h3>
+          <p>Alternator, starter, and battery work. Tests the full charging circuit so you don&#39;t replace a good alternator chasing a bad ground.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Fluids and maintenance</h3>
-          <p>Oil, coolant, transmission, brake, power steering. Standard intervals on your schedule, no waiting room, no upsell on cabin filters.</p>
+          <h3>Pre-purchase inspections</h3>
+          <p>Meets you at the seller&#39;s address before you hand over cash. Compression, leaks, frame, fluids, scan, photos sent same day.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Brake pad + rotor swap</div>
+          <div class="specialty-detail">Front or rear axle. Includes new pads, rotors, hardware kit, caliper slide service, and a proper bed-in procedure.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Starter or alternator replacement</div>
+          <div class="specialty-detail">Bench-tested replacement, charging system load test, battery terminal cleanup, and a follow-up scan to clear stored codes.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Serpentine belt + tensioner</div>
+          <div class="specialty-detail">Belt and tensioner replaced, idler pulley checked, accessory drive aligned. Quiets the morning squeal for good.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Cooling system service</div>
+          <div class="specialty-detail">Radiator, hose, thermostat, or water pump work. Vacuum fill so you don&#39;t burp air pockets in a Tampa parking lot.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Pre-purchase used car check</div>
+          <div class="specialty-detail">Roughly 90 minutes on the seller&#39;s driveway. Scan report, fluid look, undercarriage photos, honest verdict before you pay.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">You call</div>
+            <div class="process-detail">Tell Daniel the symptoms and the year, make, model. He&#39;ll quote a window and a ballpark.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">He shows up</div>
+            <div class="process-detail">Van pulls into your driveway with parts and tools. Diagnosis and written quote before any work begins.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">Fixed on site</div>
+            <div class="process-detail">Repair done in your driveway, test driven if needed, and codes cleared before he leaves.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1453491945771-a1e904948959?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -226,16 +301,20 @@
 
   <section class="about">
     <p class="eyebrow">About</p>
-    <h2>How we run jobs in Tampa</h2>
-    <p>We started Munrah&#39;s because every shop in Tampa runs on a wait list and a voicemail, and most repairs do not need a lift. Daniel works out of a fully stocked van, books the job for a real time window, and shows up. If it is something a mobile setup cannot safely handle, we say so up front instead of stringing you along.</p>
+    <h2>How we run jobs across Tampa</h2>
+    <p>We started Munrah&#39;s because every shop in Tampa runs on a wait list and a voicemail, and people with one car can&#39;t sit on a three-week queue. We come to your driveway, your office lot, or wherever the car died. If we can&#39;t fix it on site, we tell you straight, no charge for the look.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Daniel</div>
+      <p>Daniel has been turning wrenches for over a decade around Tampa and started Munrah&#39;s after one too many customers told him their dealer quoted three weeks out for a brake job. He picks up his own phone, brings the parts in the van, and won&#39;t take a job he can&#39;t finish that day.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Tampa + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Tampa</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">South Tampa</span><span class="pill">Brandon</span><span class="pill">Carrollwood</span><span class="pill">Westchase</span><span class="pill">Riverview</span><span class="pill">Town &#39;N Country</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
@@ -246,8 +325,8 @@
     <a href="tel:+13527025462" class="phone">(352) 702-5462</a>
     <div class="hours">
         <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">7 AM - 7 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8 AM - 4 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Emergency calls only</span></div>
+        <div class="hours-row"><span class="hours-day">Sat</span><span class="hours-time">8 AM - 4 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Sun</span><span class="hours-time">Emergency calls only</span></div>
     </div>
     <div class="contact-fallback">
         <p>The fastest way to reach us is by phone.</p>
