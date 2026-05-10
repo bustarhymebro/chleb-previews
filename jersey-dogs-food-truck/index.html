@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jersey Dogs Food Truck · Clearwater, FL</title>
-  <meta name="description" content="A Jersey-style dog and sausage truck rolling through Clearwater, run by people who actually work the window and remember your order." />
+  <meta name="description" content="A Clearwater food truck slinging real Jersey-style hot dogs, sausage, and fries to office parks, breweries, and private events across Pinellas County." />
   <meta property="og:title" content="Jersey Dogs Food Truck · Clearwater, FL" />
-  <meta property="og:description" content="A Jersey-style dog and sausage truck rolling through Clearwater, run by people who actually work the window and remember your order." />
+  <meta property="og:description" content="A Clearwater food truck slinging real Jersey-style hot dogs, sausage, and fries to office parks, breweries, and private events across Pinellas County." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EJ%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Clearwater · FL</p>
-      <h1>Jersey dogs, parked in Clearwater.</h1>
-      <p class="tagline">A Jersey-style dog and sausage truck rolling through Clearwater, run by people who actually work the window and remember your order.</p>
+      <h1>Jersey-style dogs, parked around Clearwater.</h1>
+      <p class="tagline">A Clearwater food truck slinging real Jersey-style hot dogs, sausage, and fries to office parks, breweries, and private events across Pinellas County.</p>
       <div class="ctas">
         <a href="tel:+17272652402" class="cta-primary">Call (727) 265-2402</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -188,22 +208,77 @@
         <div class="card fx-up">
           <div class="card-badge">1</div>
           <h3>Lunch service</h3>
-          <p>We post the truck near the usual spots around Clearwater for the lunch rush. Cash and card. Line moves fast, food comes out hot.</p>
+          <p>We park at office complexes and job sites for the lunch rush. Quick line, cash and card, plates out in under five minutes.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
-          <h3>Event catering</h3>
-          <p>Birthdays, office lunches, little league fundraisers. We bring the truck, the dogs, the buns, and the toppings. You tell us the head count.</p>
+          <h3>Brewery nights</h3>
+          <p>Standing rotation at local taprooms on weekend evenings. Full menu, late close, we work around the brewery&#39;s seating and traffic.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Private bookings</h3>
-          <p>Block the truck for two to four hours at your spot. Flat rate, set menu, we handle setup and cleanup. Good for backyard parties and shop openings.</p>
+          <h3>Private events</h3>
+          <p>Birthdays, graduations, backyard parties. Flat per-head pricing, two hours of service, we handle setup, condiments, and cleanup ourselves.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Custom menu add-ons</h3>
-          <p>Italian dogs, sausage and peppers, loaded fries on request for bigger bookings. Tell us what you want a week out and we will source it.</p>
+          <h3>Corporate catering</h3>
+          <p>Office lunches and staff appreciation days. We coordinate parking with your building manager and bring enough product to feed the whole floor.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Italian hot dog</div>
+          <div class="specialty-detail">Deep-fried all-beef dog, peppers, onions, potatoes, in a pizza bread roll. The Newark classic, done the way it&#39;s supposed to be.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Ripper with mustard</div>
+          <div class="specialty-detail">Deep-fried until the casing splits. Spicy brown mustard, raw onion, on a steamed bun. Two-napkin situation.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Sausage and peppers</div>
+          <div class="specialty-detail">Sweet Italian sausage, sauteed bell peppers and onions, long roll. Off the flat-top, served hot, no microwaves on this truck.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Disco fries</div>
+          <div class="specialty-detail">Crinkle-cut fries under brown gravy and melted mozzarella. Single or double portion, fork included, eat them fast.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Texas wiener</div>
+          <div class="specialty-detail">All-beef dog topped with our chili sauce, yellow mustard, chopped onion. Paterson-style, three-down if you order it that way.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">Find the truck</div>
+            <div class="process-detail">Check the weekly schedule on our page or call ahead for the day&#39;s location.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">Order at the window</div>
+            <div class="process-detail">Cash or card, line moves fast, most orders are out in three to four minutes.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">Eat it hot</div>
+            <div class="process-detail">Picnic tables when we have them, tailgate when we don&#39;t. Napkins are stacked on the side.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -226,16 +301,20 @@
 
   <section class="about">
     <p class="eyebrow">About</p>
-    <h2>Why Clearwater keeps flagging us down</h2>
-    <p>We grew up on Jersey-style dogs and got tired of not finding one in Clearwater. So we built the truck and started parking it. Most days we are out, the menu is short on purpose, and we cook the same way every time. If you have seen the truck once, you already know the drill.</p>
+    <h2>How a Jersey truck ended up in Clearwater</h2>
+    <p>We started Jersey Dogs because nobody down here was doing a proper Italian hot dog or a real ripper, and every time we drove home to visit family we came back craving one. Clearwater has a serious food truck scene but it leans tacos and barbecue, so we filled the gap. Bread comes from up north, dogs are all-beef, and we cook to order on a flat-top, every shift.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Owner</div>
+      <p>The owner grew up eating these dogs at North Jersey lunch counters and got tired of explaining what an Italian hot dog was every time someone asked. Started the truck to bring the real version down to Clearwater. Buns and rolls come in from a Jersey bakery, no shortcuts on the bread.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Clearwater + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Clearwater</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Downtown Clearwater</span><span class="pill">Clearwater Beach</span><span class="pill">Largo</span><span class="pill">Dunedin</span><span class="pill">Safety Harbor</span><span class="pill">Belleair Bluffs</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
@@ -245,9 +324,9 @@
     <h2>Get in touch</h2>
     <a href="tel:+17272652402" class="phone">(727) 265-2402</a>
     <div class="hours">
-        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">11 AM - 8 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">11 AM - 9 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sunday-Monday</span><span class="hours-time">Closed, book the truck</span></div>
+        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">11 AM - 2 PM lunch service</span></div>
+        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">5 PM - 10 PM brewery rotation</span></div>
+        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Private events by booking</span></div>
     </div>
     <form action="https://formsubmit.co/JerseyDogsFoodTruck@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New lead from Jersey Dogs Food Truck site preview" />
