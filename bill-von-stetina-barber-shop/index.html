@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bill Von Stetina Barber Shop · Redington Shores, FL</title>
-  <meta name="description" content="A two-chair shop on the Redington Shores strip, run by Bill, walk-ins welcome and regulars on a first-name basis." />
+  <meta name="description" content="A small chair shop on the Redington Shores strip where Bill cuts hair the way it was cut before clippers had bluetooth." />
   <meta property="og:title" content="Bill Von Stetina Barber Shop · Redington Shores, FL" />
-  <meta property="og:description" content="A two-chair shop on the Redington Shores strip, run by Bill, walk-ins welcome and regulars on a first-name basis." />
+  <meta property="og:description" content="A small chair shop on the Redington Shores strip where Bill cuts hair the way it was cut before clippers had bluetooth." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Redington Shores · FL</p>
-      <h1>Old-school barbering in Redington Shores.</h1>
-      <p class="tagline">A two-chair shop on the Redington Shores strip, run by Bill, walk-ins welcome and regulars on a first-name basis.</p>
+      <h1>Old-school barbering for Redington Shores men.</h1>
+      <p class="tagline">A small chair shop on the Redington Shores strip where Bill cuts hair the way it was cut before clippers had bluetooth.</p>
       <div class="ctas">
         <a href="tel:+17273924010" class="cta-primary">Call (727) 392-4010</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Classic cut</h3>
-          <p>Scissor and clipper cut, neckline cleaned up, finished with a hot towel. Takes about thirty minutes. No rushing the chair.</p>
+          <h3>Men&#39;s haircut</h3>
+          <p>Standard scissor or clipper cut, washed, blown out, and cleaned up around the ears and neck. Sit down, walk out sharp.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
           <h3>Beard trim</h3>
-          <p>Shape the beard, line up the cheeks and neck, trim the mustache. Pairs with a cut or stands on its own.</p>
+          <p>Shape the beard down to your jawline, clean the cheek and neck lines with a straight razor, finish with balm.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Straight razor shave</h3>
-          <p>Hot lather, straight razor, hot towel finish. The full shave the way your grandfather got it. Booked appointments preferred.</p>
+          <h3>Hot towel shave</h3>
+          <p>Steam towel, pre-shave oil, lather, two passes with a straight razor, cold towel and aftershave to close.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
           <h3>Father and son</h3>
-          <p>Cuts for dad and the kid in the same visit. We keep things calm for the little ones and quick for dad.</p>
+          <p>Two chairs, two cuts, one ticket. Good for the kid&#39;s first real barbershop visit while dad gets cleaned up.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Skin fade + beard line-up</div>
+          <div class="specialty-detail">Bald fade on the sides, scissor work on top, beard squared off with a razor edge along the cheek and neck.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Classic taper + part</div>
+          <div class="specialty-detail">Tapered sides, comb-over or hard part scissored on top, finished with pomade. The cut your grandfather paid for.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Straight razor shave</div>
+          <div class="specialty-detail">Full face shave with hot towels, badger brush lather, and a single-edge straight razor. Includes aftershave finish.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Senior cut + shave</div>
+          <div class="specialty-detail">Standard haircut paired with a neck shave and ear and brow detail. Quiet chair, no upsell, in and out.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Boy&#39;s first haircut</div>
+          <div class="specialty-detail">Clippers kept gentle, parents stay close, and the kid keeps a lock of hair in an envelope before he leaves.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">Call the shop</div>
+            <div class="process-detail">Bill picks up between cuts or calls back when the chair is empty. No app, no portal.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">Walk through it</div>
+            <div class="process-detail">Tell him what you want, point at a length, or trust him on a classic shape.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">Cut and finish</div>
+            <div class="process-detail">Cut, line-up, hot towel on the neck, brush down, pay at the chair.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1622286346003-c91ab8c7e8a8?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -226,16 +301,20 @@
 
   <section class="about">
     <p class="eyebrow">About</p>
-    <h2>How we run the shop in Redington Shores</h2>
-    <p>We started the shop because the beach side of Redington Shores deserved a real barber, not a chain in a strip mall thirty minutes inland. Most days you can walk in, sit down, and be in the chair within a song or two. Bill has been cutting hair longer than most barbers have been alive, and the regulars come back for a reason.</p>
+    <h2>How the chair runs in Redington Shores</h2>
+    <p>We are a one-chair barber shop on the Redington Shores strip, the kind of place where the door has a bell on it and the regulars know each other by truck. Most shops on the beach are walk-in chaos or salon prices. We keep it simple, take appointments by phone, and run on time. If you want a real haircut from a real barber, the chair is here.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Bill</div>
+      <p>Bill has been cutting hair on the beach strip for longer than most of his regulars have lived in Pinellas County. He runs the chair himself, answers his own phone between cuts, and does not do trendy color work or bleach jobs. If you sit down in his chair you are getting a real barber, not a stylist.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Redington Shores + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Redington Shores</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Redington Shores</span><span class="pill">Redington Beach</span><span class="pill">North Redington Beach</span><span class="pill">Madeira Beach</span><span class="pill">Indian Shores</span><span class="pill">Seminole</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
@@ -245,9 +324,9 @@
     <h2>Get in touch</h2>
     <a href="tel:+17273924010" class="phone">(727) 392-4010</a>
     <div class="hours">
-        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">8 AM - 5 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">9 AM - 5 PM</span></div>
         <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8 AM - 2 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sunday-Monday</span><span class="hours-time">Closed</span></div>
+        <div class="hours-row"><span class="hours-day">Sun-Mon</span><span class="hours-time">Closed</span></div>
     </div>
     <div class="contact-fallback">
         <p>The fastest way to reach us is by phone.</p>
