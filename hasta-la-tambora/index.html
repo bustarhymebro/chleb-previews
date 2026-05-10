@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hasta La Tambora · Tampa, FL</title>
-  <meta name="description" content="Dominican plates and late-night bites parked across Tampa, run by people who actually cook the food and answer the phone." />
+  <meta name="description" content="A Dominican food truck rolling between Ybor and Brandon, serving sancocho, mofongo, and tostones the way they get made back home in Tampa." />
   <meta property="og:title" content="Hasta La Tambora · Tampa, FL" />
-  <meta property="og:description" content="Dominican plates and late-night bites parked across Tampa, run by people who actually cook the food and answer the phone." />
+  <meta property="og:description" content="A Dominican food truck rolling between Ybor and Brandon, serving sancocho, mofongo, and tostones the way they get made back home in Tampa." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EH%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Tampa · FL</p>
-      <h1>Tampa&#39;s tambora, served from the truck.</h1>
-      <p class="tagline">Dominican plates and late-night bites parked across Tampa, run by people who actually cook the food and answer the phone.</p>
+      <h1>Dominican plates, hot off the truck in Tampa.</h1>
+      <p class="tagline">A Dominican food truck rolling between Ybor and Brandon, serving sancocho, mofongo, and tostones the way they get made back home in Tampa.</p>
       <div class="ctas">
         <a href="tel:+18133688601" class="cta-primary">Call (813) 368-8601</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -188,22 +208,77 @@
         <div class="card fx-up">
           <div class="card-badge">1</div>
           <h3>Lunch service</h3>
-          <p>Weekday lunch runs at offices, lots, and shops around Tampa. Call ahead, we hold a spot, food is ready when you pull up.</p>
+          <p>We park, drop the steam table, and serve plates with rice, beans, and your pick of stew until the line thins out.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
-          <h3>Late-night window</h3>
-          <p>Friday and Saturday window at our regular spot. Tambora, mangu plates, tripleta, and whatever the cook is feeling that night.</p>
+          <h3>Office stops</h3>
+          <p>Set route times for offices and shops that want a hot plate without sending the team across town for it.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Private events</h3>
-          <p>We pull up to birthdays, quinces, office parties, and job sites. You pick the menu, we handle headcount, plates, and timing.</p>
+          <h3>Private catering</h3>
+          <p>Birthdays, baptisms, quinces, and job sites. We bring the truck or pans, full setup, and serve straight to your guests.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Catering trays</h3>
-          <p>Half and full trays of rice, stew, and proteins for pickup. Order the day before, ready hot at the time you give us.</p>
+          <h3>Family trays</h3>
+          <p>Half and full pans of arroz con pollo, pernil, or habichuelas guisadas, ready for pickup the same afternoon you call.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">La Bandera plate</div>
+          <div class="specialty-detail">White rice, red beans, stewed chicken or beef, sweet plantains, and a side of avocado when it is in season.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Mofongo con chicharrón</div>
+          <div class="specialty-detail">Green plantain mashed with garlic and pork cracklings, served with a small cup of chicken broth on the side.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Sancocho de res</div>
+          <div class="specialty-detail">Beef, yuca, plantain, ñame, and corn simmered down on Saturdays only, sold by the bowl until the pot is gone.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Pernil sandwich</div>
+          <div class="specialty-detail">Slow roasted pork shoulder on pan de agua with pickled onions, mayo-ketchup, and a few crispy pieces of skin.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Tostones rellenos</div>
+          <div class="specialty-detail">Fried green plantain cups stuffed with shrimp criollo or stewed beef, finished with a drizzle of garlic mojo.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">Call ahead</div>
+            <div class="process-detail">Tell us how many plates, what time, and where you want the truck parked.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">We prep</div>
+            <div class="process-detail">Stews go on early, plantains get fried to order, sides packed hot before pickup.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">Eat</div>
+            <div class="process-detail">Pick up at the window or we drop trays at your spot, ready to serve.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1612366486547-ae00f64f87b6?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1572448862527-d3c904757de6?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -226,16 +301,20 @@
 
   <section class="about">
     <p class="eyebrow">About</p>
-    <h2>How we feed Tampa from a truck</h2>
-    <p>We started Hasta La Tambora to put real Dominican food on a Tampa street, not a food court. Most trucks in town run on a wait list and a voicemail, so we pick up the phone and we tell you straight what is on the plancha that day. The truck moves, the cooking does not change.</p>
+    <h2>How we run the truck in Tampa</h2>
+    <p>We started Hasta La Tambora because Tampa has Dominican families spread from Town &#39;N&#39; Country to Brandon and not enough trucks cooking the food the right way. Every stew goes on the burner before the window opens, and the rice is cooked in the pot, not held overnight. If you grew up eating this, you will recognize it.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Owner</div>
+      <p>The owner has been cooking Dominican food in Tampa kitchens for over a decade before putting the truck on the road. They run the line themselves, answer the phone between orders, and won&#39;t send a plate out if the rice is not right.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Tampa + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Tampa</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Ybor City</span><span class="pill">Town &#39;N&#39; Country</span><span class="pill">Brandon</span><span class="pill">Carrollwood</span><span class="pill">West Tampa</span><span class="pill">University Area</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
@@ -245,9 +324,9 @@
     <h2>Get in touch</h2>
     <a href="tel:+18133688601" class="phone">(813) 368-8601</a>
     <div class="hours">
-        <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">11 AM - 3 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Sat</span><span class="hours-time">6 PM - 1 AM</span></div>
-        <div class="hours-row"><span class="hours-day">Sun</span><span class="hours-time">Closed</span></div>
+        <div class="hours-row"><span class="hours-day">Tue-Fri</span><span class="hours-time">11 AM - 8 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">12 PM - 9 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">12 PM - 6 PM</span></div>
     </div>
     <div class="contact-fallback">
         <p>The fastest way to reach us is by phone.</p>
