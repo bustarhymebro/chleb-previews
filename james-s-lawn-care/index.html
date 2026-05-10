@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>James&#39;s Lawn Care · Ruskin, FL</title>
-  <meta name="description" content="James runs a small Ruskin lawn crew that cuts on a real schedule, picks up the phone, and leaves your yard looking like someone actually cared about it." />
+  <meta name="description" content="Weekly mowing, edging, and yard cleanups across Ruskin and the south Hillsborough stretch, run by the same crew every visit so nothing gets missed." />
   <meta property="og:title" content="James&#39;s Lawn Care · Ruskin, FL" />
-  <meta property="og:description" content="James runs a small Ruskin lawn crew that cuts on a real schedule, picks up the phone, and leaves your yard looking like someone actually cared about it." />
+  <meta property="og:description" content="Weekly mowing, edging, and yard cleanups across Ruskin and the south Hillsborough stretch, run by the same crew every visit so nothing gets missed." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f5f3a" />
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -158,7 +178,7 @@
     <div class="hero-inner">
       <p class="eyebrow">Ruskin · FL</p>
       <h1>Lawn care that shows up in Ruskin.</h1>
-      <p class="tagline">James runs a small Ruskin lawn crew that cuts on a real schedule, picks up the phone, and leaves your yard looking like someone actually cared about it.</p>
+      <p class="tagline">Weekly mowing, edging, and yard cleanups across Ruskin and the south Hillsborough stretch, run by the same crew every visit so nothing gets missed.</p>
       <div class="ctas">
         <a href="tel:+18138585212" class="cta-primary">Call (813) 858-5212</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -187,23 +207,78 @@
     <div class="services-grid">
         <div class="card fx-up">
           <div class="card-badge">1</div>
-          <h3>Weekly mowing</h3>
-          <p>Set day, set crew, every week. We mow at the right height for Florida grass, edge clean lines, and blow off drives and walks before we leave.</p>
+          <h3>Weekly mow service</h3>
+          <p>Cut, line trim around fences and beds, edge the driveway and walks, blow off hard surfaces. Same day each week, same crew.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
           <h3>Hedge and shrub trim</h3>
-          <p>Hedges shaped, palms cleaned up, beds tidied. We haul the clippings off the property so you are not stuck with piles by the curb.</p>
+          <p>Shape hedges, cut back overgrowth off the house, pull weeds from beds, haul the clippings. Quoted by the yard, not the hour.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
           <h3>Yard cleanups</h3>
-          <p>One time reset for overgrown yards, post storm debris, or rentals between tenants. We cut it back, bag it up, and leave the lot rentable again.</p>
+          <p>Storm debris, leaf piles, palm fronds, and overgrown corners. Good for new move-ins or properties that have sat a few months.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Mulch and bed work</h3>
-          <p>Fresh mulch, edged beds, weeds pulled by hand instead of sprayed flat. Done in an afternoon for most Ruskin lots, longer for full yard refreshes.</p>
+          <h3>Sod and mulch refresh</h3>
+          <p>Replace tired patches of St. Augustine, top off mulch beds, edge clean lines around trees. Small jobs welcome, no minimum acreage.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Weekly mow + edge package</div>
+          <div class="specialty-detail">Mow, string trim, hard edge on concrete, blow down driveway and lanai. Bagging available on request.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Bi-weekly winter schedule</div>
+          <div class="specialty-detail">Reduced cadence November through February when growth slows. Same crew, same price per visit, fewer visits.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">One-time reset cut</div>
+          <div class="specialty-detail">For lawns that have gone three or more weeks. Two pass cut, edge, full cleanup, then we quote a regular schedule.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Mulch bed refresh</div>
+          <div class="specialty-detail">Pull weeds, edge the bed line clean, lay fresh pine bark or cypress. Priced by the cubic yard installed.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Palm and hedge trim</div>
+          <div class="specialty-detail">Trim queen palms, sabal fronds, and hedge lines under ten feet. Debris hauled off, not left curbside.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">You call</div>
+            <div class="process-detail">James picks up, gets the address, and pulls up the property on the map.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">Quick walk</div>
+            <div class="process-detail">We swing by, measure the yard, and text a flat weekly or bi-weekly price.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">On the schedule</div>
+            <div class="process-detail">Same day each week, same crew, gate left how we found it.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1572202054893-c1c2db5ed05d?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -227,15 +302,19 @@
   <section class="about">
     <p class="eyebrow">About</p>
     <h2>How we run yards in Ruskin</h2>
-    <p>We started James&#39;s Lawn Care because every yard guy in Ruskin runs on a wait list and a voicemail, and most folks just want someone who shows up the day they said they would. We keep the route tight, the truck clean, and the answer to &#39;can you swing by Thursday&#39; a straight yes or no. A few hundred regulars on the books, same crew on your lawn each week, and a phone James actually picks up.</p>
+    <p>We started James&#39;s Lawn Care because every service in Ruskin seems to run on a missed-call voicemail and a route that skips a week the second it rains. We keep the route tight, stay south of the Alafia, and answer the phone when it rings. If we say Thursday, we are there Thursday.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet James</div>
+      <p>James grew up cutting yards around south Hillsborough and started running his own route after the bigger services kept skipping weeks in the rainy season. He answers his own phone, shows up on the day he says, and won&#39;t subcontract a yard out to a crew his customers haven&#39;t met.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Ruskin + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Ruskin</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Sun City Center</span><span class="pill">Apollo Beach</span><span class="pill">Wimauma</span><span class="pill">Riverview</span><span class="pill">Gibsonton</span><span class="pill">Little Manatee</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
