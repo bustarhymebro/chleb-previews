@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Neil&#39;s Mobile Mechanic Service · Winter Haven, FL</title>
-  <meta name="description" content="Honest mobile auto repair across Winter Haven and the Polk County area, run by a wrench who would rather fix it in your driveway than upsell you in a shop." />
+  <meta name="description" content="Driveway repairs across Winter Haven and Polk County, run by one mechanic who picks up his own phone and brings the parts with him." />
   <meta property="og:title" content="Neil&#39;s Mobile Mechanic Service · Winter Haven, FL" />
-  <meta property="og:description" content="Honest mobile auto repair across Winter Haven and the Polk County area, run by a wrench who would rather fix it in your driveway than upsell you in a shop." />
+  <meta property="og:description" content="Driveway repairs across Winter Haven and Polk County, run by one mechanic who picks up his own phone and brings the parts with him." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e2b?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80" />
   <meta name="theme-color" content="#1f3a5f" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231f3a5f'%2F%3E%3Ctext%20x%3D'50%25'%20y%3D'54%25'%20font-family%3D'-apple-system%2CHelvetica%2CArial'%20font-weight%3D'800'%20font-size%3D'38'%20text-anchor%3D'middle'%20dominant-baseline%3D'middle'%20fill%3D'%2523f5f5f5'%3EN%3C%2Ftext%3E%3C%2Fsvg%3E" />
   <meta name="robots" content="noindex,nofollow" />
@@ -44,7 +44,7 @@
       min-height:680px;
       display:flex; flex-direction:column; justify-content:flex-end;
       padding:64px 32px 64px 32px;
-      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
+      background-image: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%), url('https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e2b?auto=format&amp;fit=crop&amp;w=1600&amp;h=1100&amp;q=80');
       background-size: cover;
       background-position: center;
     }
@@ -94,13 +94,31 @@
     .review-empty p { margin:0 0 6px; color:#cfcfcf; font-size:16px; }
     .review-empty span { color:#7a7a7a; font-size:13px; }
 
+    /* Specialties */
+    .specialties .specialty-list { display:flex; flex-direction:column; gap:0; border:1px solid #1f1f1f; border-radius:14px; overflow:hidden; background:#0f0f0f; }
+    .specialty-row { display:grid; grid-template-columns: minmax(220px, 1fr) 2.5fr; gap:24px; padding:24px 28px; border-bottom:1px solid #1a1a1a; align-items:start; }
+    .specialty-row:last-child { border-bottom:none; }
+    .specialty-name { font-size:17px; font-weight:700; color:#f5f5f5; letter-spacing:-0.005em; }
+    .specialty-detail { font-size:15px; color:#a8a8a8; line-height:1.6; }
+
+    /* Process */
+    .process .process-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .process-step { display:flex; gap:18px; padding:24px; background:#141414; border:1px solid #1f1f1f; border-radius:14px; }
+    .process-num { width:42px; height:42px; flex-shrink:0; border-radius:10px; background:var(--accent); color:#f5f5f5; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; }
+    .process-name { font-size:17px; font-weight:700; color:#f5f5f5; margin-bottom:6px; }
+    .process-detail { font-size:14px; color:#a8a8a8; line-height:1.55; }
+
     /* About */
     .about { max-width:820px; }
     .about p { margin:0; font-size:19px; line-height:1.7; color:#dcdcdc; }
+    .owner-note { margin-top:32px; padding:24px 28px; background:#0f0f0f; border:1px solid #1f1f1f; border-left:3px solid var(--accent); border-radius:10px; }
+    .owner-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+    .owner-note p { font-size:16px; color:#cfcfcf; line-height:1.7; }
 
     /* Service area */
     .service-area .pill { display:inline-block; padding:8px 14px; border-radius:999px; background:#141414; color:#dcdcdc; border:1px solid #1f1f1f; font-size:14px; font-weight:600; margin:0 8px 8px 0; }
     .service-area .pill.primary { background:var(--accent); color:#f5f5f5; border-color:transparent; }
+    .area-pills { line-height:2.4; }
 
     /* Contact */
     .contact { max-width:820px; }
@@ -138,6 +156,8 @@
       .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       .gallery-tile:nth-child(1) { grid-column: span 2; grid-row: span 1; }
       .header-cta-btn { display:none; }
+      .specialty-row { grid-template-columns: 1fr; gap:8px; padding:20px 22px; }
+      .process-step { padding:18px; }
     }
   </style>
 </head>
@@ -157,8 +177,8 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Winter Haven · FL</p>
-      <h1>Mobile mechanic. We come to you.</h1>
-      <p class="tagline">Honest mobile auto repair across Winter Haven and the Polk County area, run by a wrench who would rather fix it in your driveway than upsell you in a shop.</p>
+      <h1>Mobile mechanic that comes to Winter Haven.</h1>
+      <p class="tagline">Driveway repairs across Winter Haven and Polk County, run by one mechanic who picks up his own phone and brings the parts with him.</p>
       <div class="ctas">
         <a href="tel:+18639348428" class="cta-primary">Call (863) 934-8428</a>
         <a href="#contact" class="cta-secondary">Book a quote</a>
@@ -188,22 +208,77 @@
         <div class="card fx-up">
           <div class="card-badge">1</div>
           <h3>Diagnostics on site</h3>
-          <p>Check engine light, rough idle, no start. We pull the codes in your driveway and walk you through what is actually wrong before any work starts.</p>
+          <p>Pull codes, road test if it drives, walk you through what is actually wrong before any wrench touches the car.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">2</div>
           <h3>Brakes and rotors</h3>
-          <p>Pads, rotors, calipers, fluid flush. Done in your driveway in a couple of hours, with the worn parts left out for you to look at.</p>
+          <p>Pads, rotors, calipers, fluid flush. Done in your driveway or office lot in a single afternoon.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">3</div>
-          <h3>Batteries and starters</h3>
-          <p>Dead in the parking lot or cranking slow. We test the system, replace the battery, alternator, or starter on the spot, and confirm the charge before we leave.</p>
+          <h3>Starters and alternators</h3>
+          <p>If it cranks slow or died in the Publix lot, I bring a jump pack, test the charging system, and replace what failed.</p>
         </div>
         <div class="card fx-up">
           <div class="card-badge">4</div>
-          <h3>Routine maintenance</h3>
-          <p>Oil changes, filters, belts, hoses, fluid top offs. Same quality as a shop visit without you losing half a Saturday in a waiting room.</p>
+          <h3>Fluids and tune-ups</h3>
+          <p>Oil, transmission, coolant flush, plugs, filters. Standard maintenance handled where the car already sits.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <p class="eyebrow">What we're known for</p>
+    <h2>Specialties</h2>
+    <div class="specialty-list">
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Brake pad + rotor swap</div>
+          <div class="specialty-detail">Front or rear axle, ceramic pads, new rotors, hardware, bleed if needed. Two to three hours in your driveway.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Starter replacement</div>
+          <div class="specialty-detail">Bench test the old unit, swap in a new starter, confirm clean cranks across three cold and warm starts.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Alternator + battery combo</div>
+          <div class="specialty-detail">Load test the system, replace alternator and battery together if both are tired, verify charging voltage under load.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Pre-purchase inspection</div>
+          <div class="specialty-detail">Meet you at the seller, two hour bumper to bumper check, written list of what is wrong before you hand over money.</div>
+        </div>
+        <div class="specialty-row fx-up">
+          <div class="specialty-name">Check engine diagnostic</div>
+          <div class="specialty-detail">Live data scan, freeze frame review, plain English explanation of the failing part and what it costs to fix.</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <p class="eyebrow">How it works</p>
+    <h2>What happens when you call</h2>
+    <div class="process-list">
+        <div class="process-step fx-up">
+          <div class="process-num">1</div>
+          <div class="process-body">
+            <div class="process-name">You call</div>
+            <div class="process-detail">Tell me what the car is doing, year and make, where it sits. Quote comes back same day.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">2</div>
+          <div class="process-body">
+            <div class="process-name">I roll out</div>
+            <div class="process-detail">Van shows up at your house or work with the parts already on board.</div>
+          </div>
+        </div>
+        <div class="process-step fx-up">
+          <div class="process-num">3</div>
+          <div class="process-body">
+            <div class="process-name">Fixed in the driveway</div>
+            <div class="process-detail">Repair, road test if it drives, payment when the job is done right.</div>
+          </div>
         </div>
     </div>
   </section>
@@ -211,7 +286,7 @@
   <section>
     <p class="eyebrow">The work</p>
     <h2>Recent jobs</h2>
-    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
+    <div class="gallery"><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div><div class="gallery-tile fx-up" style="background-image:url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=80');"></div>
     </div>
   </section>
 
@@ -227,15 +302,19 @@
   <section class="about">
     <p class="eyebrow">About</p>
     <h2>How we run jobs in Winter Haven</h2>
-    <p>We started Neil&#39;s because every shop in town runs on a wait list, a loaner car you do not want, and a voicemail that never calls back. We come to your driveway or your job site, quote the work before we touch it, and only fix what actually needs fixing. A few hundred regulars across Winter Haven now skip the shop entirely and that suits us fine.</p>
+    <p>We started this because every shop in Polk County runs on a wait list and a voicemail box, and a working person cannot drop the car for a week to get brakes done. We come to your driveway, your job site, or the parking lot the car died in. Cash, card, or Zelle, and you watch the work happen.</p>
+    <div class="owner-note">
+      <div class="owner-eyebrow">Meet Oniel</div>
+      <p>Oniel has been turning wrenches for over a decade around Polk County, started running mobile after watching shops quote two-week waits for a brake job. He answers his own phone, brings the parts in the van, and will not take a job he cannot finish the same day.</p>
+    </div>
   </section>
 
   <section class="service-area">
     <p class="eyebrow">Service area</p>
     <h2>We serve Winter Haven + nearby</h2>
-    <div>
+    <div class="area-pills">
       <span class="pill primary">Winter Haven</span>
-      <span class="pill">Surrounding FL towns</span>
+      <span class="pill">Eloise</span><span class="pill">Inwood</span><span class="pill">Cypress Gardens</span><span class="pill">Auburndale</span><span class="pill">Lake Wales</span><span class="pill">Lakeland</span>
       <span class="pill">Same-day quotes inside city limits</span>
     </div>
   </section>
@@ -245,8 +324,8 @@
     <h2>Get in touch</h2>
     <a href="tel:+18639348428" class="phone">(863) 934-8428</a>
     <div class="hours">
-        <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">7 AM - 6 PM</span></div>
-        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8 AM - 2 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Mon-Fri</span><span class="hours-time">7 AM - 7 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8 AM - 4 PM</span></div>
         <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Emergency calls only</span></div>
     </div>
     <div class="contact-fallback">
