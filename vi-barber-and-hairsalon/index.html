@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VI Barber &amp; Hairsalon — Decatur barbershop</title>
+<meta name="description" content="VI Barber &amp; Hairsalon is a small shop in Decatur taking walk-ins and standing appointments for cuts, fades, color, and beard work." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,800&family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600;700&display=swap" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --noir: #000000; --bone: #f5ecd9; --rouge: #b8902e; --sand: #d4af37; --line: #2a2114; --head-font: "Playfair Display","Cormorant Garamond","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.stripe { height: 6px; background: repeating-linear-gradient(45deg, var(--rouge) 0px, var(--rouge) 16px, var(--bone) 16px, var(--bone) 32px, var(--noir) 32px, var(--noir) 48px); }
+
+.nav-ep { display: flex; align-items: center; justify-content: space-between; padding: 22px 32px; border-bottom: 1px solid var(--line); }
+.nav-ep-mark { font-family: var(--head-font); font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+.nav-ep-mark .est { color: var(--sand); font-style: italic; font-size: 14px; margin-left: 12px; font-weight: 400; }
+.nav-ep-call { background: var(--rouge); color: var(--bone); padding: 10px 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
+
+.hero-ep { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 88vh; }
+.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
+.hero-ep-text { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; background: var(--noir); }
+.hero-ep-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 22px; font-weight: 600; }
+.hero-ep-name { font-family: var(--head-font); font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 0.96; letter-spacing: -0.012em; margin: 0; font-style: italic; color: var(--bone); }
+.hero-ep-tag { margin: 28px 0 36px; font-size: 22px; line-height: 1.5; color: rgba(236,225,205,0.78); font-style: italic; }
+.hero-ep-flourish { margin: 0 0 28px; height: 1px; width: 88px; background: var(--sand); }
+.hero-ep-cta { display: inline-block; padding: 18px 30px; background: var(--rouge); color: var(--bone); font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; align-self: flex-start; }
+
+.menu-ep { padding: 100px 32px 60px; max-width: 920px; margin: 0 auto; text-align: center; }
+.menu-ep-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 14px; font-weight: 600; }
+.menu-ep-title { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; line-height: 1; margin: 0 0 8px; }
+.menu-ep-sub { font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(236,225,205,0.55); margin: 0 0 48px; }
+.cut-list { text-align: left; max-width: 720px; margin: 0 auto; }
+.cut-row { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.cut-row:last-child { border-bottom: 0; }
+.cut-name { font-family: var(--head-font); font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 6px; color: var(--bone); }
+.cut-detail { font-size: 16px; color: rgba(236,225,205,0.65); line-height: 1.6; }
+
+.ritual-section { padding: 100px 32px; background: linear-gradient(180deg, var(--noir) 0%, #1a1410 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.ritual-section .menu-ep-eyebrow { text-align: center; }
+.ritual-section .menu-ep-title { text-align: center; }
+.ritual-grid { max-width: 1080px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.ritual { padding: 40px 32px; border-right: 1px solid var(--line); position: relative; }
+.ritual:last-child { border-right: 0; }
+.ritual-num { font-family: var(--head-font); font-size: 80px; font-weight: 600; color: var(--rouge); line-height: 1; margin-bottom: 18px; font-style: italic; }
+.ritual-name { font-family: var(--head-font); font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 12px; }
+.ritual-detail { font-size: 16px; color: rgba(236,225,205,0.7); line-height: 1.65; margin: 0; }
+
+.portraits { padding: 100px 32px; max-width: 1200px; margin: 0 auto; }
+.portraits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.portrait { aspect-ratio: 3 / 4; background-size: cover; background-position: center; filter: contrast(1.06) saturate(0.92); }
+
+.owner-ep { padding: 100px 32px; max-width: 720px; margin: 0 auto; text-align: center; }
+.owner-ep-name { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 28px; line-height: 1; color: var(--bone); }
+.owner-ep-name .of { font-size: 0.7em; font-style: normal; color: var(--sand); }
+.owner-ep p { font-size: 19px; line-height: 1.75; color: rgba(236,225,205,0.85); }
+.owner-ep .signature-ep { margin-top: 28px; font-family: var(--head-font); font-size: 26px; color: var(--rouge); font-style: italic; }
+
+.book-ep { padding: 100px 32px; background: var(--rouge); color: var(--bone); text-align: center; }
+.book-ep h2 { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 16px; line-height: 1; }
+.book-ep p { margin: 0 auto 32px; max-width: 540px; font-size: 18px; line-height: 1.6; }
+.book-ep a { background: var(--noir); color: var(--bone); padding: 22px 36px; font-family: var(--sans-font); font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
+
+.area-ep { padding: 64px 32px; max-width: 920px; margin: 0 auto; text-align: center; }
+.area-ep p { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0; font-weight: 600; }
+.area-ep-cities { margin-top: 14px; font-family: var(--head-font); font-size: 24px; color: var(--bone); line-height: 1.6; font-style: italic; }
+
+.foot-ep { padding: 36px 32px; background: var(--noir); color: var(--sand); text-align: center; font-family: var(--sans-font); border-top: 1px solid var(--line); }
+.foot-ep-name { font-family: var(--head-font); font-size: 28px; color: var(--bone); margin-bottom: 8px; font-style: italic; }
+.foot-ep-meta { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; }
+
+@media (max-width: 700px) {
+  .hero-ep { grid-template-columns: 1fr; }
+  .hero-ep-photo { min-height: 480px; }
+  .hero-ep-text { padding: 48px 28px; }
+  .ritual-grid { grid-template-columns: 1fr; }
+  .ritual { border-right: 0; border-bottom: 1px solid var(--line); }
+  .ritual:last-child { border-bottom: 0; }
+  .portraits-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<div class="stripe"></div>
+
+<nav class="nav-ep">
+  <div class="nav-ep-mark">VI Barber &amp; Hairsalon<span class="est">est. Decatur</span></div>
+  <a href="tel:+12563037138" class="nav-ep-call">(256) 303-7138</a>
+</nav>
+
+<section class="hero-ep">
+  <div class="hero-ep-photo"></div>
+  <div class="hero-ep-text">
+    <p class="hero-ep-eyebrow">Decatur, AL · Virginia</p>
+    <h1 class="hero-ep-name">A proper chair, in downtown Decatur.</h1>
+    <p class="hero-ep-tag">VI Barber &amp; Hairsalon is a small shop in Decatur taking walk-ins and standing appointments for cuts, fades, color, and beard work.</p>
+    <div class="hero-ep-flourish"></div>
+    <a href="tel:+12563037138" class="hero-ep-cta">Book your seat</a>
+  </div>
+</section>
+
+<section class="menu-ep">
+  <p class="menu-ep-eyebrow">Services</p>
+  <h2 class="menu-ep-title">How we run the chair in Decatur</h2>
+  <p class="menu-ep-sub">Walk-ins welcome · Calls preferred</p>
+  <div class="cut-list">
+    <div class="cut-row">
+      <div class="cut-name">Skin fade + beard line-up</div>
+      <div class="cut-detail">Bald fade through the sides and back, scissor work on top, beard shaped and edged with a straight razor finish.</div>
+    </div>
+    <div class="cut-row">
+      <div class="cut-name">Cut + blowout</div>
+      <div class="cut-detail">Shampoo, cut to your length, round-brush blowout. Most clients are in and out in under an hour.</div>
+    </div>
+    <div class="cut-row">
+      <div class="cut-name">Root touch-up + gloss</div>
+      <div class="cut-detail">Color matched to your existing shade, applied to new growth only, sealed with a shine gloss at the bowl.</div>
+    </div>
+    <div class="cut-row">
+      <div class="cut-name">Partial highlights</div>
+      <div class="cut-detail">Foils through the top and around the face, toned at the bowl, blown out and styled before you leave the chair.</div>
+    </div>
+    <div class="cut-row">
+      <div class="cut-name">Father and son cut</div>
+      <div class="cut-detail">Back-to-back chairs for dad and kid. Same haircut or two different ones, priced together. Good for first cuts.</div>
+    </div>
+  </div>
+</section>
+
+<section class="ritual-section">
+  <p class="menu-ep-eyebrow">The chair</p>
+  <h2 class="menu-ep-title">A seat in the chair.</h2>
+  <div class="ritual-grid">
+    <div class="ritual">
+      <div class="ritual-num">01</div>
+      <div class="ritual-name">Book or walk in</div>
+      <p class="ritual-detail">Call the shop or stop by. We hold standing appointments and take walk-ins when a chair is open.</p>
+    </div>
+    <div class="ritual">
+      <div class="ritual-num">02</div>
+      <div class="ritual-name">Talk it through</div>
+      <p class="ritual-detail">Before the cape goes on, we go over length, shape, and how you style it at home.</p>
+    </div>
+    <div class="ritual">
+      <div class="ritual-num">03</div>
+      <div class="ritual-name">Cut and finish</div>
+      <p class="ritual-detail">Cut, color or beard work, then a wash and a finish so you leave camera-ready.</p>
+    </div>
+  </div>
+</section>
+
+<section class="portraits">
+  <div class="portraits-grid">
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+  </div>
+</section>
+
+<section class="owner-ep">
+  <h2 class="owner-ep-name">A note <span class="of">from</span> Virginia</h2>
+  <p>Virginia runs the shop and works the front chair. She started VI because every salon in town was either booked three weeks out or rushing people through, and she wanted a chair where the cut takes as long as the cut takes.</p>
+  <p class="signature-ep">— Virginia</p>
+</section>
+
+<section class="area-ep">
+  <p>Where Virginia works</p>
+  <p class="area-ep-cities">Downtown Decatur · Priceville · Hartselle · Somerville · Trinity · Mooresville</p>
+</section>
+
+<section class="book-ep">
+  <h2>Book the chair.</h2>
+  <p>We started VI Barber &amp; Hairsalon in Decatur because the chair is the whole point and most shops treat it like a conveyor belt. We keep the book light enough that no one feels rushed, and we answer the phone ourselves when we can. Cuts, color, and beard work, done right the first time.</p>
+  <a href="tel:+12563037138">(256) 303-7138 · Call Virginia</a>
+</section>
+
+<footer class="foot-ep">
+  <div class="foot-ep-name">VI Barber &amp; Hairsalon</div>
+  <p class="foot-ep-meta">Decatur, AL · Run by Virginia</p>
+</footer>
+
+</body>
+</html>
