@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Curuvian LLC · Sarasota food truck</title>
-<meta name="description" content="Curuvian rolls into Sarasota with a short menu, real ingredients, and a window that opens when we say it opens." />
+<meta name="description" content="A Sarasota food truck cooking made-to-order plates with real prep, real ingredients, and a phone that gets answered before the lunch rush." />
 <meta property="og:title" content="Curuvian LLC" />
-<meta property="og:description" content="Curuvian rolls into Sarasota with a short menu, real ingredients, and a window that opens when we say it opens." />
+<meta property="og:description" content="A Sarasota food truck cooking made-to-order plates with real prep, real ingredients, and a phone that gets answered before the lunch rush." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #e9e6df; --ink: #0d0d0d; --rust: #a3271f; --mustard: #525a5e; --olive: #262625; --head-font: "Playfair Display","Times New Roman",serif; --body-font: "Inter","Helvetica Neue",sans-serif; --sans-font: "Inter","Helvetica Neue",sans-serif; --rule: 1px solid; --brand-style: normal; --brand-weight: 900; --brand-spacing: -0.03em; --sub-style: normal; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -82,8 +85,8 @@ a { color: inherit; }
 <body>
 
 <div class="masthead">
-  <div class="vol">Vol. 04 · 2026</div>
-  <div class="center">A Curuvian LLC Communique</div>
+  <div class="vol">Edition · 2026</div>
+  <div class="center">A Curuvian LLC Gazette</div>
   <div class="right">Sarasota, FL</div>
 </div>
 
@@ -93,26 +96,7 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">C</span>uruvian rolls into Sarasota with a short menu, real ingredients, and a window that opens when we say it opens.</p>
-</section>
-
-<section class="schedule">
-  <p class="schedule-eyebrow">How Curuvian runs in Sarasota</p>
-  <h2>What happens when you call.</h2>
-  <div class="schedule-grid">
-    <div class="schedule-row">
-      <div class="schedule-day">Check the schedule</div>
-      <div class="schedule-where">The strip on this page shows where the truck parks each day of the week.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Walk up, read the board, pay at the window, we hand you a number.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Eat while it is hot</div>
-      <div class="schedule-where">Food comes out in a paper boat in about six minutes, find a bench nearby.</div>
-    </div>
-  </div>
+  <p><span class="drop-cap">A</span> Sarasota food truck cooking made-to-order plates with real prep, real ingredients, and a phone that gets answered before the lunch rush.</p>
 </section>
 
 <section class="menu">
@@ -121,40 +105,47 @@ a { color: inherit; }
   <div class="menu-list">
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">The house sandwich</div>
+        <div class="menu-item-name">Birria tacos + consomé</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Slow-cooked protein, pickled onion, house sauce, soft roll, wrapped in paper. The plate we are known for.</p>
+      <p class="menu-item-detail">Three slow-braised beef tacos on griddled corn tortillas with melted cheese, onion, cilantro, and a cup of dipping consomé.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Loaded fries basket</div>
+        <div class="menu-item-name">Cubano pressed sandwich</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Hand-cut fries, melted cheese, choice of protein, scallion, and the same house sauce. Big enough to share, barely.</p>
+      <p class="menu-item-detail">Roast pork, ham, swiss, pickles, and yellow mustard pressed on Cuban bread, served with plantain chips.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Daily rice bowl</div>
+        <div class="menu-item-name">Loaded street fries</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Steamed rice, one protein, two vegetables that rotate by the week, finished with fresh herbs and a wedge of lime.</p>
+      <p class="menu-item-detail">Hand-cut fries under chopped steak or chicken, queso, pickled onion, cilantro crema, and a squeeze of lime.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Soft tacos, two each</div>
+        <div class="menu-item-name">Shrimp tacos, gulf-style</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Two corn tortillas, your pick of protein, raw onion and cilantro, hot sauce on the side so it travels well.</p>
+      <p class="menu-item-detail">Two flour tortillas with seared gulf shrimp, slaw, chipotle aioli, and pickled red onion. Comes with rice and black beans.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Side salad</div>
+        <div class="menu-item-name">Event taco bar</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Chopped greens, cucumber, citrus vinaigrette. Built for the customer who skipped lunch and wants something light.</p>
+      <p class="menu-item-detail">Per-head buildout for parties of 25 plus. Two proteins, three salsas, all the fixings, served live off the truck.</p>
     </div>
   </div>
+</section>
+
+<section class="note">
+  <p class="note-eyebrow">A short note</p>
+  <h2>From Michelle.</h2>
+  <p>Michelle runs the truck and answers the phone herself. She started Curuvian after years of cooking private dinners around Sarasota and getting tired of catering through middlemen. She prepays her produce orders, preps every morning, and won&#39;t book a date she can&#39;t personally cook.</p>
+  <p class="signature">— Michelle</p>
 </section>
 
 <section class="cluster">
@@ -165,22 +156,34 @@ a { color: inherit; }
   <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1542528180-a1208c5169a5?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
 </section>
 
-<section class="note">
-  <p class="note-eyebrow">A short note</p>
-  <h2>From Michelle.</h2>
-  <p>Michelle runs Curuvian out of one truck with a short menu she actually cooks. She started it because the lunch options near her old job were either a forty minute wait or a sad clamshell. She answers the phone, takes the catering orders, and pulls the shutter up herself.</p>
-  <p class="signature">— Michelle</p>
+<section class="schedule">
+  <p class="schedule-eyebrow">How we run events around Sarasota</p>
+  <h2>What happens when you call.</h2>
+  <div class="schedule-grid">
+    <div class="schedule-row">
+      <div class="schedule-day">You call</div>
+      <div class="schedule-where">Tell us your date, headcount, and where the truck needs to park. We quote on the spot.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">We build the menu</div>
+      <div class="schedule-where">Two or three proteins, sides, dietary swaps. You sign off, we lock the date.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">We show up and cook</div>
+      <div class="schedule-where">Truck arrives early, sets up, runs the line, breaks down clean. You eat, we handle the rest.</div>
+    </div>
+  </div>
 </section>
 
 <section class="catering">
   <h2>Book Curuvian LLC.</h2>
-  <p>We started Curuvian in Sarasota because the city had room for one more truck that took the food seriously and the schedule even more seriously. The menu is short on purpose, four or five items we can run all day without dropping quality. If the truck says it opens at eleven, the shutter is up at eleven.</p>
+  <p>We started Curuvian because every decent food truck on the Gulf Coast was booked three months out and half the caterers in town only return calls on Tuesdays. We cook off one truck, with one crew, in and around Sarasota. If Michelle picks up the phone, the date is real and the food is hers.</p>
   <a href="tel:+19418072276" class="catering-btn">(941) 807-2276 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">Downtown Sarasota · Gulf Gate · Siesta Key · Lakewood Ranch · Osprey · Bradenton</p>
+  <p class="area-cities">Downtown Sarasota · Gulf Gate · Lakewood Ranch · Siesta Key · Osprey · Bradenton</p>
 </section>
 
 <footer class="foot">

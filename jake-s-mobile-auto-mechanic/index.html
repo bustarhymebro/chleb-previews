@@ -4,12 +4,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jake&#39;s Mobile Auto Mechanic — Wilmington, NC</title>
-<meta name="description" content="Jake brings the shop to you across Wilmington, diagnosing and fixing most issues curbside so your car never has to ride a tow truck twice." />
+<meta name="description" content="Wilmington&#39;s on-site auto repair run by Jake out of a fully stocked van, fixing what the shops want to keep overnight." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Sans+Condensed:wght@700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@700;800;900&family=Oswald:wght@600;700;900&family=Inter:wght@400;600;700;900&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --steel: #161a1f; --steel-2: #1c2128; --concrete: #2a3038; --safety: #f97316; --bone: #ebe5d8; --line: #3a4047; --green: #6ee7b7; }
-body { margin: 0; background: var(--steel); color: var(--bone); font-family: "IBM Plex Mono", "JetBrains Mono", "Menlo", monospace; font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+:root { --steel: #0b1726; --steel-2: #0f1f33; --concrete: #1a2c44; --safety: #22d3ee; --bone: #e6f4f9; --line: #1e3553; --green: #facc15; --mono-font: "JetBrains Mono","IBM Plex Mono","Menlo",monospace; --sans-cond: "Barlow Condensed","IBM Plex Sans Condensed",sans-serif; --sans: "Barlow","Inter",sans-serif; }
+body { margin: 0; background: var(--steel); color: var(--bone); font-family: var(--mono-font); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
 .top { display: grid; grid-template-columns: 1fr auto auto; align-items: center; padding: 14px 22px; background: var(--steel-2); border-bottom: 1px solid var(--line); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; gap: 14px; }
@@ -21,22 +24,22 @@ a { color: inherit; text-decoration: none; }
 .hero { padding: 60px 22px 48px; background: repeating-linear-gradient(0deg, transparent 0px, transparent 39px, rgba(255,255,255,0.02) 39px, rgba(255,255,255,0.02) 40px), repeating-linear-gradient(90deg, transparent 0px, transparent 39px, rgba(255,255,255,0.02) 39px, rgba(255,255,255,0.02) 40px), var(--steel); border-bottom: 1px solid var(--line); }
 .hero-spec { display: flex; gap: 40px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(235,229,216,0.55); margin-bottom: 28px; flex-wrap: wrap; }
 .hero-spec b { color: var(--safety); font-weight: 700; }
-.hero h1 { font-family: "IBM Plex Sans Condensed", "Inter", sans-serif; font-weight: 900; font-size: clamp(40px, 8vw, 96px); line-height: 0.95; letter-spacing: -0.025em; margin: 0 0 22px; color: var(--bone); text-transform: uppercase; }
+.hero h1 { font-family: var(--sans-cond); font-weight: 900; font-size: clamp(40px, 8vw, 96px); line-height: 0.95; letter-spacing: -0.025em; margin: 0 0 22px; color: var(--bone); text-transform: uppercase; }
 .hero h1 .safety { color: var(--safety); }
-.hero-sub { margin: 0 0 32px; font-size: 17px; font-family: "IBM Plex Sans", "Inter", sans-serif; font-weight: 400; color: rgba(235,229,216,0.78); max-width: 640px; line-height: 1.55; }
+.hero-sub { margin: 0 0 32px; font-size: 17px; font-family: var(--sans); font-weight: 400; color: rgba(235,229,216,0.78); max-width: 640px; line-height: 1.55; }
 .hero-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-call { background: var(--safety); color: var(--steel); padding: 16px 22px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: "IBM Plex Sans", sans-serif; }
-.btn-text { background: transparent; border: 1px solid var(--line); color: var(--bone); padding: 16px 22px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: "IBM Plex Sans", sans-serif; }
+.btn-call { background: var(--safety); color: var(--steel); padding: 16px 22px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: var(--sans); }
+.btn-text { background: transparent; border: 1px solid var(--line); color: var(--bone); padding: 16px 22px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: var(--sans); }
 
 .spec-section { padding: 80px 22px; max-width: 1100px; margin: 0 auto; }
 .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 10px; }
 .section-eyebrow { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); font-weight: 700; margin: 0; }
-.section-h2 { font-family: "IBM Plex Sans Condensed", "Inter", sans-serif; font-weight: 900; font-size: 44px; letter-spacing: -0.02em; text-transform: uppercase; margin: 4px 0 0; color: var(--bone); line-height: 1; }
-.section-meta { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: "IBM Plex Mono", monospace; }
+.section-h2 { font-family: var(--sans-cond); font-weight: 900; font-size: 44px; letter-spacing: -0.02em; text-transform: uppercase; margin: 4px 0 0; color: var(--bone); line-height: 1; }
+.section-meta { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: var(--mono-font); }
 
-.spec-table { width: 100%; border-collapse: collapse; font-family: "IBM Plex Mono", monospace; font-size: 14px; }
+.spec-table { width: 100%; border-collapse: collapse; font-family: var(--mono-font); font-size: 14px; }
 .spec-table tbody td { padding: 16px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
-.spec-table .job { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 700; font-size: 17px; color: var(--bone); width: 28%; padding-right: 18px; }
+.spec-table .job { font-family: var(--sans-cond); font-weight: 700; font-size: 17px; color: var(--bone); width: 28%; padding-right: 18px; }
 .spec-table .detail { color: rgba(235,229,216,0.65); padding-right: 18px; }
 .spec-table .turn { color: var(--green); text-align: right; white-space: nowrap; font-size: 12px; letter-spacing: 0.1em; width: 18%; }
 
@@ -44,32 +47,32 @@ a { color: inherit; text-decoration: none; }
 .flow-grid { max-width: 1100px; margin: 32px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); background: var(--concrete); }
 .flow-step { padding: 32px 28px; border-right: 1px solid var(--line); position: relative; }
 .flow-step:last-child { border-right: 0; }
-.flow-step .num { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 88px; line-height: 1; color: var(--safety); letter-spacing: -0.04em; margin-bottom: 18px; }
-.flow-step .name { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: -0.005em; color: var(--bone); margin-bottom: 10px; }
-.flow-step .body { font-family: "IBM Plex Sans", sans-serif; font-size: 15px; color: rgba(235,229,216,0.72); line-height: 1.6; margin: 0; }
+.flow-step .num { font-family: var(--sans-cond); font-weight: 900; font-size: 88px; line-height: 1; color: var(--safety); letter-spacing: -0.04em; margin-bottom: 18px; }
+.flow-step .name { font-family: var(--sans-cond); font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: -0.005em; color: var(--bone); margin-bottom: 10px; }
+.flow-step .body { font-family: var(--sans); font-size: 15px; color: rgba(235,229,216,0.72); line-height: 1.6; margin: 0; }
 
 .area { padding: 80px 22px; max-width: 1100px; margin: 0 auto; }
 .area-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .area-cell { padding: 22px 24px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.area-name { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 700; font-size: 19px; color: var(--bone); margin: 0 0 6px; text-transform: uppercase; letter-spacing: -0.005em; }
-.area-detail { font-family: "IBM Plex Sans", sans-serif; font-size: 13px; color: rgba(235,229,216,0.55); line-height: 1.5; margin: 0; }
+.area-name { font-family: var(--sans-cond); font-weight: 700; font-size: 19px; color: var(--bone); margin: 0 0 6px; text-transform: uppercase; letter-spacing: -0.005em; }
+.area-detail { font-family: var(--sans); font-size: 13px; color: rgba(235,229,216,0.55); line-height: 1.5; margin: 0; }
 
 .owner { background: var(--bone); color: var(--steel); padding: 80px 22px; }
 .owner-inner { max-width: 920px; margin: 0 auto; }
-.owner-tag { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 18px; font-weight: 700; }
-.owner-name { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 56px; text-transform: uppercase; letter-spacing: -0.02em; line-height: 0.95; margin: 0 0 16px; color: var(--steel); }
-.owner p { font-family: "IBM Plex Sans", sans-serif; font-size: 17px; line-height: 1.7; color: var(--steel); margin: 0 0 14px; }
+.owner-tag { font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 18px; font-weight: 700; }
+.owner-name { font-family: var(--sans-cond); font-weight: 900; font-size: 56px; text-transform: uppercase; letter-spacing: -0.02em; line-height: 0.95; margin: 0 0 16px; color: var(--steel); }
+.owner p { font-family: var(--sans); font-size: 17px; line-height: 1.7; color: var(--steel); margin: 0 0 14px; }
 
 .dispatch { background: var(--steel); padding: 80px 22px; border-top: 1px solid var(--line); }
 .dispatch-card { max-width: 720px; margin: 0 auto; border: 2px solid var(--safety); background: var(--steel-2); padding: 36px 32px; }
-.dispatch-eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 14px; font-weight: 700; }
-.dispatch-card h2 { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 38px; text-transform: uppercase; letter-spacing: -0.015em; margin: 0 0 20px; line-height: 1.05; }
-.dispatch-phone { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 56px; letter-spacing: -0.02em; color: var(--safety); margin: 12px 0; display: block; text-decoration: none; }
-.dispatch-meta { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: rgba(235,229,216,0.65); letter-spacing: 0.06em; margin: 14px 0 0; }
+.dispatch-eyebrow { font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 14px; font-weight: 700; }
+.dispatch-card h2 { font-family: var(--sans-cond); font-weight: 900; font-size: 38px; text-transform: uppercase; letter-spacing: -0.015em; margin: 0 0 20px; line-height: 1.05; }
+.dispatch-phone { font-family: var(--sans-cond); font-weight: 900; font-size: 56px; letter-spacing: -0.02em; color: var(--safety); margin: 12px 0; display: block; text-decoration: none; }
+.dispatch-meta { font-family: var(--mono-font); font-size: 13px; color: rgba(235,229,216,0.65); letter-spacing: 0.06em; margin: 14px 0 0; }
 
 .foot { background: var(--steel-2); padding: 36px 22px; border-top: 1px solid var(--line); text-align: center; }
-.foot-mark { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); font-weight: 700; margin-bottom: 8px; }
-.foot-meta { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: "IBM Plex Mono", monospace; }
+.foot-mark { font-family: var(--mono-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); font-weight: 700; margin-bottom: 8px; }
+.foot-meta { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: var(--mono-font); }
 
 @media (max-width: 700px) {
   .flow-grid { grid-template-columns: 1fr; }
@@ -84,141 +87,37 @@ a { color: inherit; text-decoration: none; }
 <body>
 
 <div class="top">
-  <div class="top-mark">Jake&#39;s Mobile Auto Mechanic · Wilmington, NC</div>
-  <div class="top-status">On call</div>
-  <a href="tel:+19103740062" class="top-call">Dispatch · (910) 374-0062</a>
+  <div class="top-mark">Jake&#39;s Mobile Auto Mechanic // Wilmington, NC</div>
+  <div class="top-status">Online</div>
+  <a href="tel:+19103740062" class="top-call">Send · (910) 374-0062</a>
 </div>
 
 <header class="hero">
   <div class="hero-spec">
-    <span><b>VAN-STOCKED</b> common parts on board</span>
-    <span><b>RADIUS</b> Wilmington + nearby</span>
-    <span><b>RESPONSE</b> same-day, most jobs</span>
+    <span><b>INVENTORY</b> common parts on board</span>
+    <span><b>RANGE</b> Wilmington + nearby</span>
+    <span><b>TURN</b> same-day, most jobs</span>
   </div>
-  <h1>Mobile auto repair, on your driveway in Wilmington.</h1>
-  <p class="hero-sub">Jake brings the shop to you across Wilmington, diagnosing and fixing most issues curbside so your car never has to ride a tow truck twice.</p>
+  <h1>Mobile mechanic. We come to you.</h1>
+  <p class="hero-sub">Wilmington&#39;s on-site auto repair run by Jake out of a fully stocked van, fixing what the shops want to keep overnight.</p>
   <div class="hero-cta-row">
-    <a href="tel:+19103740062" class="btn-call">Dispatch · (910) 374-0062</a>
+    <a href="tel:+19103740062" class="btn-call">Send · (910) 374-0062</a>
     <a href="#jobs" class="btn-text">Common jobs + rates</a>
   </div>
 </header>
 
-<section class="spec-section" id="jobs">
-  <div class="section-head">
-    <div>
-      <p class="section-eyebrow">Service spec sheet</p>
-      <h2 class="section-h2">Common jobs.</h2>
-    </div>
-    <div class="section-meta">Quote on site, before any wrench moves.</div>
-  </div>
-  <table class="spec-table">
-    <tbody>
-    <tr>
-      <td class="job">Brake pad and rotor swap</td>
-      <td class="detail">Front or rear axle, ceramic pads, new rotors, hardware kit, brake fluid top off, road test before he leaves.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">Starter replacement</td>
-      <td class="detail">Bench-test the old unit, install OE-spec replacement, verify cranking amps, clean the ground strap while he is in there.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">Alternator and battery service</td>
-      <td class="detail">Load test the battery, check charging output, replace the alternator or battery, reset any related fault codes.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">Check-engine light diagnostic</td>
-      <td class="detail">Full scan with live data, smoke test if needed, written quote for the repair. Diagnostic fee credits toward the fix.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">Pre-purchase inspection</td>
-      <td class="detail">Used car you are about to buy. Jake meets you at the seller, runs codes, checks fluids, frame, brakes, tires.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    </tbody>
-  </table>
-</section>
 
-<section class="flow">
-  <div style="max-width: 1100px; margin: 0 auto;">
-    <div class="section-head">
-      <div>
-        <p class="section-eyebrow">Process · 3 steps</p>
-        <h2 class="section-h2">How it works.</h2>
-      </div>
-      <div class="section-meta">No upsells. No tow bill. No shop wait.</div>
-    </div>
-  </div>
-  <div class="flow-grid">
-    <div class="flow-step">
-      <div class="num">01</div>
-      <div class="name">You call</div>
-      <p class="body">Jake answers, asks what the car is doing, and gives you a window same day or next.</p>
-    </div>
-    <div class="flow-step">
-      <div class="num">02</div>
-      <div class="name">He rolls up</div>
-      <p class="body">Scanner and tools in the van. Diagnoses in your driveway, then quotes before any wrench turns.</p>
-    </div>
-    <div class="flow-step">
-      <div class="num">03</div>
-      <div class="name">Fixed on site</div>
-      <p class="body">Parts installed, car road-tested, payment taken curbside. No tow, no rental, no shop drop-off.</p>
-    </div>
-  </div>
-</section>
 
-<section class="area">
-  <div class="section-head">
-    <div>
-      <p class="section-eyebrow">Service area</p>
-      <h2 class="section-h2">Where the van runs.</h2>
-    </div>
-    <div class="section-meta">Outside the radius? Call, I will quote the trip.</div>
-  </div>
-  <div class="area-grid">
-    <div class="area-cell">
-      <h3 class="area-name">Carolina Beach Rd corridor</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Monkey Junction</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Myrtle Grove</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Masonboro</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Silver Lake</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Downtown Wilmington</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-  </div>
-</section>
 
-<section class="owner">
-  <div class="owner-inner">
-    <p class="owner-tag">Behind the van</p>
-    <h2 class="owner-name">Jake runs the truck.</h2>
-    <p>Jake runs the van himself out of the Carolina Beach Rd area in Wilmington. He picks up his own phone, brings the parts with him, and will tell you straight if a job needs a lift instead of a driveway. No upsells, no shop hours to work around.</p>
-  </div>
-</section>
+
+
+
+
 
 <section class="dispatch">
   <div class="dispatch-card">
-    <p class="dispatch-eyebrow">Dispatch · same-day, most jobs</p>
-    <h2>How Jake runs jobs in Wilmington</h2>
+    <p class="dispatch-eyebrow">Send · same-day, most jobs</p>
+    <h2>How we run jobs in Wilmington</h2>
     <a href="tel:+19103740062" class="dispatch-phone">(910) 374-0062</a>
     <p class="dispatch-meta">Final quote on site before any wrench moves.</p>
   </div>

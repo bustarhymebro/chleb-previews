@@ -4,27 +4,30 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mobile Elite Detailing &amp; Commercial Cleaning LLC — Ocala, FL</title>
-<meta name="description" content="Driveway-to-driveway detailing across Ocala and Marion County, run by an operator who picks up the phone and shows up when promised." />
+<meta name="description" content="Ocala mobile detailing and commercial cleaning, run by one crew that picks up the phone and shows up when we say." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --black: #0c0c0c; --yellow: #ffd60a; --red: #e63946; --cream: #fffbe9; }
-body { margin: 0; background: var(--black); color: var(--cream); font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing: antialiased; }
+:root { --black: #0c0c0c; --yellow: #ffd60a; --red: #e63946; --cream: #fffbe9; --head-font: "Bungee","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(0,0,0,0.4); }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
 .nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
-.nav-mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
 .nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
 
 .today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
 .today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
 @keyframes blink { 50% { opacity: 0.35; } }
-.today-sep { color: rgba(0,0,0,0.4); }
+.today-sep { color: var(--today-hue); }
 
 .hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
 .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
 .hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
-.hero h1 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 { font-family: var(--head-font); font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
 .hero h1 .yellow { color: var(--yellow); }
 .hero h1 .red { color: var(--red); }
 .hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
@@ -34,34 +37,34 @@ a { color: inherit; text-decoration: none; }
 
 .menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
 .menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
-.menu-h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
 .menu-h2 .red { color: var(--red); }
 .menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
 .menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
-.menu-card-name { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-name { font-family: var(--head-font); font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
 .menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
 .menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
 
 .quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
-.quote-mark { font-family: "Bungee", "Inter", sans-serif; font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
-.quote-body { font-family: "Inter", sans-serif; font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-mark { font-family: var(--head-font); font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: var(--body-font); font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
 .quote-body .yellow { color: var(--yellow); }
 .quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
 
 .book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
-.book h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
 .book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
 .book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
 
 .find { padding: 60px 22px; background: var(--black); text-align: center; }
 .find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
-.find-list { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list { font-family: var(--head-font); font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
 .find-list .dot { color: var(--red); margin: 0 14px; }
 
 .foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
-.foot .mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot .mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
 .foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
 .foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
 </style>
@@ -75,17 +78,13 @@ a { color: inherit; text-decoration: none; }
 
 <div class="today">
   <span class="today-dot"></span>
-  <span>You call · Tell us the vehicle, the condition, and </span>
-  <span class="today-sep">/</span>
-  <span>We roll up · Van arrives with water, power, and produ</span>
-  <span class="today-sep">/</span>
-  <span>We finish clean · Walk the car with you in daylight before</span>
+  <span>Ocala, FL</span>
 </div>
 
 <header class="hero">
   <p class="hero-eyebrow">Ocala, FL · Run by Owner</p>
-  <h1>Mobile detailing, dialed in for Ocala.</h1>
-  <p class="hero-sub">Driveway-to-driveway detailing across Ocala and Marion County, run by an operator who picks up the phone and shows up when promised.</p>
+  <h1>Mobile detailing that comes to your driveway.</h1>
+  <p class="hero-sub">Ocala mobile detailing and commercial cleaning, run by one crew that picks up the phone and shows up when we say.</p>
   <div class="hero-cta-row">
     <a href="tel:+13529013479" class="btn-loud">Call · book the truck</a>
     <a href="#menu" class="btn-ghost">See the menu</a>
@@ -95,52 +94,23 @@ a { color: inherit; text-decoration: none; }
 <section class="menu" id="menu">
   <div class="menu-head">
     <h2 class="menu-h2">The <span class="red">Menu</span></h2>
-    <div class="menu-meta">5 services · Fast turnaround</div>
+    <div class="menu-meta">0 services · Fast turnaround</div>
   </div>
   <div class="menu-grid">
-    <div class="menu-card">
-      <span class="menu-card-tag">Most ordered</span>
-      <h3 class="menu-card-name">Showroom full detail</h3>
-      <p class="menu-card-detail">Exterior wash, clay bar, single-stage polish, interior vacuum and wipe-down, glass in and out. Roughly four hours on site.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Daily-driver refresh</h3>
-      <p class="menu-card-detail">Two-bucket wash, wheels and tires, quick interior vacuum, dash and door wipe. Good monthly upkeep between full details.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Pet hair extraction</h3>
-      <p class="menu-card-detail">Hand pull, rubber-block sweep, and deep vacuum on seats, carpets, and cargo area. Add-on to any interior service.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Headlight restoration</h3>
-      <p class="menu-card-detail">Wet sand cloudy lenses through three grits, machine polish, and seal so they stay clear instead of yellowing back in a month.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Commercial floor and window</h3>
-      <p class="menu-card-detail">After-hours office and storefront cleaning. Hard floors, glass, restrooms, and trash. Scoped per building, billed weekly or monthly.</p>
-    </div>
   </div>
 </section>
 
-<section class="quote-wrap">
-  <p class="quote-mark">"</p>
-  <p class="quote-body">The owner has been detailing around Ocala and Marion County for years, and started the mobile side after watching shop appointments stretch past two weeks. He answers his own phone, brings water and power in the van, and won&#39;t leave a car until the work looks right in full sun.</p>
-  <p class="quote-attr">— Owner · Mobile Elite Detailing &amp; Commercial Cleaning LLC</p>
-</section>
+
 
 <section class="book">
   <h2>Book Owner.</h2>
-  <p>We started Mobile Elite because every detail shop in Ocala runs on a wait list and a voicemail, and most of our regulars just wanted someone to show up at the house on the day they were promised. We bring the water, the power, and the product, and we work one car at a time so nothing gets rushed. If a job needs another hour to look right, it gets the hour.</p>
+  <p>We started Mobile Elite because every detailer in Ocala runs on missed calls and a back of napkin schedule. We bring water, power, and product to your driveway or your yard, and we book the next visit before we leave. A few hundred regulars across Marion County keep us on the road most weeks.</p>
   <a href="tel:+13529013479">(352) 901-3479 · Call to book</a>
 </section>
 
 <section class="find">
   <p class="find-eyebrow">Where Owner rolls</p>
-  <p class="find-list">Ocala<span class="dot">·</span>Silver Springs<span class="dot">·</span>Belleview<span class="dot">·</span>Dunnellon<span class="dot">·</span>Summerfield<span class="dot">·</span>The Villages</p>
+  <p class="find-list"></p>
 </section>
 
 <footer class="foot">

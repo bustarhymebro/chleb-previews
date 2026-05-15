@@ -4,39 +4,41 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>The Barber Company — Plant City barbershop</title>
-<meta name="description" content="A neighborhood barbershop on N Alexander Street in Plant City, run by experienced barbers who treat the chair like a craft, not a conveyor belt." />
+<meta name="description" content="A Plant City barbershop run the old way, walk in or book ahead, every chair worked by a barber who actually finishes on time." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,800&family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --noir: #0c0a09; --bone: #ece1cd; --rouge: #9b1f2c; --sand: #c4a87a; --line: #2a2421; }
-body { margin: 0; background: var(--noir); color: var(--bone); font-family: "Cormorant Garamond", "Garamond", "Georgia", serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+:root { --noir: #000000; --bone: #f5ecd9; --rouge: #b8902e; --sand: #d4af37; --line: #2a2114; --head-font: "Playfair Display","Cormorant Garamond","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
 .stripe { height: 6px; background: repeating-linear-gradient(45deg, var(--rouge) 0px, var(--rouge) 16px, var(--bone) 16px, var(--bone) 32px, var(--noir) 32px, var(--noir) 48px); }
 
 .nav-ep { display: flex; align-items: center; justify-content: space-between; padding: 22px 32px; border-bottom: 1px solid var(--line); }
-.nav-ep-mark { font-family: "Cormorant Garamond", serif; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+.nav-ep-mark { font-family: var(--head-font); font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
 .nav-ep-mark .est { color: var(--sand); font-style: italic; font-size: 14px; margin-left: 12px; font-weight: 400; }
-.nav-ep-call { background: var(--rouge); color: var(--bone); padding: 10px 18px; font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
+.nav-ep-call { background: var(--rouge); color: var(--bone); padding: 10px 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
 
 .hero-ep { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 88vh; }
-.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
+.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
 .hero-ep-text { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; background: var(--noir); }
-.hero-ep-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 22px; font-weight: 600; }
-.hero-ep-name { font-family: "Cormorant Garamond", serif; font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 0.96; letter-spacing: -0.012em; margin: 0; font-style: italic; color: var(--bone); }
+.hero-ep-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 22px; font-weight: 600; }
+.hero-ep-name { font-family: var(--head-font); font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 0.96; letter-spacing: -0.012em; margin: 0; font-style: italic; color: var(--bone); }
 .hero-ep-tag { margin: 28px 0 36px; font-size: 22px; line-height: 1.5; color: rgba(236,225,205,0.78); font-style: italic; }
 .hero-ep-flourish { margin: 0 0 28px; height: 1px; width: 88px; background: var(--sand); }
-.hero-ep-cta { display: inline-block; padding: 18px 30px; background: var(--rouge); color: var(--bone); font-family: "Inter", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; align-self: flex-start; }
+.hero-ep-cta { display: inline-block; padding: 18px 30px; background: var(--rouge); color: var(--bone); font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; align-self: flex-start; }
 
 .menu-ep { padding: 100px 32px 60px; max-width: 920px; margin: 0 auto; text-align: center; }
-.menu-ep-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 14px; font-weight: 600; }
-.menu-ep-title { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; line-height: 1; margin: 0 0 8px; }
-.menu-ep-sub { font-family: "Inter", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(236,225,205,0.55); margin: 0 0 48px; }
+.menu-ep-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 14px; font-weight: 600; }
+.menu-ep-title { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; line-height: 1; margin: 0 0 8px; }
+.menu-ep-sub { font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(236,225,205,0.55); margin: 0 0 48px; }
 .cut-list { text-align: left; max-width: 720px; margin: 0 auto; }
 .cut-row { padding: 22px 0; border-bottom: 1px solid var(--line); }
 .cut-row:last-child { border-bottom: 0; }
-.cut-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 6px; color: var(--bone); }
+.cut-name { font-family: var(--head-font); font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 6px; color: var(--bone); }
 .cut-detail { font-size: 16px; color: rgba(236,225,205,0.65); line-height: 1.6; }
 
 .ritual-section { padding: 100px 32px; background: linear-gradient(180deg, var(--noir) 0%, #1a1410 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -45,8 +47,8 @@ a { color: inherit; text-decoration: none; }
 .ritual-grid { max-width: 1080px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
 .ritual { padding: 40px 32px; border-right: 1px solid var(--line); position: relative; }
 .ritual:last-child { border-right: 0; }
-.ritual-num { font-family: "Cormorant Garamond", serif; font-size: 80px; font-weight: 600; color: var(--rouge); line-height: 1; margin-bottom: 18px; font-style: italic; }
-.ritual-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 12px; }
+.ritual-num { font-family: var(--head-font); font-size: 80px; font-weight: 600; color: var(--rouge); line-height: 1; margin-bottom: 18px; font-style: italic; }
+.ritual-name { font-family: var(--head-font); font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 12px; }
 .ritual-detail { font-size: 16px; color: rgba(236,225,205,0.7); line-height: 1.65; margin: 0; }
 
 .portraits { padding: 100px 32px; max-width: 1200px; margin: 0 auto; }
@@ -54,22 +56,22 @@ a { color: inherit; text-decoration: none; }
 .portrait { aspect-ratio: 3 / 4; background-size: cover; background-position: center; filter: contrast(1.06) saturate(0.92); }
 
 .owner-ep { padding: 100px 32px; max-width: 720px; margin: 0 auto; text-align: center; }
-.owner-ep-name { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 28px; line-height: 1; color: var(--bone); }
+.owner-ep-name { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 28px; line-height: 1; color: var(--bone); }
 .owner-ep-name .of { font-size: 0.7em; font-style: normal; color: var(--sand); }
 .owner-ep p { font-size: 19px; line-height: 1.75; color: rgba(236,225,205,0.85); }
-.owner-ep .signature-ep { margin-top: 28px; font-family: "Cormorant Garamond", serif; font-size: 26px; color: var(--rouge); font-style: italic; }
+.owner-ep .signature-ep { margin-top: 28px; font-family: var(--head-font); font-size: 26px; color: var(--rouge); font-style: italic; }
 
 .book-ep { padding: 100px 32px; background: var(--rouge); color: var(--bone); text-align: center; }
-.book-ep h2 { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 16px; line-height: 1; }
+.book-ep h2 { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 16px; line-height: 1; }
 .book-ep p { margin: 0 auto 32px; max-width: 540px; font-size: 18px; line-height: 1.6; }
-.book-ep a { background: var(--noir); color: var(--bone); padding: 22px 36px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
+.book-ep a { background: var(--noir); color: var(--bone); padding: 22px 36px; font-family: var(--sans-font); font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area-ep { padding: 64px 32px; max-width: 920px; margin: 0 auto; text-align: center; }
-.area-ep p { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0; font-weight: 600; }
-.area-ep-cities { margin-top: 14px; font-family: "Cormorant Garamond", serif; font-size: 24px; color: var(--bone); line-height: 1.6; font-style: italic; }
+.area-ep p { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0; font-weight: 600; }
+.area-ep-cities { margin-top: 14px; font-family: var(--head-font); font-size: 24px; color: var(--bone); line-height: 1.6; font-style: italic; }
 
-.foot-ep { padding: 36px 32px; background: var(--noir); color: var(--sand); text-align: center; font-family: "Inter", sans-serif; border-top: 1px solid var(--line); }
-.foot-ep-name { font-family: "Cormorant Garamond", serif; font-size: 28px; color: var(--bone); margin-bottom: 8px; font-style: italic; }
+.foot-ep { padding: 36px 32px; background: var(--noir); color: var(--sand); text-align: center; font-family: var(--sans-font); border-top: 1px solid var(--line); }
+.foot-ep-name { font-family: var(--head-font); font-size: 28px; color: var(--bone); margin-bottom: 8px; font-style: italic; }
 .foot-ep-meta { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; }
 
 @media (max-width: 700px) {
@@ -96,90 +98,36 @@ a { color: inherit; text-decoration: none; }
   <div class="hero-ep-photo"></div>
   <div class="hero-ep-text">
     <p class="hero-ep-eyebrow">Plant City, FL · Grant</p>
-    <h1 class="hero-ep-name">Sharp cuts, steady hands, downtown Plant City.</h1>
-    <p class="hero-ep-tag">A neighborhood barbershop on N Alexander Street in Plant City, run by experienced barbers who treat the chair like a craft, not a conveyor belt.</p>
+    <h1 class="hero-ep-name">Sharp cuts, on time in Plant City.</h1>
+    <p class="hero-ep-tag">A Plant City barbershop run the old way, walk in or book ahead, every chair worked by a barber who actually finishes on time.</p>
     <div class="hero-ep-flourish"></div>
     <a href="tel:+18134414835" class="hero-ep-cta">Book your seat</a>
   </div>
 </section>
 
-<section class="menu-ep">
-  <p class="menu-ep-eyebrow">The menu</p>
-  <h2 class="menu-ep-title">How the shop runs in Plant City</h2>
-  <p class="menu-ep-sub">Walk-ins welcome · Calls preferred</p>
-  <div class="cut-list">
-    <div class="cut-row">
-      <div class="cut-name">Haircut &amp; Beard</div>
-      <div class="cut-detail">Full cut paired with a shaped beard trim. Hot lather neckline and a clean finish. $40.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Regular Haircut</div>
-      <div class="cut-detail">Clipper and shear work to your length, tapered or blended as you like, finished with a neckline. $30.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Hot Towel Shave</div>
-      <div class="cut-detail">Pre-shave oil, hot towel, straight razor pass, cold towel to close pores, balm finish. $30.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Haircut with Full Face Shave</div>
-      <div class="cut-detail">Full haircut plus a complete straight-razor shave. The longest service on the menu and the one to book first. $50.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Edge Up + Beard Trim</div>
-      <div class="cut-detail">Crisp hairline edge with a shaped and lined beard. Good between full cuts to stay sharp. $25.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Kids Haircut (5-12 yrs)</div>
-      <div class="cut-detail">Cut for the school-age crowd. Quick, clean, finished with a neckline. $25. Kids 0 to 4 also offered at $20.</div>
-    </div>
-  </div>
-</section>
 
-<section class="ritual-section">
-  <p class="menu-ep-eyebrow">The visit</p>
-  <h2 class="menu-ep-title">A seat in the chair.</h2>
-  <div class="ritual-grid">
-    <div class="ritual">
-      <div class="ritual-num">01</div>
-      <div class="ritual-name">Book a chair</div>
-      <p class="ritual-detail">Pick a barber and a service online or call the shop. Walk-ins welcome when a chair is open.</p>
-    </div>
-    <div class="ritual">
-      <div class="ritual-num">02</div>
-      <div class="ritual-name">Talk it through</div>
-      <p class="ritual-detail">Two minutes at the chair to confirm length, line, and finish before clippers turn on.</p>
-    </div>
-    <div class="ritual">
-      <div class="ritual-num">03</div>
-      <div class="ritual-name">Cut and finish</div>
-      <p class="ritual-detail">Clipper work, scissor work, edge up, hot towel finish. You leave ready for the week.</p>
-    </div>
-  </div>
-</section>
+
+
 
 <section class="portraits">
   <div class="portraits-grid">
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1622286346003-c91ab8c7e8a8?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1622286346003-c91ab8c7e8a8?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
   </div>
 </section>
 
-<section class="owner-ep">
-  <h2 class="owner-ep-name">A note <span class="of">from</span> Grant</h2>
-  <p>Grant runs The Barber Company out of 316 N Alexander Street in downtown Plant City, with a team of experienced barbers committed to doing the work right. The shop has been on Alexander for around five years and the standard has not moved since day one.</p>
-  <p class="signature-ep">— Grant</p>
-</section>
+
 
 <section class="area-ep">
-  <p>Where Grant cuts</p>
-  <p class="area-ep-cities">Downtown Plant City · N Alexander Street · Historic District · Walden Lake · Midtown Plant City</p>
+  <p>Where Grant works</p>
+  <p class="area-ep-cities">Plant City, FL</p>
 </section>
 
 <section class="book-ep">
   <h2>Book the chair.</h2>
-  <p>We are a team of experienced barbers on N Alexander Street in downtown Plant City, committed to exceptional barbering and a chair that feels like the neighborhood. Every cut gets the same care whether it is a $15 edge up or a full shave. Book a chair, walk through what you want, and we handle the rest.</p>
+  <p>We opened The Barber Company because every shop in Plant City was either an hour wait or a phone that nobody answered. Grant runs the floor, takes walk-ins when there&#39;s room, and keeps the book honest so a 2 PM means 2 PM. A few hundred regulars, mostly word of mouth, and we&#39;d rather keep it that way.</p>
   <a href="tel:+18134414835">(813) 441-4835 · Call Grant</a>
 </section>
 

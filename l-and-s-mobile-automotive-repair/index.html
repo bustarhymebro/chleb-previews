@@ -4,12 +4,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>L&amp;S Mobile Automotive Repair — Lakeland, FL</title>
-<meta name="description" content="Lee and Steve roll a fully-stocked van across Lakeland and South Lakeland so you skip the shop wait and the tow bill." />
+<meta name="description" content="L&amp;S rolls up to driveways and parking lots across Lakeland with a full van, fixing the car where it sits instead of making you tow it." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Sans+Condensed:wght@700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@700;800;900&family=Oswald:wght@600;700;900&family=Inter:wght@400;600;700;900&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --steel: #161a1f; --steel-2: #1c2128; --concrete: #2a3038; --safety: #f97316; --bone: #ebe5d8; --line: #3a4047; --green: #6ee7b7; }
-body { margin: 0; background: var(--steel); color: var(--bone); font-family: "IBM Plex Mono", "JetBrains Mono", "Menlo", monospace; font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+:root { --steel: #0b1726; --steel-2: #0f1f33; --concrete: #1a2c44; --safety: #22d3ee; --bone: #e6f4f9; --line: #1e3553; --green: #facc15; --mono-font: "JetBrains Mono","IBM Plex Mono","Menlo",monospace; --sans-cond: "Barlow Condensed","IBM Plex Sans Condensed",sans-serif; --sans: "Barlow","Inter",sans-serif; }
+body { margin: 0; background: var(--steel); color: var(--bone); font-family: var(--mono-font); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
 .top { display: grid; grid-template-columns: 1fr auto auto; align-items: center; padding: 14px 22px; background: var(--steel-2); border-bottom: 1px solid var(--line); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; gap: 14px; }
@@ -21,22 +24,22 @@ a { color: inherit; text-decoration: none; }
 .hero { padding: 60px 22px 48px; background: repeating-linear-gradient(0deg, transparent 0px, transparent 39px, rgba(255,255,255,0.02) 39px, rgba(255,255,255,0.02) 40px), repeating-linear-gradient(90deg, transparent 0px, transparent 39px, rgba(255,255,255,0.02) 39px, rgba(255,255,255,0.02) 40px), var(--steel); border-bottom: 1px solid var(--line); }
 .hero-spec { display: flex; gap: 40px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(235,229,216,0.55); margin-bottom: 28px; flex-wrap: wrap; }
 .hero-spec b { color: var(--safety); font-weight: 700; }
-.hero h1 { font-family: "IBM Plex Sans Condensed", "Inter", sans-serif; font-weight: 900; font-size: clamp(40px, 8vw, 96px); line-height: 0.95; letter-spacing: -0.025em; margin: 0 0 22px; color: var(--bone); text-transform: uppercase; }
+.hero h1 { font-family: var(--sans-cond); font-weight: 900; font-size: clamp(40px, 8vw, 96px); line-height: 0.95; letter-spacing: -0.025em; margin: 0 0 22px; color: var(--bone); text-transform: uppercase; }
 .hero h1 .safety { color: var(--safety); }
-.hero-sub { margin: 0 0 32px; font-size: 17px; font-family: "IBM Plex Sans", "Inter", sans-serif; font-weight: 400; color: rgba(235,229,216,0.78); max-width: 640px; line-height: 1.55; }
+.hero-sub { margin: 0 0 32px; font-size: 17px; font-family: var(--sans); font-weight: 400; color: rgba(235,229,216,0.78); max-width: 640px; line-height: 1.55; }
 .hero-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-call { background: var(--safety); color: var(--steel); padding: 16px 22px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: "IBM Plex Sans", sans-serif; }
-.btn-text { background: transparent; border: 1px solid var(--line); color: var(--bone); padding: 16px 22px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: "IBM Plex Sans", sans-serif; }
+.btn-call { background: var(--safety); color: var(--steel); padding: 16px 22px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: var(--sans); }
+.btn-text { background: transparent; border: 1px solid var(--line); color: var(--bone); padding: 16px 22px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 14px; font-family: var(--sans); }
 
 .spec-section { padding: 80px 22px; max-width: 1100px; margin: 0 auto; }
 .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 10px; }
 .section-eyebrow { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); font-weight: 700; margin: 0; }
-.section-h2 { font-family: "IBM Plex Sans Condensed", "Inter", sans-serif; font-weight: 900; font-size: 44px; letter-spacing: -0.02em; text-transform: uppercase; margin: 4px 0 0; color: var(--bone); line-height: 1; }
-.section-meta { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: "IBM Plex Mono", monospace; }
+.section-h2 { font-family: var(--sans-cond); font-weight: 900; font-size: 44px; letter-spacing: -0.02em; text-transform: uppercase; margin: 4px 0 0; color: var(--bone); line-height: 1; }
+.section-meta { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: var(--mono-font); }
 
-.spec-table { width: 100%; border-collapse: collapse; font-family: "IBM Plex Mono", monospace; font-size: 14px; }
+.spec-table { width: 100%; border-collapse: collapse; font-family: var(--mono-font); font-size: 14px; }
 .spec-table tbody td { padding: 16px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
-.spec-table .job { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 700; font-size: 17px; color: var(--bone); width: 28%; padding-right: 18px; }
+.spec-table .job { font-family: var(--sans-cond); font-weight: 700; font-size: 17px; color: var(--bone); width: 28%; padding-right: 18px; }
 .spec-table .detail { color: rgba(235,229,216,0.65); padding-right: 18px; }
 .spec-table .turn { color: var(--green); text-align: right; white-space: nowrap; font-size: 12px; letter-spacing: 0.1em; width: 18%; }
 
@@ -44,32 +47,32 @@ a { color: inherit; text-decoration: none; }
 .flow-grid { max-width: 1100px; margin: 32px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); background: var(--concrete); }
 .flow-step { padding: 32px 28px; border-right: 1px solid var(--line); position: relative; }
 .flow-step:last-child { border-right: 0; }
-.flow-step .num { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 88px; line-height: 1; color: var(--safety); letter-spacing: -0.04em; margin-bottom: 18px; }
-.flow-step .name { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: -0.005em; color: var(--bone); margin-bottom: 10px; }
-.flow-step .body { font-family: "IBM Plex Sans", sans-serif; font-size: 15px; color: rgba(235,229,216,0.72); line-height: 1.6; margin: 0; }
+.flow-step .num { font-family: var(--sans-cond); font-weight: 900; font-size: 88px; line-height: 1; color: var(--safety); letter-spacing: -0.04em; margin-bottom: 18px; }
+.flow-step .name { font-family: var(--sans-cond); font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: -0.005em; color: var(--bone); margin-bottom: 10px; }
+.flow-step .body { font-family: var(--sans); font-size: 15px; color: rgba(235,229,216,0.72); line-height: 1.6; margin: 0; }
 
 .area { padding: 80px 22px; max-width: 1100px; margin: 0 auto; }
 .area-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .area-cell { padding: 22px 24px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.area-name { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 700; font-size: 19px; color: var(--bone); margin: 0 0 6px; text-transform: uppercase; letter-spacing: -0.005em; }
-.area-detail { font-family: "IBM Plex Sans", sans-serif; font-size: 13px; color: rgba(235,229,216,0.55); line-height: 1.5; margin: 0; }
+.area-name { font-family: var(--sans-cond); font-weight: 700; font-size: 19px; color: var(--bone); margin: 0 0 6px; text-transform: uppercase; letter-spacing: -0.005em; }
+.area-detail { font-family: var(--sans); font-size: 13px; color: rgba(235,229,216,0.55); line-height: 1.5; margin: 0; }
 
 .owner { background: var(--bone); color: var(--steel); padding: 80px 22px; }
 .owner-inner { max-width: 920px; margin: 0 auto; }
-.owner-tag { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 18px; font-weight: 700; }
-.owner-name { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 56px; text-transform: uppercase; letter-spacing: -0.02em; line-height: 0.95; margin: 0 0 16px; color: var(--steel); }
-.owner p { font-family: "IBM Plex Sans", sans-serif; font-size: 17px; line-height: 1.7; color: var(--steel); margin: 0 0 14px; }
+.owner-tag { font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 18px; font-weight: 700; }
+.owner-name { font-family: var(--sans-cond); font-weight: 900; font-size: 56px; text-transform: uppercase; letter-spacing: -0.02em; line-height: 0.95; margin: 0 0 16px; color: var(--steel); }
+.owner p { font-family: var(--sans); font-size: 17px; line-height: 1.7; color: var(--steel); margin: 0 0 14px; }
 
 .dispatch { background: var(--steel); padding: 80px 22px; border-top: 1px solid var(--line); }
 .dispatch-card { max-width: 720px; margin: 0 auto; border: 2px solid var(--safety); background: var(--steel-2); padding: 36px 32px; }
-.dispatch-eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 14px; font-weight: 700; }
-.dispatch-card h2 { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 38px; text-transform: uppercase; letter-spacing: -0.015em; margin: 0 0 20px; line-height: 1.05; }
-.dispatch-phone { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 900; font-size: 56px; letter-spacing: -0.02em; color: var(--safety); margin: 12px 0; display: block; text-decoration: none; }
-.dispatch-meta { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: rgba(235,229,216,0.65); letter-spacing: 0.06em; margin: 14px 0 0; }
+.dispatch-eyebrow { font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); margin: 0 0 14px; font-weight: 700; }
+.dispatch-card h2 { font-family: var(--sans-cond); font-weight: 900; font-size: 38px; text-transform: uppercase; letter-spacing: -0.015em; margin: 0 0 20px; line-height: 1.05; }
+.dispatch-phone { font-family: var(--sans-cond); font-weight: 900; font-size: 56px; letter-spacing: -0.02em; color: var(--safety); margin: 12px 0; display: block; text-decoration: none; }
+.dispatch-meta { font-family: var(--mono-font); font-size: 13px; color: rgba(235,229,216,0.65); letter-spacing: 0.06em; margin: 14px 0 0; }
 
 .foot { background: var(--steel-2); padding: 36px 22px; border-top: 1px solid var(--line); text-align: center; }
-.foot-mark { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); font-weight: 700; margin-bottom: 8px; }
-.foot-meta { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: "IBM Plex Mono", monospace; }
+.foot-mark { font-family: var(--mono-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--safety); font-weight: 700; margin-bottom: 8px; }
+.foot-meta { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(235,229,216,0.45); font-family: var(--mono-font); }
 
 @media (max-width: 700px) {
   .flow-grid { grid-template-columns: 1fr; }
@@ -84,140 +87,36 @@ a { color: inherit; text-decoration: none; }
 <body>
 
 <div class="top">
-  <div class="top-mark">L&amp;S Mobile Automotive Repair · Lakeland, FL</div>
-  <div class="top-status">On call</div>
-  <a href="tel:+18637974687" class="top-call">Dispatch · (863) 797-4687</a>
+  <div class="top-mark">L&amp;S Mobile Automotive Repair // Lakeland, FL</div>
+  <div class="top-status">Online</div>
+  <a href="tel:+18637974687" class="top-call">Send · (863) 797-4687</a>
 </div>
 
 <header class="hero">
   <div class="hero-spec">
-    <span><b>VAN-STOCKED</b> common parts on board</span>
-    <span><b>RADIUS</b> Lakeland + nearby</span>
-    <span><b>RESPONSE</b> same-day, most jobs</span>
+    <span><b>INVENTORY</b> common parts on board</span>
+    <span><b>RANGE</b> Lakeland + nearby</span>
+    <span><b>TURN</b> same-day, most jobs</span>
   </div>
-  <h1>Mobile auto repair, on your driveway in Lakeland.</h1>
-  <p class="hero-sub">Lee and Steve roll a fully-stocked van across Lakeland and South Lakeland so you skip the shop wait and the tow bill.</p>
+  <h1>Mobile auto repair, on your schedule.</h1>
+  <p class="hero-sub">L&amp;S rolls up to driveways and parking lots across Lakeland with a full van, fixing the car where it sits instead of making you tow it.</p>
   <div class="hero-cta-row">
-    <a href="tel:+18637974687" class="btn-call">Dispatch · (863) 797-4687</a>
+    <a href="tel:+18637974687" class="btn-call">Send · (863) 797-4687</a>
     <a href="#jobs" class="btn-text">Common jobs + rates</a>
   </div>
 </header>
 
-<section class="spec-section" id="jobs">
-  <div class="section-head">
-    <div>
-      <p class="section-eyebrow">Service spec sheet</p>
-      <h2 class="section-h2">Common jobs.</h2>
-    </div>
-    <div class="section-meta">Quote on site, before any wrench moves.</div>
-  </div>
-  <table class="spec-table">
-    <tbody>
-    <tr>
-      <td class="job">Oil changes</td>
-      <td class="detail">Full or partial synthetic, new filter, fluids topped, quick under-vehicle check for leaks and worn boots.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">Brake repair</td>
-      <td class="detail">Pad and rotor replacement, caliper service, brake fluid bleed, and a road test before we leave the curb.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">Battery service</td>
-      <td class="detail">Load test, terminal cleaning, and replacement with a battery that fits your vehicle. Old core hauled off.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">Engine diagnostics</td>
-      <td class="detail">Code pull, live data review, and a written summary of what&#39;s actually failing versus what threw the light.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    <tr>
-      <td class="job">AC system repair</td>
-      <td class="detail">Leak detection, evac and recharge, compressor and condenser work. Same approach we used on the intermittent jobs nobody else solved.</td>
-      <td class="turn">Same day</td>
-    </tr>
-    </tbody>
-  </table>
-</section>
 
-<section class="flow">
-  <div style="max-width: 1100px; margin: 0 auto;">
-    <div class="section-head">
-      <div>
-        <p class="section-eyebrow">Process · 3 steps</p>
-        <h2 class="section-h2">How it works.</h2>
-      </div>
-      <div class="section-meta">No upsells. No tow bill. No shop wait.</div>
-    </div>
-  </div>
-  <div class="flow-grid">
-    <div class="flow-step">
-      <div class="num">01</div>
-      <div class="name">You call</div>
-      <p class="body">Lee or Steve picks up, takes the symptoms, and gives you a window that day or the next.</p>
-    </div>
-    <div class="flow-step">
-      <div class="num">02</div>
-      <div class="name">We diagnose on site</div>
-      <p class="body">Van rolls up, we plug in, drive it if needed, and quote the fix before any work starts.</p>
-    </div>
-    <div class="flow-step">
-      <div class="num">03</div>
-      <div class="name">Fixed in your driveway</div>
-      <p class="body">Parts on the van for most jobs, road test when we&#39;re done, payment after you&#39;re satisfied.</p>
-    </div>
-  </div>
-</section>
 
-<section class="area">
-  <div class="section-head">
-    <div>
-      <p class="section-eyebrow">Service area</p>
-      <h2 class="section-h2">Where the van runs.</h2>
-    </div>
-    <div class="section-meta">Outside the radius? Call, I will quote the trip.</div>
-  </div>
-  <div class="area-grid">
-    <div class="area-cell">
-      <h3 class="area-name">Lakeland</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">South Lakeland</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Sugar Creek</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Lakeland Highlands</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Mulberry</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-    <div class="area-cell">
-      <h3 class="area-name">Bartow</h3>
-      <p class="area-detail">Same-day service.</p>
-    </div>
-  </div>
-</section>
 
-<section class="owner">
-  <div class="owner-inner">
-    <p class="owner-tag">Behind the van</p>
-    <h2 class="owner-name">Lee runs the truck.</h2>
-    <p>Lee runs L&amp;S with his partner Steve, hence the name on the van. They picked up the mobile work because every shop in Lakeland was running a week out and customers were paying tow bills to wait in line. Lee answers the phone himself, brings the parts in the van, and prices the job before he turns a wrench.</p>
-  </div>
-</section>
+
+
+
+
 
 <section class="dispatch">
   <div class="dispatch-card">
-    <p class="dispatch-eyebrow">Dispatch · same-day, most jobs</p>
+    <p class="dispatch-eyebrow">Send · same-day, most jobs</p>
     <h2>How we run jobs in Lakeland</h2>
     <a href="tel:+18637974687" class="dispatch-phone">(863) 797-4687</a>
     <p class="dispatch-meta">Final quote on site before any wrench moves.</p>
@@ -226,7 +125,7 @@ a { color: inherit; text-decoration: none; }
 
 <footer class="foot">
   <div class="foot-mark">L&amp;S Mobile Automotive Repair</div>
-  <p class="foot-meta">Lakeland, FL · Run by Lee</p>
+  <p class="foot-meta">Lakeland, FL · Run by Owner</p>
 </footer>
 
 </body>

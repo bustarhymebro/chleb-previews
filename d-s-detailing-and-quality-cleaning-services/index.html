@@ -4,27 +4,30 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>D&#39;s Detailing &amp; Quality Cleaning Services — Dothan, AL</title>
-<meta name="description" content="Dothan&#39;s hassle-free mobile detailing and ceramic coating specialist, not shop based, rolling to your house, apartment, or job to make the vehicle look its best." />
+<meta name="description" content="D&#39;s runs mobile detail and deep cleans across Dothan, booked by phone, done at your home or shop, finished the same day when the schedule allows." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --black: #0c0c0c; --yellow: #ffd60a; --red: #e63946; --cream: #fffbe9; }
-body { margin: 0; background: var(--black); color: var(--cream); font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing: antialiased; }
+:root { --black: #0c0c0c; --yellow: #ffd60a; --red: #e63946; --cream: #fffbe9; --head-font: "Bungee","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(0,0,0,0.4); }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
 .nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
-.nav-mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
 .nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
 
 .today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
 .today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
 @keyframes blink { 50% { opacity: 0.35; } }
-.today-sep { color: rgba(0,0,0,0.4); }
+.today-sep { color: var(--today-hue); }
 
 .hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
 .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
 .hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
-.hero h1 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 { font-family: var(--head-font); font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
 .hero h1 .yellow { color: var(--yellow); }
 .hero h1 .red { color: var(--red); }
 .hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
@@ -34,34 +37,34 @@ a { color: inherit; text-decoration: none; }
 
 .menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
 .menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
-.menu-h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
 .menu-h2 .red { color: var(--red); }
 .menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
 .menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
-.menu-card-name { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-name { font-family: var(--head-font); font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
 .menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
 .menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
 
 .quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
-.quote-mark { font-family: "Bungee", "Inter", sans-serif; font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
-.quote-body { font-family: "Inter", sans-serif; font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-mark { font-family: var(--head-font); font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: var(--body-font); font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
 .quote-body .yellow { color: var(--yellow); }
 .quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
 
 .book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
-.book h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
 .book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
 .book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
 
 .find { padding: 60px 22px; background: var(--black); text-align: center; }
 .find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
-.find-list { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list { font-family: var(--head-font); font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
 .find-list .dot { color: var(--red); margin: 0 14px; }
 
 .foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
-.foot .mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot .mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
 .foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
 .foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
 </style>
@@ -75,17 +78,13 @@ a { color: inherit; text-decoration: none; }
 
 <div class="today">
   <span class="today-dot"></span>
-  <span>You call · Tell us the vehicle, the condition, and </span>
-  <span class="today-sep">/</span>
-  <span>We roll up · Truck arrives with water and power on bo</span>
-  <span class="today-sep">/</span>
-  <span>We finish on site · Wash, correct, coat, vacuum, done in you</span>
+  <span>Dothan, AL</span>
 </div>
 
 <header class="hero">
   <p class="hero-eyebrow">Dothan, AL · Run by Owner</p>
-  <h1>Mobile detailing, dialed in for Dothan.</h1>
-  <p class="hero-sub">Dothan&#39;s hassle-free mobile detailing and ceramic coating specialist, not shop based, rolling to your house, apartment, or job to make the vehicle look its best.</p>
+  <h1>Mobile detailing that comes to your driveway.</h1>
+  <p class="hero-sub">D&#39;s runs mobile detail and deep cleans across Dothan, booked by phone, done at your home or shop, finished the same day when the schedule allows.</p>
   <div class="hero-cta-row">
     <a href="tel:+13342328640" class="btn-loud">Call · book the truck</a>
     <a href="#menu" class="btn-ghost">See the menu</a>
@@ -95,52 +94,23 @@ a { color: inherit; text-decoration: none; }
 <section class="menu" id="menu">
   <div class="menu-head">
     <h2 class="menu-h2">The <span class="red">Menu</span></h2>
-    <div class="menu-meta">5 services · Fast turnaround</div>
+    <div class="menu-meta">0 services · Fast turnaround</div>
   </div>
   <div class="menu-grid">
-    <div class="menu-card">
-      <span class="menu-card-tag">Most ordered</span>
-      <h3 class="menu-card-name">Everyday Special, Car</h3>
-      <p class="menu-card-detail">Wash, wax, vacuum, full interior wipe down, window cleaning. Done at your address. $75 to $100 depending on condition.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Everyday Special, Truck or SUV</h3>
-      <p class="menu-card-detail">Same package, sized for the bigger footprint. Bed cleaned out, third row vacuumed, all glass. $100 to $125.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Interior detail</h3>
-      <p class="menu-card-detail">Seat and carpet shampoo, steam cleaning the dash and console, upholstery cleaning, door jambs wiped, salt and sand pulled.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Exterior detail</h3>
-      <p class="menu-card-detail">Foam bath, decontamination, paint polishing to knock down swirls, sealant on the clear coat, tires and trim dressed.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Headlight restoration</h3>
-      <p class="menu-card-detail">Both housings sanded, polished, and sealed in about an hour. Adds real night visibility before inspection or resale.</p>
-    </div>
   </div>
 </section>
 
-<section class="quote-wrap">
-  <p class="quote-mark">"</p>
-  <p class="quote-body">The owner runs D&#39;s as a mobile-only operation, no shop, no waiting room. He brings the water, the power, and the product to your driveway, apartment lot, or job site, and the focus is ceramic coatings and correction work done right the first time.</p>
-  <p class="quote-attr">— Owner · D&#39;s Detailing &amp; Quality Cleaning Services</p>
-</section>
+
 
 <section class="book">
   <h2>Book Owner.</h2>
-  <p>We started D&#39;s because the only way to detail a vehicle right is to take the time, and the only way most people in Dothan can afford that time is if we come to them. We are mobile only, ceramic-coating focused, and we bring everything with us. If you are at the house, the apartment, or the job, we work around your day.</p>
+  <p>We started D&#39;s because every detailer in town runs on a voicemail and a maybe-Tuesday. We answer the phone, show up when we said, and bring water and power with us. Cars, trucks, homes, offices, all done by the same crew that books the job.</p>
   <a href="tel:+13342328640">(334) 232-8640 · Call to book</a>
 </section>
 
 <section class="find">
   <p class="find-eyebrow">Where Owner rolls</p>
-  <p class="find-list">Dothan<span class="dot">·</span>Cottonwood<span class="dot">·</span>Webb<span class="dot">·</span>Midland City<span class="dot">·</span>Rehobeth<span class="dot">·</span>Taylor</p>
+  <p class="find-list"></p>
 </section>
 
 <footer class="foot">

@@ -4,39 +4,41 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Country Squire Barbershop — Clearwater barbershop</title>
-<meta name="description" content="A family-run shop on US Hwy 19 N, cutting Clearwater since 1985, welcoming every age into the chair without the wait or the upsell." />
+<meta name="description" content="A walk-in barbershop on the Clearwater side of the bay, built around clean fades, hot lather necks, and chairs that don&#39;t run late." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,800&family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --noir: #0c0a09; --bone: #ece1cd; --rouge: #9b1f2c; --sand: #c4a87a; --line: #2a2421; }
-body { margin: 0; background: var(--noir); color: var(--bone); font-family: "Cormorant Garamond", "Garamond", "Georgia", serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+:root { --noir: #3d2e2c; --bone: #fbf4ee; --rouge: #b85661; --sand: #c98b91; --line: #5a4540; --head-font: "Didot","Bodoni Moda","Playfair Display","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
 .stripe { height: 6px; background: repeating-linear-gradient(45deg, var(--rouge) 0px, var(--rouge) 16px, var(--bone) 16px, var(--bone) 32px, var(--noir) 32px, var(--noir) 48px); }
 
 .nav-ep { display: flex; align-items: center; justify-content: space-between; padding: 22px 32px; border-bottom: 1px solid var(--line); }
-.nav-ep-mark { font-family: "Cormorant Garamond", serif; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+.nav-ep-mark { font-family: var(--head-font); font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
 .nav-ep-mark .est { color: var(--sand); font-style: italic; font-size: 14px; margin-left: 12px; font-weight: 400; }
-.nav-ep-call { background: var(--rouge); color: var(--bone); padding: 10px 18px; font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
+.nav-ep-call { background: var(--rouge); color: var(--bone); padding: 10px 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
 
 .hero-ep { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 88vh; }
-.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
+.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1622286346003-c91ab8c7e8a8?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
 .hero-ep-text { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; background: var(--noir); }
-.hero-ep-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 22px; font-weight: 600; }
-.hero-ep-name { font-family: "Cormorant Garamond", serif; font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 0.96; letter-spacing: -0.012em; margin: 0; font-style: italic; color: var(--bone); }
+.hero-ep-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 22px; font-weight: 600; }
+.hero-ep-name { font-family: var(--head-font); font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 0.96; letter-spacing: -0.012em; margin: 0; font-style: italic; color: var(--bone); }
 .hero-ep-tag { margin: 28px 0 36px; font-size: 22px; line-height: 1.5; color: rgba(236,225,205,0.78); font-style: italic; }
 .hero-ep-flourish { margin: 0 0 28px; height: 1px; width: 88px; background: var(--sand); }
-.hero-ep-cta { display: inline-block; padding: 18px 30px; background: var(--rouge); color: var(--bone); font-family: "Inter", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; align-self: flex-start; }
+.hero-ep-cta { display: inline-block; padding: 18px 30px; background: var(--rouge); color: var(--bone); font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; align-self: flex-start; }
 
 .menu-ep { padding: 100px 32px 60px; max-width: 920px; margin: 0 auto; text-align: center; }
-.menu-ep-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 14px; font-weight: 600; }
-.menu-ep-title { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; line-height: 1; margin: 0 0 8px; }
-.menu-ep-sub { font-family: "Inter", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(236,225,205,0.55); margin: 0 0 48px; }
+.menu-ep-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 14px; font-weight: 600; }
+.menu-ep-title { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; line-height: 1; margin: 0 0 8px; }
+.menu-ep-sub { font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(236,225,205,0.55); margin: 0 0 48px; }
 .cut-list { text-align: left; max-width: 720px; margin: 0 auto; }
 .cut-row { padding: 22px 0; border-bottom: 1px solid var(--line); }
 .cut-row:last-child { border-bottom: 0; }
-.cut-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 6px; color: var(--bone); }
+.cut-name { font-family: var(--head-font); font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 6px; color: var(--bone); }
 .cut-detail { font-size: 16px; color: rgba(236,225,205,0.65); line-height: 1.6; }
 
 .ritual-section { padding: 100px 32px; background: linear-gradient(180deg, var(--noir) 0%, #1a1410 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -45,8 +47,8 @@ a { color: inherit; text-decoration: none; }
 .ritual-grid { max-width: 1080px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
 .ritual { padding: 40px 32px; border-right: 1px solid var(--line); position: relative; }
 .ritual:last-child { border-right: 0; }
-.ritual-num { font-family: "Cormorant Garamond", serif; font-size: 80px; font-weight: 600; color: var(--rouge); line-height: 1; margin-bottom: 18px; font-style: italic; }
-.ritual-name { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 12px; }
+.ritual-num { font-family: var(--head-font); font-size: 80px; font-weight: 600; color: var(--rouge); line-height: 1; margin-bottom: 18px; font-style: italic; }
+.ritual-name { font-family: var(--head-font); font-size: 28px; font-weight: 600; font-style: italic; margin-bottom: 12px; }
 .ritual-detail { font-size: 16px; color: rgba(236,225,205,0.7); line-height: 1.65; margin: 0; }
 
 .portraits { padding: 100px 32px; max-width: 1200px; margin: 0 auto; }
@@ -54,22 +56,22 @@ a { color: inherit; text-decoration: none; }
 .portrait { aspect-ratio: 3 / 4; background-size: cover; background-position: center; filter: contrast(1.06) saturate(0.92); }
 
 .owner-ep { padding: 100px 32px; max-width: 720px; margin: 0 auto; text-align: center; }
-.owner-ep-name { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 28px; line-height: 1; color: var(--bone); }
+.owner-ep-name { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 28px; line-height: 1; color: var(--bone); }
 .owner-ep-name .of { font-size: 0.7em; font-style: normal; color: var(--sand); }
 .owner-ep p { font-size: 19px; line-height: 1.75; color: rgba(236,225,205,0.85); }
-.owner-ep .signature-ep { margin-top: 28px; font-family: "Cormorant Garamond", serif; font-size: 26px; color: var(--rouge); font-style: italic; }
+.owner-ep .signature-ep { margin-top: 28px; font-family: var(--head-font); font-size: 26px; color: var(--rouge); font-style: italic; }
 
 .book-ep { padding: 100px 32px; background: var(--rouge); color: var(--bone); text-align: center; }
-.book-ep h2 { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 16px; line-height: 1; }
+.book-ep h2 { font-family: var(--head-font); font-size: clamp(40px, 6vw, 72px); font-weight: 600; font-style: italic; margin: 0 0 16px; line-height: 1; }
 .book-ep p { margin: 0 auto 32px; max-width: 540px; font-size: 18px; line-height: 1.6; }
-.book-ep a { background: var(--noir); color: var(--bone); padding: 22px 36px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
+.book-ep a { background: var(--noir); color: var(--bone); padding: 22px 36px; font-family: var(--sans-font); font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area-ep { padding: 64px 32px; max-width: 920px; margin: 0 auto; text-align: center; }
-.area-ep p { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0; font-weight: 600; }
-.area-ep-cities { margin-top: 14px; font-family: "Cormorant Garamond", serif; font-size: 24px; color: var(--bone); line-height: 1.6; font-style: italic; }
+.area-ep p { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0; font-weight: 600; }
+.area-ep-cities { margin-top: 14px; font-family: var(--head-font); font-size: 24px; color: var(--bone); line-height: 1.6; font-style: italic; }
 
-.foot-ep { padding: 36px 32px; background: var(--noir); color: var(--sand); text-align: center; font-family: "Inter", sans-serif; border-top: 1px solid var(--line); }
-.foot-ep-name { font-family: "Cormorant Garamond", serif; font-size: 28px; color: var(--bone); margin-bottom: 8px; font-style: italic; }
+.foot-ep { padding: 36px 32px; background: var(--noir); color: var(--sand); text-align: center; font-family: var(--sans-font); border-top: 1px solid var(--line); }
+.foot-ep-name { font-family: var(--head-font); font-size: 28px; color: var(--bone); margin-bottom: 8px; font-style: italic; }
 .foot-ep-meta { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; }
 
 @media (max-width: 700px) {
@@ -96,86 +98,36 @@ a { color: inherit; text-decoration: none; }
   <div class="hero-ep-photo"></div>
   <div class="hero-ep-text">
     <p class="hero-ep-eyebrow">Clearwater, FL · Owner</p>
-    <h1 class="hero-ep-name">Three generations of barbering in Clearwater.</h1>
-    <p class="hero-ep-tag">A family-run shop on US Hwy 19 N, cutting Clearwater since 1985, welcoming every age into the chair without the wait or the upsell.</p>
+    <h1 class="hero-ep-name">Old-school cuts in Clearwater.</h1>
+    <p class="hero-ep-tag">A walk-in barbershop on the Clearwater side of the bay, built around clean fades, hot lather necks, and chairs that don&#39;t run late.</p>
     <div class="hero-ep-flourish"></div>
     <a href="tel:+17277844151" class="hero-ep-cta">Book your seat</a>
   </div>
 </section>
 
-<section class="menu-ep">
-  <p class="menu-ep-eyebrow">The menu</p>
-  <h2 class="menu-ep-title">How Clearwater has booked with us since 1985</h2>
-  <p class="menu-ep-sub">Walk-ins welcome · Calls preferred</p>
-  <div class="cut-list">
-    <div class="cut-row">
-      <div class="cut-name">Fade and scissor cuts</div>
-      <div class="cut-detail">Skin, low, mid, or high fade blended into a scissor-cut top. Hot towel finish on the neckline included.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Traditional straight razor shave</div>
-      <div class="cut-detail">Hot towel, lather, straight razor, two passes with the grain and against. Aftershave balm to close it out.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Beard trim and styling</div>
-      <div class="cut-detail">Length set with clippers, lines walked in by razor, mustache tidied. Beard oil worked in before you leave.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Kids cuts</div>
-      <div class="cut-detail">Cuts for boys under twelve. Quiet barbers, quick chair time, a lollipop on the way out. Parents wait in the front.</div>
-    </div>
-    <div class="cut-row">
-      <div class="cut-name">Full service barbering</div>
-      <div class="cut-detail">Cut, beard, shave, and line-up booked as one seat. About forty-five minutes start to finish, walk-ins welcome between.</div>
-    </div>
-  </div>
-</section>
 
-<section class="ritual-section">
-  <p class="menu-ep-eyebrow">The visit</p>
-  <h2 class="menu-ep-title">A seat in the chair.</h2>
-  <div class="ritual-grid">
-    <div class="ritual">
-      <div class="ritual-num">01</div>
-      <div class="ritual-name">Walk in or call</div>
-      <p class="ritual-detail">Grab a seat in the front, or ring the shop and we&#39;ll hold a chair for you.</p>
-    </div>
-    <div class="ritual">
-      <div class="ritual-num">02</div>
-      <div class="ritual-name">In the chair</div>
-      <p class="ritual-detail">Tell the barber what you want, show a photo if you have one, we take it from there.</p>
-    </div>
-    <div class="ritual">
-      <div class="ritual-num">03</div>
-      <div class="ritual-name">Finish clean</div>
-      <p class="ritual-detail">Hot towel on the neck, line-up checked in the mirror, brushed off and out the door.</p>
-    </div>
-  </div>
-</section>
+
+
 
 <section class="portraits">
   <div class="portraits-grid">
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&h=1100&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
   </div>
 </section>
 
-<section class="owner-ep">
-  <h2 class="owner-ep-name">A note <span class="of">from</span> Owner</h2>
-  <p>Country Squire has been cutting hair on US Hwy 19 N since 1985, three generations of the same family in the same shop. TJ and the bench run it the old way, walk-ins welcome, cash or card, no app required. If the phone rings during a cut, somebody picks it up.</p>
-  <p class="signature-ep">— Owner</p>
-</section>
+
 
 <section class="area-ep">
-  <p>Where Owner cuts</p>
-  <p class="area-ep-cities">Countryside · Northwood · Safety Harbor · Dunedin · Palm Harbor · Oldsmar</p>
+  <p>Where Owner books</p>
+  <p class="area-ep-cities">Clearwater, FL</p>
 </section>
 
 <section class="book-ep">
   <h2>Book the chair.</h2>
-  <p>We opened Country Squire on US Hwy 19 N in 1985 and we have been cutting Clearwater families ever since. Three generations of barbers, the same chairs, the same straight razor shave that brought your dad in. Every shop around runs on a booking app and a wait list. We pick up the phone, take walk-ins, and keep the price reasonable.</p>
+  <p>We opened Country Squire because Clearwater needed a barbershop, not a salon. Every place in town wants you to book three weeks out on an app and pay extra for a beard trim. We take walk-ins, we keep the cut times honest, and we know the regulars by name. If you have not been in before, ask for whoever is open.</p>
   <a href="tel:+17277844151">(727) 784-4151 · Call Owner</a>
 </section>
 

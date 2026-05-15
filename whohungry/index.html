@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>WhoHungry? · Montgomery food truck</title>
-<meta name="description" content="WhoHungry? is Shun&#39;s food truck rolling through Montgomery with a tight menu, fair prices, and a line that moves while the music plays." />
+<meta name="description" content="A Montgomery food truck run by Shun, serving honest portions at the lots, lunch stops, and events that actually feed the city." />
 <meta property="og:title" content="WhoHungry?" />
-<meta property="og:description" content="WhoHungry? is Shun&#39;s food truck rolling through Montgomery with a tight menu, fair prices, and a line that moves while the music plays." />
+<meta property="og:description" content="A Montgomery food truck run by Shun, serving honest portions at the lots, lunch stops, and events that actually feed the city." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; --head-font: "Playfair Display","Georgia",serif; --body-font: "Georgia","Times New Roman",serif; --sans-font: "Helvetica Neue","Arial",sans-serif; --rule: 6px double; --brand-style: italic; --brand-weight: 900; --brand-spacing: -0.045em; --sub-style: italic; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -93,24 +96,24 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">W</span>hoHungry? is Shun&#39;s food truck rolling through Montgomery with a tight menu, fair prices, and a line that moves while the music plays.</p>
+  <p><span class="drop-cap">A</span> Montgomery food truck run by Shun, serving honest portions at the lots, lunch stops, and events that actually feed the city.</p>
 </section>
 
 <section class="schedule">
-  <p class="schedule-eyebrow">How the truck runs in Montgomery</p>
+  <p class="schedule-eyebrow">How we feed Montgomery off the truck</p>
   <h2>What happens when you call.</h2>
   <div class="schedule-grid">
     <div class="schedule-row">
-      <div class="schedule-day">Find the truck</div>
-      <div class="schedule-where">Check the location post the night before, pull up to the window during service hours.</div>
+      <div class="schedule-day">Check the spot</div>
+      <div class="schedule-where">Find this week&#39;s lot and hours on the schedule we text out every Monday morning.</div>
     </div>
     <div class="schedule-row">
       <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Tell us what you want, grab a number, card or cash both work fine.</div>
+      <div class="schedule-where">Walk up, order off the board, pay by card or cash, we cook it fresh.</div>
     </div>
     <div class="schedule-row">
       <div class="schedule-day">Eat hot</div>
-      <div class="schedule-where">Food comes up in under ten minutes, fresh off the flat top, never sitting under a lamp.</div>
+      <div class="schedule-where">Most plates are out in under ten minutes, packed for the car or a picnic table nearby.</div>
     </div>
   </div>
 </section>
@@ -121,38 +124,38 @@ a { color: inherit; }
   <div class="menu-list">
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Loaded smash burger</div>
+        <div class="menu-item-name">Smash burger combo</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Two smashed patties, american, grilled onions, house sauce, toasted brioche. Comes with seasoned fries and a pickle spear.</p>
+      <p class="menu-item-detail">Two seasoned smash patties, American cheese, grilled onions, house sauce on a toasted bun, with seasoned fries and a drink.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Wing basket</div>
+        <div class="menu-item-name">Loaded wing basket</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Six or ten wings tossed in lemon pepper, hot honey, or garlic parmesan. Fries underneath, ranch or blue cheese on the side.</p>
+      <p class="menu-item-detail">Ten jumbo wings tossed in lemon pepper, hot honey, or garlic parm, served over fries with ranch on the side.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Philly cheesesteak</div>
+        <div class="menu-item-name">Philly cheesesteak plate</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Shaved ribeye, peppers, onions, melted provolone on a hoagie roll. Served with chips or upgrade to fries for two dollars.</p>
+      <p class="menu-item-detail">Shaved ribeye, peppers, onions, melted provolone on a hoagie, with a side of fries or fried corn.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Loaded fry plate</div>
+        <div class="menu-item-name">Shrimp and grits bowl</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Fries piled with cheese, bacon, sour cream, and choice of chopped chicken or steak. Plate big enough to share, most folks don&#39;t.</p>
+      <p class="menu-item-detail">Pan seared shrimp over creamy stone ground grits, smoked sausage, peppers, and a touch of cajun butter.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Shrimp basket</div>
+        <div class="menu-item-name">Catfish and fries</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Hand-breaded gulf shrimp fried to order, fries, hush puppies, cocktail and tartar on the side. Lemon wedge on top.</p>
+      <p class="menu-item-detail">Two hand breaded catfish filets fried to order, seasoned fries, hush puppies, tartar and hot sauce on the side.</p>
     </div>
   </div>
 </section>
@@ -168,19 +171,19 @@ a { color: inherit; }
 <section class="note">
   <p class="note-eyebrow">A short note</p>
   <h2>From Shun.</h2>
-  <p>Shun started WhoHungry? in Montgomery because the food he wanted to eat after a long shift wasn&#39;t on any menu in town. He runs the window himself most days, preps the sauces in-house, and posts the truck&#39;s spot the night before so regulars know where to find him.</p>
+  <p>Shun started WhoHungry? after years of cooking for family, friends, and anybody who showed up hungry. He runs the window himself most days, answers his own phone, and won&#39;t send a plate out he wouldn&#39;t eat standing at the truck.</p>
   <p class="signature">— Shun</p>
 </section>
 
 <section class="catering">
   <h2>Book WhoHungry?.</h2>
-  <p>We started WhoHungry? in Montgomery because the late shift in this city deserves better than a drive-thru bag. Every sauce, every season blend, every patty gets prepped in the truck the morning of service. We post our spot the night before, we run a tight menu so the line keeps moving, and we feed regulars who keep coming back week after week.</p>
+  <p>We started WhoHungry? to put real food on a real plate at lunch and after work, without the wait you get sitting down at a restaurant in Montgomery. Every truck in town runs on a schedule and a phone, so we keep ours simple and we pick up when you call. If we are parked, we are cooking.</p>
   <a href="tel:+13342211805" class="catering-btn">(334) 221-1805 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">Downtown Montgomery · Cloverdale · Old Cloverdale · Garden District · Prattville · Pike Road</p>
+  <p class="area-cities">Cloverdale · Old Cloverdale · Capitol Heights · Pike Road · Prattville · Wetumpka</p>
 </section>
 
 <footer class="foot">

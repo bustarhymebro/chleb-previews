@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>901 Eats and Treats · Memphis food truck</title>
-<meta name="description" content="A Memphis food truck running a short menu of from-scratch plates, posted up at lots, parks, and office blocks across the city most days of the week." />
+<meta name="description" content="901 Eats and Treats rolls into Memphis lots, offices, and block parties with a short menu we actually cook on the truck." />
 <meta property="og:title" content="901 Eats and Treats" />
-<meta property="og:description" content="A Memphis food truck running a short menu of from-scratch plates, posted up at lots, parks, and office blocks across the city most days of the week." />
+<meta property="og:description" content="901 Eats and Treats rolls into Memphis lots, offices, and block parties with a short menu we actually cook on the truck." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1612366486547-ae00f64f87b6?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #ece2cd; --ink: #2a2118; --rust: #a04d28; --mustard: #a98032; --olive: #5a6234; --head-font: "Cardo","Georgia",serif; --body-font: "Cardo","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; --rule: 4px double; --brand-style: italic; --brand-weight: 700; --brand-spacing: -0.02em; --sub-style: italic; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -82,8 +85,8 @@ a { color: inherit; }
 <body>
 
 <div class="masthead">
-  <div class="vol">Vol. 04 · 2026</div>
-  <div class="center">A 901 Eats and Treats Communique</div>
+  <div class="vol">Volume IV · 2026</div>
+  <div class="center">A 901 Eats and Treats Letters</div>
   <div class="right">Memphis, TN</div>
 </div>
 
@@ -93,24 +96,24 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">A</span> Memphis food truck running a short menu of from-scratch plates, posted up at lots, parks, and office blocks across the city most days of the week.</p>
+  <p><span class="drop-cap">9</span>01 Eats and Treats rolls into Memphis lots, offices, and block parties with a short menu we actually cook on the truck.</p>
 </section>
 
 <section class="schedule">
-  <p class="schedule-eyebrow">How we run the truck in Memphis</p>
+  <p class="schedule-eyebrow">How we run a truck in Memphis</p>
   <h2>What happens when you call.</h2>
   <div class="schedule-grid">
     <div class="schedule-row">
-      <div class="schedule-day">Find the truck</div>
-      <div class="schedule-where">Check the weekly schedule or our social posts to see where we&#39;re parked that day.</div>
+      <div class="schedule-day">Send the address</div>
+      <div class="schedule-where">Call or text the lot, the date, and how many people you&#39;re feeding.</div>
     </div>
     <div class="schedule-row">
-      <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Short menu, fast line. Cash or card. Call ahead if you&#39;re feeding a group.</div>
+      <div class="schedule-day">Lock the menu</div>
+      <div class="schedule-where">We confirm the plate count, sides, and desserts, then send a deposit link.</div>
     </div>
     <div class="schedule-row">
-      <div class="schedule-day">Eat hot</div>
-      <div class="schedule-where">Plates come out in a few minutes, packed for sit-down at the lot or to take back to the office.</div>
+      <div class="schedule-day">We roll in</div>
+      <div class="schedule-where">Truck arrives ninety minutes early, sets up power and tents, serves on time.</div>
     </div>
   </div>
 </section>
@@ -121,38 +124,38 @@ a { color: inherit; }
   <div class="menu-list">
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Smoked wings basket</div>
+        <div class="menu-item-name">Pulled pork plate</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Half pound of wood-smoked wings, house dry rub or sauce-tossed, served with pickles and a side of fries.</p>
+      <p class="menu-item-detail">Half pound of smoked shoulder, choice of two sides, slice of white bread, house sauce on the side.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Brisket loaded fries</div>
+        <div class="menu-item-name">Hot wings, six-piece</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Hand-cut fries under chopped brisket, melted cheese, slaw, and a drizzle of house barbecue sauce. Fork required.</p>
+      <p class="menu-item-detail">Smoked then flashed in the fryer, tossed in dry rub or Memphis hot, served with pickles and ranch.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Hot honey chicken sandwich</div>
+        <div class="menu-item-name">Loaded BBQ nachos</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Buttermilk-brined fried thigh, hot honey glaze, pickles, slaw, brioche bun. Comes with fries or a side.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Catfish plate</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Two cornmeal-dusted catfish fillets fried to order, served with hush puppies, slaw, and white bread.</p>
+      <p class="menu-item-detail">Tortilla chips, pulled pork, queso, slaw, jalapenos, drizzle of sauce. Built to eat standing up.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
         <div class="menu-item-name">Banana pudding cup</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Layered vanilla pudding, nilla wafers, fresh banana, fresh whipped cream. Made fresh the morning of each shift.</p>
+      <p class="menu-item-detail">Vanilla wafers, fresh banana, scratch-made pudding, whipped topping. Made the morning of, kept on ice.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Peach cobbler slice</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Skillet cobbler with a buttery crust, cut into squares, served warm with a scoop of vanilla on request.</p>
     </div>
   </div>
 </section>
@@ -168,19 +171,19 @@ a { color: inherit; }
 <section class="note">
   <p class="note-eyebrow">A short note</p>
   <h2>From Owner.</h2>
-  <p>Owner has been cooking around Memphis kitchens for years before putting a window on a truck. The menu stays short on purpose, everything gets made the morning of, and the truck only posts up where the line moves and the food still comes out hot.</p>
+  <p>Owner has been cooking around Memphis for years, started the truck after one too many catering gigs run out of a home kitchen. Picks up the phone, books the dates, and won&#39;t take an event they can&#39;t staff right.</p>
   <p class="signature">— Owner</p>
 </section>
 
 <section class="catering">
   <h2>Book 901 Eats and Treats.</h2>
-  <p>We started 901 Eats and Treats to bring real Memphis comfort food to the block instead of waiting for the block to come to a restaurant. Every shift starts with a short prep list, fresh sides, and a route worked out the night before. The menu stays small so the food stays right, and the regulars know where to find us.</p>
+  <p>We started 901 Eats and Treats because every truck in town runs on a voicemail and a maybe. We answer the phone, hold the date, and cook a short menu we can actually do well. If we book your event, we show up and we serve on time.</p>
   <a href="tel:+19019004800" class="catering-btn">(901) 900-4800 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">Downtown Memphis · Midtown · Cooper-Young · East Memphis · Germantown · Bartlett</p>
+  <p class="area-cities">Downtown Memphis · Cooper-Young · Midtown · East Memphis · Bartlett · Germantown</p>
 </section>
 
 <footer class="foot">

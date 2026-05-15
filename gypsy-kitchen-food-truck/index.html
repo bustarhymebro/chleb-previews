@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gypsy Kitchen Food Truck · Knoxville food truck</title>
-<meta name="description" content="Gypsy Kitchen rolls through Knoxville with a short, sharp menu cooked from scratch on the truck, the kind of food you stand in line for." />
+<meta name="description" content="A Knoxville food truck running scratch-made plates for office lots, brewery patios, and weddings from Bearden out to Farragut." />
 <meta property="og:title" content="Gypsy Kitchen Food Truck" />
-<meta property="og:description" content="Gypsy Kitchen rolls through Knoxville with a short, sharp menu cooked from scratch on the truck, the kind of food you stand in line for." />
+<meta property="og:description" content="A Knoxville food truck running scratch-made plates for office lots, brewery patios, and weddings from Bearden out to Farragut." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1542528180-a1208c5169a5?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #e9e6df; --ink: #0d0d0d; --rust: #a3271f; --mustard: #525a5e; --olive: #262625; --head-font: "Playfair Display","Times New Roman",serif; --body-font: "Inter","Helvetica Neue",sans-serif; --sans-font: "Inter","Helvetica Neue",sans-serif; --rule: 1px solid; --brand-style: normal; --brand-weight: 900; --brand-spacing: -0.03em; --sub-style: normal; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -82,8 +85,8 @@ a { color: inherit; }
 <body>
 
 <div class="masthead">
-  <div class="vol">Vol. 04 · 2026</div>
-  <div class="center">A Gypsy Kitchen Food Truck Communique</div>
+  <div class="vol">Edition · 2026</div>
+  <div class="center">A Gypsy Kitchen Food Truck Gazette</div>
   <div class="right">Knoxville, TN</div>
 </div>
 
@@ -93,26 +96,7 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">G</span>ypsy Kitchen rolls through Knoxville with a short, sharp menu cooked from scratch on the truck, the kind of food you stand in line for.</p>
-</section>
-
-<section class="schedule">
-  <p class="schedule-eyebrow">How the truck runs in Knoxville</p>
-  <h2>What happens when you call.</h2>
-  <div class="schedule-grid">
-    <div class="schedule-row">
-      <div class="schedule-day">Find the truck</div>
-      <div class="schedule-where">Check the schedule strip or our social posts for tomorrow&#39;s lot and service window.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Walk up, order off the board, pay at the counter. We call your name when it&#39;s up.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Eat hot</div>
-      <div class="schedule-where">Grab a spot at the picnic tables or take it back to the office while everything is still crisp.</div>
-    </div>
-  </div>
+  <p><span class="drop-cap">A</span> Knoxville food truck running scratch-made plates for office lots, brewery patios, and weddings from Bearden out to Farragut.</p>
 </section>
 
 <section class="menu">
@@ -121,40 +105,47 @@ a { color: inherit; }
   <div class="menu-list">
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Signature smash burger</div>
+        <div class="menu-item-name">Smashburger + hand-cut fries</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Two seared patties, american cheese, house pickles, soft potato bun. Cooked to order on the flat top.</p>
+      <p class="menu-item-detail">Two thin patties, american, grilled onion, house sauce on a potato bun. Fries cut that morning, fried twice.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Korean fried chicken sandwich</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Buttermilk-brined thigh, double-fried, gochujang glaze, quick-pickled slaw, sesame brioche. Comes with a side of pickles.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Birria tacos, three-pack</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Slow-braised beef, crisped corn tortillas, melted oaxaca, white onion and cilantro, cup of consomé for dipping.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
         <div class="menu-item-name">Loaded street fries</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Hand-cut fries under braised beef, queso, pickled onion, and cilantro. The one everyone orders for the table.</p>
+      <p class="menu-item-detail">Hand-cut fries under birria, queso, pickled jalapeño, crema, and scallion. Built to share, eats like a meal.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Birria tacos</div>
+        <div class="menu-item-name">Weekly chalkboard special</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Slow-braised beef on griddled corn tortillas, cheese pulled, with a cup of consome for dipping. Three per order.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Crispy chicken sandwich</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Buttermilk-brined thigh, fried to order, slaw, pickles, soft bun. Hot honey on request.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Loaded nachos</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Fresh-fried tortilla chips, queso, your protein of choice, pico, jalapeno, crema. Sized to share or wreck alone.</p>
+      <p class="menu-item-detail">One off-menu plate we run Thursday through Saturday. Posted on the truck and on the calendar each Monday.</p>
     </div>
   </div>
+</section>
+
+<section class="note">
+  <p class="note-eyebrow">A short note</p>
+  <h2>From Owner.</h2>
+  <p>The Owner has been cooking around Knoxville kitchens for years before putting the truck on the road. Books every event personally, answers the phone between services, and won&#39;t take a date the truck can&#39;t show up to clean and on time.</p>
+  <p class="signature">— Owner</p>
 </section>
 
 <section class="cluster">
@@ -165,22 +156,34 @@ a { color: inherit; }
   <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
 </section>
 
-<section class="note">
-  <p class="note-eyebrow">A short note</p>
-  <h2>From Owner.</h2>
-  <p>Gypsy Kitchen started because the owner was tired of cooking other people&#39;s food. The menu stays short on purpose, every sauce gets made on the truck, and we post the next day&#39;s stop before we close out the register. If the line is long, the line moves fast.</p>
-  <p class="signature">— Owner</p>
+<section class="schedule">
+  <p class="schedule-eyebrow">How we run the truck in Knoxville</p>
+  <h2>What happens when you call.</h2>
+  <div class="schedule-grid">
+    <div class="schedule-row">
+      <div class="schedule-day">Call or text</div>
+      <div class="schedule-where">Tell us the date, the headcount, and where you want the truck parked.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Lock the menu</div>
+      <div class="schedule-where">We send a short menu and a flat per-head quote, no hidden fees.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">We roll up</div>
+      <div class="schedule-where">Truck arrives an hour early, sets up, serves hot, cleans the lot before leaving.</div>
+    </div>
+  </div>
 </section>
 
 <section class="catering">
   <h2>Book Gypsy Kitchen Food Truck.</h2>
-  <p>We started Gypsy Kitchen to cook the food we actually wanted to eat and serve it where the people are. Every truck in town runs on a short menu and a long line, so we made ours shorter and tightened the line. Knoxville eats well, and we plan to keep it that way.</p>
+  <p>We started Gypsy Kitchen because every good lunch spot downtown runs a forty-minute wait and every catering company in town wants a two-month lead time. We cook scratch food out of a tight truck kitchen, post our weekly stops by Sunday, and pick up the phone when you call about a private date. If we say we&#39;ll be there, the truck is there.</p>
   <a href="tel:+18652353117" class="catering-btn">(865) 235-3117 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">Downtown Knoxville · Old City · Bearden · South Knoxville · Fountain City · West Hills</p>
+  <p class="area-cities">Bearden · Old City · South Knoxville · Farragut · Hardin Valley · Powell</p>
 </section>
 
 <footer class="foot">

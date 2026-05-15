@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>K&#39;ndungo · Zephyrhills food truck</title>
-<meta name="description" content="A Puerto Rico inspired food truck running between Zephyrhills and Wesley Chapel, cooking the plates the chef grew up on for whoever pulls up to the window." />
+<meta name="description" content="K&#39;ndungo runs a food truck in Zephyrhills, cooking the kind of plates we grew up eating and feeding the lunch crowd that keeps coming back." />
 <meta property="og:title" content="K&#39;ndungo" />
-<meta property="og:description" content="A Puerto Rico inspired food truck running between Zephyrhills and Wesley Chapel, cooking the plates the chef grew up on for whoever pulls up to the window." />
+<meta property="og:description" content="K&#39;ndungo runs a food truck in Zephyrhills, cooking the kind of plates we grew up eating and feeding the lunch crowd that keeps coming back." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #ece2cd; --ink: #2a2118; --rust: #a04d28; --mustard: #a98032; --olive: #5a6234; --head-font: "Cardo","Georgia",serif; --body-font: "Cardo","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; --rule: 4px double; --brand-style: italic; --brand-weight: 700; --brand-spacing: -0.02em; --sub-style: italic; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -82,8 +85,8 @@ a { color: inherit; }
 <body>
 
 <div class="masthead">
-  <div class="vol">Vol. 04 · 2026</div>
-  <div class="center">A K&#39;ndungo Communique</div>
+  <div class="vol">Volume IV · 2026</div>
+  <div class="center">A K&#39;ndungo Letters</div>
   <div class="right">Zephyrhills, FL</div>
 </div>
 
@@ -93,67 +96,13 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">A</span> Puerto Rico inspired food truck running between Zephyrhills and Wesley Chapel, cooking the plates the chef grew up on for whoever pulls up to the window.</p>
-</section>
-
-<section class="schedule">
-  <p class="schedule-eyebrow">How the truck runs in Pasco</p>
-  <h2>What happens when you call.</h2>
-  <div class="schedule-grid">
-    <div class="schedule-row">
-      <div class="schedule-day">Find the truck</div>
-      <div class="schedule-where">Check the page for the week&#39;s spot, usually around Epperson, Wesley Chapel, or Zephyrhills.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Pick a plate off the board, tell us the protein, we ring it up and start the line.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Eat it hot</div>
-      <div class="schedule-where">Plates come out fresh off the flat-top in a few minutes. Best eaten standing right there.</div>
-    </div>
-  </div>
+  <p><span class="drop-cap">K</span>&#39;ndungo runs a food truck in Zephyrhills, cooking the kind of plates we grew up eating and feeding the lunch crowd that keeps coming back.</p>
 </section>
 
 <section class="menu">
   <p class="menu-eyebrow">The list</p>
   <h2>What we make.</h2>
   <div class="menu-list">
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Mofongo bowl</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Green plantains mashed with garlic and chicharrón, topped with your choice of stewed chicken, pork, or shrimp in criollo sauce. Also offered.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Pernil plate</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Slow-roasted pork shoulder pulled to order, served with arroz con gandules and a side of sweet plantains. Also offered.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Tripleta sandwich</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Three meats, lettuce, tomato, shoestring potatoes, pressed on a soft roll with our house mayo-ketchup. Also offered.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Catering package</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Truck on site for two to four hours, two proteins, two sides, plantains and rice for your guest count. Headcount confirmed at booking.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Tostones and sides</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Twice-fried green plantains with garlic mojo, plus alcapurrias and empanadillas pulled from the fryer all service. Also offered.</p>
-    </div>
   </div>
 </section>
 
@@ -168,19 +117,19 @@ a { color: inherit; }
 <section class="note">
   <p class="note-eyebrow">A short note</p>
   <h2>From Owner.</h2>
-  <p>The chef behind K&#39;ndungo grew up on this food in Puerto Rico and started the truck three years ago to cook it the way it&#39;s supposed to be cooked. Sofrito made in-house, pernil that sits in the oven for hours, no shortcuts in the fryer.</p>
+  <p>We started K&#39;ndungo because Zephyrhills needed a lunch spot that actually cooks the food, not heats it up. Most days it&#39;s the same crew on the truck, the same recipes, the same prep we did the night before. We&#39;re not trying to be everywhere, we&#39;re trying to be good where we park.</p>
   <p class="signature">— Owner</p>
 </section>
 
 <section class="catering">
   <h2>Book K&#39;ndungo.</h2>
-  <p>We started K&#39;ndungo because there was nowhere around Zephyrhills cooking the Puerto Rican food we actually eat at home. So we built the truck, wrote the menu around abuela&#39;s recipes, and started rotating between Epperson, Wesley Chapel, and the Tampa side. Three years in and we still cook every plate to order.</p>
+  <p>We started K&#39;ndungo because Zephyrhills needed a lunch spot that actually cooks the food, not heats it up. Most days it&#39;s the same crew on the truck, the same recipes, the same prep we did the night before. We&#39;re not trying to be everywhere, we&#39;re trying to be good where we park.</p>
   <a href="tel:+18134102815" class="catering-btn">(813) 410-2815 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">Epperson Crystal Lagoon · Wesley Chapel · Zephyrhills · Wiregrass Ranch · Land O&#39; Lakes · Dade City</p>
+  <p class="area-cities">Zephyrhills, FL</p>
 </section>
 
 <footer class="foot">

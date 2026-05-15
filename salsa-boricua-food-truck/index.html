@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Salsa Boricua Food Truck · Belleview food truck</title>
-<meta name="description" content="Salsa Boricua serves real Boricua cooking from our truck and kitchen in Belleview, pernil, tripletas, and pollo guisado made the way Richard&#39;s family taught him." />
+<meta name="description" content="Richard runs a Boricua kitchen on wheels serving Belleview and the Ocala area, lechon, mofongo, and pernil cooked the way his family taught him." />
 <meta property="og:title" content="Salsa Boricua Food Truck" />
-<meta property="og:description" content="Salsa Boricua serves real Boricua cooking from our truck and kitchen in Belleview, pernil, tripletas, and pollo guisado made the way Richard&#39;s family taught him." />
+<meta property="og:description" content="Richard runs a Boricua kitchen on wheels serving Belleview and the Ocala area, lechon, mofongo, and pernil cooked the way his family taught him." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; --head-font: "Playfair Display","Georgia",serif; --body-font: "Georgia","Times New Roman",serif; --sans-font: "Helvetica Neue","Arial",sans-serif; --rule: 6px double; --brand-style: italic; --brand-weight: 900; --brand-spacing: -0.045em; --sub-style: italic; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -93,75 +96,7 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">S</span>alsa Boricua serves real Boricua cooking from our truck and kitchen in Belleview, pernil, tripletas, and pollo guisado made the way Richard&#39;s family taught him.</p>
-</section>
-
-<section class="schedule">
-  <p class="schedule-eyebrow">Why Belleview keeps coming back to the truck</p>
-  <h2>What happens when you call.</h2>
-  <div class="schedule-grid">
-    <div class="schedule-row">
-      <div class="schedule-day">Find the truck</div>
-      <div class="schedule-where">Hwy 484 most days, Eat Street and private events on the weekends. Check before you drive out.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Plates, sandwiches, and empanadas off the board, cash or card, ready in a few minutes.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Eat hot</div>
-      <div class="schedule-where">Picnic tables on site, or take it back to the job and finish it in the truck.</div>
-    </div>
-  </div>
-</section>
-
-<section class="menu">
-  <p class="menu-eyebrow">The list</p>
-  <h2>What we make.</h2>
-  <div class="menu-list">
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Pernil (Roast Pork) plate</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Slow roasted pork shoulder, yellow rice with pigeon peas, sweet plantains on the side. $5 plate.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Tripleta sandwich</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Steak, ham, and roast pork on Cuban bread with queso, lettuce, tomato, and potato sticks, pressed hot. $7.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Bistec con Cebolla</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Thin steak smothered in sauteed onions and pan gravy, served over yellow rice with pigeon peas. $5 plate.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Pollo Guisado</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Chicken stewed down with sofrito, potatoes, olives, and tomato, ladled over rice. $5 plate.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Cuban sandwich</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Roast pork, ham, swiss, pickles, and mustard on Cuban bread, pressed until the cheese pulls.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Empanadas and Italian ice</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Beef and chicken empanadas fried to order, plus shaved Italian ice in a rotation of fruit flavors.</p>
-    </div>
-  </div>
+  <p><span class="drop-cap">R</span>ichard runs a Boricua kitchen on wheels serving Belleview and the Ocala area, lechon, mofongo, and pernil cooked the way his family taught him.</p>
 </section>
 
 <section class="cluster">
@@ -172,22 +107,83 @@ a { color: inherit; }
   <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
 </section>
 
+<section class="schedule">
+  <p class="schedule-eyebrow">How we feed Belleview</p>
+  <h2>What happens when you call.</h2>
+  <div class="schedule-grid">
+    <div class="schedule-row">
+      <div class="schedule-day">Call or text</div>
+      <div class="schedule-where">Tell Richard the date, headcount, and whether you want plates, trays, or the truck on site.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">We confirm the menu</div>
+      <div class="schedule-where">Lock in proteins, sides, and pickup window. Deposit by card or cash holds the date.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Hot food ready</div>
+      <div class="schedule-where">Pick up at the truck or we roll up to your spot, set up, and serve.</div>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <p class="menu-eyebrow">The list</p>
+  <h2>What we make.</h2>
+  <div class="menu-list">
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Pernil plate</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Slow roasted pork shoulder, arroz con gandules, sweet plantains, and a side of pickled onions. House sauce on request.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Mofongo with shrimp</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Green plantains mashed with garlic and chicharron, packed in a pilon, topped with shrimp in criollo sauce.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Tripleta sandwich</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Pressed roll with pernil, ham, and steak, lettuce, tomato, potato sticks, and the yellow sauce. Comes with a drink.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Empanadillas, three pack</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Fried turnovers, choice of beef picadillo, chicken, or cheese. Hand crimped that morning, fried to order at the window.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Family rice tray</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Feeds six to eight. Arroz con gandules, half pernil, tostones, and a quart of beans. Twelve hour notice please.</p>
+    </div>
+  </div>
+</section>
+
 <section class="note">
   <p class="note-eyebrow">A short note</p>
   <h2>From Richard.</h2>
-  <p>Richard runs Salsa Boricua as authentic a Puerto Rican food truck as they come, parked across from the McDonald&#39;s and the new Popeyes on Highway 484. Nine years in, he still cooks the pernil himself and answers the phone for catering orders.</p>
+  <p>Richard cooked Puerto Rican food at home for years before putting a window on a truck and parking it in Belleview. He answers the phone himself, sets the menu off what looked good at the market that morning, and will not send out a pernil he would not feed his own family.</p>
   <p class="signature">— Richard</p>
 </section>
 
 <section class="catering">
   <h2>Book Salsa Boricua Food Truck.</h2>
-  <p>We started Salsa Boricua to bring real Puerto Rican cooking to Belleview and Ocala, the kind of pernil and arroz con gandules you grew up eating, not a watered down version of it. Every plate comes off the same stove Richard cooks on, and the prices have stayed honest since day one. If you have not tried a tripleta yet, start there.</p>
+  <p>We started Salsa Boricua because nobody around Belleview was cooking Puerto Rican food the way it gets cooked at home in Bayamon. Most trucks in the area run the same burger and taco menu, and weekday lunch in Marion County deserves better than that. We keep the menu short, the rice fresh, and the line moving.</p>
   <a href="tel:+13526939567" class="catering-btn">(352) 693-9567 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">SW Hwy 484, Ocala · SE Abshier Blvd, Belleview · Downtown Market Eat Street · Summerfield · Marion Oaks · Silver Springs Shores</p>
+  <p class="area-cities">Belleview · Summerfield · Ocala · Silver Springs Shores · Marion Oaks · The Villages</p>
 </section>
 
 <footer class="foot">

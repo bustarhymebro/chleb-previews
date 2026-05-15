@@ -4,22 +4,25 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>S and R Family Lawn Care LLC — Spring Hill lawn care</title>
-<meta name="description" content="A family run crew keeping Spring Hill yards tight from spring through hurricane season, with a route that actually shows up the day we say." />
+<meta name="description" content="S and R Family Lawn Care runs weekly routes across Spring Hill, with the same crew on your yard every visit and a phone that gets answered." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&family=Cormorant+Garamond:wght@500;700&family=Lora:wght@500;700&family=Caveat:wght@600;700&family=Inter:wght@400;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --moss: #2c3e2a; --leaf: #4f7a3a; --bark: #3b2d20; --bone: #f4f1e8; --rust: #b54d2c; --sage: #cdd5be; }
-body { margin: 0; background: var(--bone); color: var(--bark); font-family: "Source Serif Pro", "Charter", "Iowan Old Style", "Georgia", serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+:root { --moss: #5a4d3c; --leaf: #a48a55; --bark: #3c2f24; --bone: #fbf3e2; --rust: #c98146; --sage: #dcd2b7; --head-font: "Lora","Source Serif Pro","Georgia",serif; --sans-font: "Inter","Helvetica",sans-serif; --script-font: "Caveat","Lora",cursive; }
+body { margin: 0; background: var(--bone); color: var(--bark); font-family: var(--head-font); line-height: 1.55; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.book-top { background: var(--moss); color: var(--bone); padding: 14px 28px; font-family: "Inter", "Helvetica", sans-serif; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; }
+.book-top { background: var(--moss); color: var(--bone); padding: 14px 28px; font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; }
 .book-top .seal { width: 26px; height: 26px; border-radius: 50%; background: var(--rust); display: inline-block; margin-right: 12px; vertical-align: middle; }
 .book-top .meta { color: var(--sage); }
 
 .cover { padding: 80px 28px 60px; text-align: center; background: linear-gradient(180deg, var(--bone) 0%, #ece7d8 100%); border-bottom: 4px double var(--moss); position: relative; }
-.cover-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.42em; text-transform: uppercase; color: var(--leaf); margin: 0 0 16px; font-weight: 600; }
-.cover h1 { font-family: "Source Serif Pro", "Charter", serif; font-size: clamp(48px, 9vw, 112px); font-weight: 700; line-height: 0.96; letter-spacing: -0.018em; color: var(--bark); margin: 0; max-width: 980px; margin-left: auto; margin-right: auto; }
+.cover-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.42em; text-transform: uppercase; color: var(--leaf); margin: 0 0 16px; font-weight: 600; }
+.cover h1 { font-family: var(--head-font); font-size: clamp(48px, 9vw, 112px); font-weight: 700; line-height: 0.96; letter-spacing: -0.018em; color: var(--bark); margin: 0; max-width: 980px; margin-left: auto; margin-right: auto; }
 .cover-sub { margin: 28px auto 0; max-width: 720px; font-size: 19px; line-height: 1.6; color: #4d4031; font-style: italic; }
 .cover-flourish { margin: 32px auto 0; height: 2px; width: 90px; background: var(--bark); position: relative; }
 .cover-flourish::before, .cover-flourish::after { content: ""; position: absolute; top: -3px; width: 8px; height: 8px; background: var(--bark); transform: rotate(45deg); }
@@ -28,15 +31,15 @@ a { color: inherit; }
 
 .field-photo { position: relative; height: 540px; background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1800&h=900&q=80'); margin: 0; }
 .field-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(60, 51, 40, 0.5) 100%); }
-.field-caption { position: absolute; bottom: 32px; left: 32px; right: 32px; color: var(--bone); font-family: "Caveat", "Source Serif Pro", cursive; font-size: 32px; font-weight: 600; max-width: 760px; line-height: 1.3; z-index: 2; }
+.field-caption { position: absolute; bottom: 32px; left: 32px; right: 32px; color: var(--bone); font-family: var(--script-font); font-size: 32px; font-weight: 600; max-width: 760px; line-height: 1.3; z-index: 2; }
 
 .plans { padding: 80px 28px; max-width: 920px; margin: 0 auto; }
-.section-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--leaf); margin: 0 0 10px; font-weight: 700; }
-.section-h2 { font-family: "Source Serif Pro", serif; font-size: 48px; font-weight: 700; letter-spacing: -0.012em; line-height: 1.05; margin: 0 0 36px; color: var(--bark); }
+.section-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--leaf); margin: 0 0 10px; font-weight: 700; }
+.section-h2 { font-family: var(--head-font); font-size: 48px; font-weight: 700; letter-spacing: -0.012em; line-height: 1.05; margin: 0 0 36px; color: var(--bark); }
 .plan-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid #d4cbb6; }
 .plan-row { display: grid; grid-template-columns: 24px 1fr; gap: 22px; padding: 28px 0; border-bottom: 1px solid #d4cbb6; align-items: start; }
 .plan-bullet { width: 18px; height: 18px; background: var(--leaf); border-radius: 50%; margin-top: 6px; box-shadow: 0 0 0 4px var(--bone), 0 0 0 5px var(--leaf); }
-.plan-name { font-family: "Source Serif Pro", serif; font-size: 23px; font-weight: 700; color: var(--bark); margin-bottom: 6px; }
+.plan-name { font-family: var(--head-font); font-size: 23px; font-weight: 700; color: var(--bark); margin-bottom: 6px; }
 .plan-detail { font-size: 16px; color: #5a4d3c; line-height: 1.6; font-style: italic; }
 
 .cycle { padding: 80px 28px; background: var(--moss); color: var(--bone); }
@@ -45,8 +48,8 @@ a { color: inherit; }
 .cycle .section-h2 { color: var(--bone); }
 .week-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 32px; }
 .week-card { padding: 32px 26px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid var(--rust); }
-.week-num { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--rust); font-weight: 700; margin-bottom: 12px; }
-.week-name { font-family: "Source Serif Pro", serif; font-size: 26px; font-weight: 700; line-height: 1.1; margin-bottom: 12px; }
+.week-num { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--rust); font-weight: 700; margin-bottom: 12px; }
+.week-name { font-family: var(--head-font); font-size: 26px; font-weight: 700; line-height: 1.1; margin-bottom: 12px; }
 .week-detail { font-size: 15px; color: rgba(244, 241, 232, 0.78); line-height: 1.6; margin: 0; }
 
 .snapshots { padding: 80px 28px; max-width: 1080px; margin: 0 auto; }
@@ -58,22 +61,22 @@ a { color: inherit; }
 
 .letter { padding: 80px 28px; background: var(--bone); }
 .letter-inner { max-width: 720px; margin: 0 auto; padding: 56px 48px; background: #fbf9ef; border: 1px solid #d4cbb6; box-shadow: 4px 4px 0 0 rgba(60,51,40,0.04); }
-.letter-eyebrow { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--leaf); margin: 0 0 16px; font-weight: 700; }
-.letter h2 { font-family: "Source Serif Pro", serif; font-size: 38px; font-weight: 700; line-height: 1.05; margin: 0 0 22px; color: var(--bark); letter-spacing: -0.01em; }
+.letter-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--leaf); margin: 0 0 16px; font-weight: 700; }
+.letter h2 { font-family: var(--head-font); font-size: 38px; font-weight: 700; line-height: 1.05; margin: 0 0 22px; color: var(--bark); letter-spacing: -0.01em; }
 .letter p { font-size: 17px; line-height: 1.75; color: #4d4031; margin: 0 0 14px; }
-.signature { margin-top: 28px; font-family: "Caveat", "Source Serif Pro", cursive; font-size: 32px; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--script-font); font-size: 32px; color: var(--rust); }
 
 .area-fj { padding: 80px 28px; max-width: 920px; margin: 0 auto; text-align: center; border-top: 4px double var(--moss); }
-.area-fj p { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--leaf); margin: 0; font-weight: 700; }
-.area-fj-cities { margin-top: 14px; font-family: "Source Serif Pro", serif; font-size: 22px; color: var(--bark); line-height: 1.6; font-style: italic; }
+.area-fj p { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--leaf); margin: 0; font-weight: 700; }
+.area-fj-cities { margin-top: 14px; font-family: var(--head-font); font-size: 22px; color: var(--bark); line-height: 1.6; font-style: italic; }
 
 .book-fj { padding: 80px 28px; background: var(--rust); color: var(--bone); text-align: center; }
-.book-fj h2 { font-family: "Source Serif Pro", serif; font-size: clamp(38px, 6vw, 72px); font-weight: 700; letter-spacing: -0.012em; margin: 0 0 18px; line-height: 1.0; }
+.book-fj h2 { font-family: var(--head-font); font-size: clamp(38px, 6vw, 72px); font-weight: 700; letter-spacing: -0.012em; margin: 0 0 18px; line-height: 1.0; }
 .book-fj p { margin: 0 auto 28px; max-width: 540px; font-size: 18px; line-height: 1.55; color: rgba(244,241,232,0.92); font-style: italic; }
-.book-fj a { background: var(--bark); color: var(--bone); padding: 22px 36px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
+.book-fj a { background: var(--bark); color: var(--bone); padding: 22px 36px; font-family: var(--sans-font); font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; }
 
-.foot-fj { padding: 36px 28px; background: var(--moss); color: var(--sage); text-align: center; font-family: "Inter", sans-serif; }
-.foot-fj-name { font-family: "Source Serif Pro", serif; font-size: 28px; color: var(--bone); margin-bottom: 8px; font-weight: 700; }
+.foot-fj { padding: 36px 28px; background: var(--moss); color: var(--sage); text-align: center; font-family: var(--sans-font); }
+.foot-fj-name { font-family: var(--head-font); font-size: 28px; color: var(--bone); margin-bottom: 8px; font-weight: 700; }
 .foot-fj-meta { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; }
 
 @media (max-width: 700px) {
@@ -88,86 +91,24 @@ a { color: inherit; }
 <body>
 
 <div class="book-top">
-  <span><span class="seal"></span>Field Journal · 2026</span>
+  <span><span class="seal"></span>Yard Almanac · 2026</span>
   <span class="meta">Spring Hill, FL · Run by Owner</span>
 </div>
 
 <header class="cover">
   <p class="cover-eyebrow">A Spring Hill lawn-care company</p>
-  <h1>Lawn care on a real schedule in Spring Hill.</h1>
-  <p class="cover-sub">A family run crew keeping Spring Hill yards tight from spring through hurricane season, with a route that actually shows up the day we say.</p>
+  <h1>Spring Hill lawns, kept sharp.</h1>
+  <p class="cover-sub">S and R Family Lawn Care runs weekly routes across Spring Hill, with the same crew on your yard every visit and a phone that gets answered.</p>
   <div class="cover-flourish"></div>
 </header>
 
 <div class="field-photo">
-  <div class="field-caption">"We started S and R because every lawn outfit around Spring Hill runs on a wait list and a voicemail that never gets returned." — Owner</div>
+  <div class="field-caption">"We started S and R as a family operation, working a route of homes around Spring Hill and Hernando County." — Owner</div>
 </div>
 
-<section class="plans">
-  <p class="section-eyebrow">The plan list</p>
-  <h2 class="section-h2">How we run lawns in Spring Hill</h2>
-  <ul class="plan-list">
-    <li class="plan-row">
-      <div class="plan-bullet"></div>
-      <div class="plan-body">
-        <div class="plan-name">Weekly mow and edge</div>
-        <div class="plan-detail">Mow, string-trim fence lines and trees, edge driveway and walkways, blow off all hard surfaces. Standard route service.</div>
-      </div>
-    </li>
-    <li class="plan-row">
-      <div class="plan-bullet"></div>
-      <div class="plan-body">
-        <div class="plan-name">Bi-weekly maintenance plan</div>
-        <div class="plan-detail">Every other week through the slow growth months. Same scope as weekly, priced for snowbird homes and tighter budgets.</div>
-      </div>
-    </li>
-    <li class="plan-row">
-      <div class="plan-bullet"></div>
-      <div class="plan-body">
-        <div class="plan-name">Seasonal mulch refresh</div>
-        <div class="plan-detail">Bed edges recut, weeds pulled at the root, two inches of fresh mulch laid. Quoted by the yard, not by the hour.</div>
-      </div>
-    </li>
-    <li class="plan-row">
-      <div class="plan-bullet"></div>
-      <div class="plan-body">
-        <div class="plan-name">Palm and hedge trim</div>
-        <div class="plan-detail">Skin and trim sabal and queen palms within ladder height. Hedge cleanup off the house. Debris hauled, not bagged at the curb.</div>
-      </div>
-    </li>
-    <li class="plan-row">
-      <div class="plan-bullet"></div>
-      <div class="plan-body">
-        <div class="plan-name">Storm and overgrowth cleanup</div>
-        <div class="plan-detail">One-time reset for yards that got away. Cut down, hauled out, beds re-edged. Quoted on site after a walkaround.</div>
-      </div>
-    </li>
-  </ul>
-</section>
 
-<section class="cycle">
-  <div class="cycle-inner">
-    <p class="section-eyebrow">How a property runs with us</p>
-    <h2 class="section-h2">The cycle.</h2>
-    <div class="week-grid">
-    <div class="week-card">
-      <div class="week-num">Week 1</div>
-      <div class="week-name">Walk the yard</div>
-      <p class="week-detail">We come out, measure the lot, and quote the work in writing before any blades start.</p>
-    </div>
-    <div class="week-card">
-      <div class="week-num">Week 2</div>
-      <div class="week-name">Set the route day</div>
-      <p class="week-detail">You get a fixed service day each week or every other week, same crew every visit.</p>
-    </div>
-    <div class="week-card">
-      <div class="week-num">Week 3</div>
-      <div class="week-name">Mow, edge, blow</div>
-      <p class="week-detail">Full cut, trim, edge, and blow-off. Photo of the finished yard if you are not home.</p>
-    </div>
-    </div>
-  </div>
-</section>
+
+
 
 <section class="snapshots">
   <p class="section-eyebrow">From the field</p>
@@ -180,23 +121,16 @@ a { color: inherit; }
   </div>
 </section>
 
-<section class="letter">
-  <div class="letter-inner">
-    <p class="letter-eyebrow">A short note from the owner</p>
-    <h2>About S and R Family Lawn Care LLC.</h2>
-    <p>S and R is run by the owner and family out of Spring Hill, with years of route work across Hernando County. The owner picks up the phone, walks the yard before quoting, and keeps the route small enough that nobody gets skipped when it rains four days straight.</p>
-    <p class="signature">— Owner</p>
-  </div>
-</section>
+
 
 <section class="area-fj">
   <p>Where we keep yards</p>
-  <p class="area-fj-cities">Spring Hill · Brooksville · Weeki Wachee · Hudson · Masaryktown · Shady Hills</p>
+  <p class="area-fj-cities">Spring Hill, FL</p>
 </section>
 
 <section class="book-fj">
   <h2>Get a quote on your yard.</h2>
-  <p>We started S and R because every lawn outfit around Spring Hill runs on a wait list and a voicemail that never gets returned. We keep the route tight, the truck stocked, and the same crew on your yard week after week. If we say Thursday, we mean Thursday.</p>
+  <p>We started S and R as a family operation, working a route of homes around Spring Hill and Hernando County. Most yards in town get cut by whoever picks up the phone that week, and the grass shows it. We run a set route, the same crew every visit, and we answer when you call.</p>
   <a href="tel:+13526781293">(352) 678-1293 · Call Owner</a>
 </section>
 

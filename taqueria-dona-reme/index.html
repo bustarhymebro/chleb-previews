@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Taqueria Dona Reme · Plant City food truck</title>
-<meta name="description" content="A family taqueria on Cork Road serving Plant City the birria, flautas, and huaraches we grew up eating, cooked to order from a covered patio." />
+<meta name="description" content="A family-run taqueria on wheels serving Plant City and the surrounding towns, cooking the same recipes we grew up on, one order at a time." />
 <meta property="og:title" content="Taqueria Dona Reme" />
-<meta property="og:description" content="A family taqueria on Cork Road serving Plant City the birria, flautas, and huaraches we grew up eating, cooked to order from a covered patio." />
+<meta property="og:description" content="A family-run taqueria on wheels serving Plant City and the surrounding towns, cooking the same recipes we grew up on, one order at a time." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #e9e6df; --ink: #0d0d0d; --rust: #a3271f; --mustard: #525a5e; --olive: #262625; --head-font: "Playfair Display","Times New Roman",serif; --body-font: "Inter","Helvetica Neue",sans-serif; --sans-font: "Inter","Helvetica Neue",sans-serif; --rule: 1px solid; --brand-style: normal; --brand-weight: 900; --brand-spacing: -0.03em; --sub-style: normal; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -82,8 +85,8 @@ a { color: inherit; }
 <body>
 
 <div class="masthead">
-  <div class="vol">Vol. 04 · 2026</div>
-  <div class="center">A Taqueria Dona Reme Communique</div>
+  <div class="vol">Edition · 2026</div>
+  <div class="center">A Taqueria Dona Reme Gazette</div>
   <div class="right">Plant City, FL</div>
 </div>
 
@@ -93,75 +96,7 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">A</span> family taqueria on Cork Road serving Plant City the birria, flautas, and huaraches we grew up eating, cooked to order from a covered patio.</p>
-</section>
-
-<section class="schedule">
-  <p class="schedule-eyebrow">How we cook on Cork Road</p>
-  <h2>What happens when you call.</h2>
-  <div class="schedule-grid">
-    <div class="schedule-row">
-      <div class="schedule-day">Pull up</div>
-      <div class="schedule-where">Find us at 3217 Cork Rd under the covered awning, open six days a week.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Quesa birria, flautas, huaraches, fajita mix, or street tacos. Call ahead if you are in a hurry.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Eat fresh</div>
-      <div class="schedule-where">Grab a seat on the patio with an agua fresca de pina, or pack it to go.</div>
-    </div>
-  </div>
-</section>
-
-<section class="menu">
-  <p class="menu-eyebrow">The list</p>
-  <h2>What we make.</h2>
-  <div class="menu-list">
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Quesa Birria Tacos</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Slow-braised birria with melted cheese on a dipped corn tortilla. Served with consome for dipping and a side of onion and cilantro.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Birria Flautas</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Crispy rolled tortillas stuffed with the same birria, fried golden, topped with crema, queso fresco, and salsa verde.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Huaraches</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Thick handmade masa base with beans, your choice of meat, lettuce, queso, crema, and salsa. Eats like a meal.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Fajita Mix</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Grilled steak and chicken with peppers and onions, served on tacos, huaraches, or as a plate with rice and beans.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Tacos</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Street-style on double corn tortillas with onion, cilantro, and lime. Asada, pastor, pollo, or chorizo by the order.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Agua Fresca de Piña</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Fresh pineapple agua fresca, made in-house, served cold in a large cup. Rotates with seasonal flavors when the fruit is right.</p>
-    </div>
-  </div>
+  <p><span class="drop-cap">A</span> family-run taqueria on wheels serving Plant City and the surrounding towns, cooking the same recipes we grew up on, one order at a time.</p>
 </section>
 
 <section class="cluster">
@@ -172,22 +107,29 @@ a { color: inherit; }
   <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1566740933229-7d6dde2e9a31?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
 </section>
 
+<section class="menu">
+  <p class="menu-eyebrow">The list</p>
+  <h2>What we make.</h2>
+  <div class="menu-list">
+  </div>
+</section>
+
 <section class="note">
   <p class="note-eyebrow">A short note</p>
   <h2>From Owner.</h2>
-  <p>We run Dona Reme out of 3217 Cork Road, cooking the birria, flautas, and huaraches our family has made for years. The kindness people leave in reviews is the same kindness we try to put in every order. Come by, the awning is up and the tacos are ready.</p>
+  <p>We started Dona Reme to cook the food our family has been making for as long as we can remember, and to do it for the people of Plant City. Every shop around here runs on a wait list and a missed call, so we keep things simple. You order, we cook, you eat. The recipes are our grandmother&#39;s, the salsas are made fresh every morning, and the line moves.</p>
   <p class="signature">— Owner</p>
 </section>
 
 <section class="catering">
   <h2>Book Taqueria Dona Reme.</h2>
-  <p>We started Dona Reme to serve Plant City the food we cook at home, birria that simmers all morning, masa pressed by hand for the huaraches, and agua fresca cut fresh from the fruit. Most days you will find the same faces working the window and the same regulars eating under the awning. If you have not been by yet, pull off Cork Road and try the quesa birria.</p>
+  <p>We started Dona Reme to cook the food our family has been making for as long as we can remember, and to do it for the people of Plant City. Every shop around here runs on a wait list and a missed call, so we keep things simple. You order, we cook, you eat. The recipes are our grandmother&#39;s, the salsas are made fresh every morning, and the line moves.</p>
   <a href="tel:+18135806058" class="catering-btn">(813) 580-6058 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">Cork · Plant City · Dover · Knights · Trapnell · Lakeland</p>
+  <p class="area-cities">Plant City, FL</p>
 </section>
 
 <footer class="foot">

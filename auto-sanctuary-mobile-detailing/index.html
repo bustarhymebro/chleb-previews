@@ -4,27 +4,30 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Auto Sanctuary Mobile Detailing — Wesley Chapel, FL</title>
-<meta name="description" content="Bronson runs Auto Sanctuary out of Wesley Chapel, bringing the wash, polish, and interior reset to your driveway so your car stays a place that feels clean and sacred." />
+<meta name="description" content="Wesley Chapel mobile detailing run out of one van, one route, and a short list of regulars who keep their cars looking right." />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --black: #0c0c0c; --yellow: #ffd60a; --red: #e63946; --cream: #fffbe9; }
-body { margin: 0; background: var(--black); color: var(--cream); font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing: antialiased; }
+:root { --black: #0c0a14; --yellow: #d946ef; --red: #84cc16; --cream: #fdf4ff; --head-font: "Anton","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(255,255,255,0.45); }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
 .nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
-.nav-mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
 .nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
 
 .today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
 .today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
 @keyframes blink { 50% { opacity: 0.35; } }
-.today-sep { color: rgba(0,0,0,0.4); }
+.today-sep { color: var(--today-hue); }
 
 .hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
 .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
 .hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
-.hero h1 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 { font-family: var(--head-font); font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
 .hero h1 .yellow { color: var(--yellow); }
 .hero h1 .red { color: var(--red); }
 .hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
@@ -34,34 +37,34 @@ a { color: inherit; text-decoration: none; }
 
 .menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
 .menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
-.menu-h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
 .menu-h2 .red { color: var(--red); }
 .menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
 .menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
-.menu-card-name { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-name { font-family: var(--head-font); font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
 .menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
 .menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
 
 .quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
-.quote-mark { font-family: "Bungee", "Inter", sans-serif; font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
-.quote-body { font-family: "Inter", sans-serif; font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-mark { font-family: var(--head-font); font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: var(--body-font); font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
 .quote-body .yellow { color: var(--yellow); }
 .quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
 
 .book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
-.book h2 { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
 .book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
 .book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
 
 .find { padding: 60px 22px; background: var(--black); text-align: center; }
 .find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
-.find-list { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list { font-family: var(--head-font); font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
 .find-list .dot { color: var(--red); margin: 0 14px; }
 
 .foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
-.foot .mark { font-family: "Bungee", "Inter", sans-serif; font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot .mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
 .foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
 .foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
 </style>
@@ -75,78 +78,45 @@ a { color: inherit; text-decoration: none; }
 
 <div class="today">
   <span class="today-dot"></span>
-  <span>You book · Text or call Bronson with the vehicle, t</span>
-  <span class="today-sep">/</span>
-  <span>We roll up · Van pulls into your driveway with water,</span>
-  <span class="today-sep">/</span>
-  <span>You get it back clean · Walk-around when finished so you can see</span>
+  <span>Wesley Chapel, FL</span>
 </div>
 
 <header class="hero">
-  <p class="hero-eyebrow">Wesley Chapel, FL · Run by Bronson</p>
-  <h1>Mobile detailing, dialed in for Wesley Chapel.</h1>
-  <p class="hero-sub">Bronson runs Auto Sanctuary out of Wesley Chapel, bringing the wash, polish, and interior reset to your driveway so your car stays a place that feels clean and sacred.</p>
+  <p class="hero-eyebrow">Wesley Chapel, FL · Run by Owner</p>
+  <h1>Mobile detailing that comes to your driveway.</h1>
+  <p class="hero-sub">Wesley Chapel mobile detailing run out of one van, one route, and a short list of regulars who keep their cars looking right.</p>
   <div class="hero-cta-row">
-    <a href="tel:+18138101184" class="btn-loud">Call · book the truck</a>
-    <a href="#menu" class="btn-ghost">See the menu</a>
+    <a href="tel:+18138101184" class="btn-loud">Call · lock the slot</a>
+    <a href="#menu" class="btn-ghost">See the services</a>
   </div>
 </header>
 
 <section class="menu" id="menu">
   <div class="menu-head">
-    <h2 class="menu-h2">The <span class="red">Menu</span></h2>
-    <div class="menu-meta">5 services · Fast turnaround</div>
+    <h2 class="menu-h2">The <span class="red">Services</span></h2>
+    <div class="menu-meta">0 services · Fast turnaround</div>
   </div>
   <div class="menu-grid">
-    <div class="menu-card">
-      <span class="menu-card-tag">Most ordered</span>
-      <h3 class="menu-card-name">Showroom full detail</h3>
-      <p class="menu-card-detail">Exterior wash and seal, full interior steam and vacuum, door jambs, windows in and out. Half day in your driveway.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Maintenance wash</h3>
-      <p class="menu-card-detail">Recurring exterior hand wash, wheels, windows, and a quick interior wipedown. Built for clients who book monthly or biweekly.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Pet hair and stain pull</h3>
-      <p class="menu-card-detail">Targeted extraction for embedded pet hair, food stains, sunscreen, and clay residue from the carpets, mats, and seat fabric.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Headlight restoration</h3>
-      <p class="menu-card-detail">Wet sand the yellowed lenses back to clear, then seal so the haze does not come back the next time the sun hits them.</p>
-    </div>
-    <div class="menu-card">
-      
-      <h3 class="menu-card-name">Pre-sale prep</h3>
-      <p class="menu-card-detail">Detail tuned for trade-in or private sale. Engine bay wipedown, full interior, exterior polish so photos hold up at asking price.</p>
-    </div>
   </div>
 </section>
 
-<section class="quote-wrap">
-  <p class="quote-mark">"</p>
-  <p class="quote-body">Bronson started Auto Sanctuary on the idea that your car is a place of private sanctuary, and the job is to help you keep it clean and sacred. He runs the van himself, picks up his own phone, and shows up to your driveway with water, power, and everything the job needs.</p>
-  <p class="quote-attr">— Bronson · Auto Sanctuary Mobile Detailing</p>
-</section>
+
 
 <section class="book">
-  <h2>Book Bronson.</h2>
-  <p>We started Auto Sanctuary because every detail shop in town runs on a wait list, a drop-off window, and a voicemail. We bring the bay to your driveway in Wesley Chapel so you get the car back the same day, cleaned the way it should have been the first time. Bronson runs every job personally and stands behind the finish.</p>
+  <h2>Book Owner.</h2>
+  <p>We started Auto Sanctuary because every detailer in Wesley Chapel was running on a voicemail and a maybe. We show up when we say, work out of our own rig with our own water and power, and keep a short book of regulars instead of chasing volume. If your car matters to you, you&#39;ll get along with how we work.</p>
   <a href="tel:+18138101184">(813) 810-1184 · Call to book</a>
 </section>
 
 <section class="find">
-  <p class="find-eyebrow">Where Bronson rolls</p>
-  <p class="find-list">Seven Oaks<span class="dot">·</span>Meadow Pointe<span class="dot">·</span>Lexington Oaks<span class="dot">·</span>Wiregrass Ranch<span class="dot">·</span>Land O&#39; Lakes<span class="dot">·</span>Zephyrhills</p>
+  <p class="find-eyebrow">Where Owner rolls</p>
+  <p class="find-list"></p>
 </section>
 
 <footer class="foot">
   <div class="mark">Auto Sanctuary Mobile Detailing</div>
   <a href="tel:+18138101184" class="phone">(813) 810-1184</a>
-  <p class="foot-meta">Wesley Chapel, FL · Run by Bronson</p>
+  <p class="foot-meta">Wesley Chapel, FL · Run by Owner</p>
 </footer>
 
 </body>

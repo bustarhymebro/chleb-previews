@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mr Tacos Grill · Pensacola food truck</title>
-<meta name="description" content="A Pensacola taco counter run by Laura and her crew, serving steak tacos, Burro Burritos, and queso to the Brent crowd six days a week." />
+<meta name="description" content="Laura&#39;s truck rolls through Pensacola most days of the week, slinging real Jalisco-style tacos, tortas, and aguas frescas off a hot flat-top." />
 <meta property="og:title" content="Mr Tacos Grill" />
-<meta property="og:description" content="A Pensacola taco counter run by Laura and her crew, serving steak tacos, Burro Burritos, and queso to the Brent crowd six days a week." />
+<meta property="og:description" content="Laura&#39;s truck rolls through Pensacola most days of the week, slinging real Jalisco-style tacos, tortas, and aguas frescas off a hot flat-top." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #e9e6df; --ink: #0d0d0d; --rust: #a3271f; --mustard: #525a5e; --olive: #262625; --head-font: "Playfair Display","Times New Roman",serif; --body-font: "Inter","Helvetica Neue",sans-serif; --sans-font: "Inter","Helvetica Neue",sans-serif; --rule: 1px solid; --brand-style: normal; --brand-weight: 900; --brand-spacing: -0.03em; --sub-style: normal; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -82,8 +85,8 @@ a { color: inherit; }
 <body>
 
 <div class="masthead">
-  <div class="vol">Vol. 04 · 2026</div>
-  <div class="center">A Mr Tacos Grill Communique</div>
+  <div class="vol">Edition · 2026</div>
+  <div class="center">A Mr Tacos Grill Gazette</div>
   <div class="right">Pensacola, FL</div>
 </div>
 
@@ -93,24 +96,24 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">A</span> Pensacola taco counter run by Laura and her crew, serving steak tacos, Burro Burritos, and queso to the Brent crowd six days a week.</p>
+  <p><span class="drop-cap">L</span>aura&#39;s truck rolls through Pensacola most days of the week, slinging real Jalisco-style tacos, tortas, and aguas frescas off a hot flat-top.</p>
 </section>
 
 <section class="schedule">
-  <p class="schedule-eyebrow">How Mr Tacos cooks in Pensacola</p>
+  <p class="schedule-eyebrow">How the truck runs in Pensacola</p>
   <h2>What happens when you call.</h2>
   <div class="schedule-grid">
     <div class="schedule-row">
+      <div class="schedule-day">Check the location</div>
+      <div class="schedule-where">Call the truck or check the day&#39;s parking spot before you head over for service.</div>
+    </div>
+    <div class="schedule-row">
       <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Tell us how many tacos, what protein, and if you want queso on the side.</div>
+      <div class="schedule-where">Walk up, order in Spanish or English, pay cash or card at the window.</div>
     </div>
     <div class="schedule-row">
-      <div class="schedule-day">Grilled to order</div>
-      <div class="schedule-where">Steak hits the flat top, tortillas warm next to it, salsas and lime come out fresh.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Hot, in your hands</div>
-      <div class="schedule-where">Plates and to-go trays handed over within minutes, never sitting under a heat lamp.</div>
+      <div class="schedule-day">Eat hot</div>
+      <div class="schedule-where">We call your name when it is up. Salsas, limes, and onions are at the side bar.</div>
     </div>
   </div>
 </section>
@@ -121,38 +124,38 @@ a { color: inherit; }
   <div class="menu-list">
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Steak tacos</div>
+        <div class="menu-item-name">Tacos al pastor</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Three grilled steak tacos on soft corn tortillas, onion, cilantro, salsa verde, lime wedge on the side.</p>
+      <p class="menu-item-detail">Marinated pork off the trompo, double corn tortilla, white onion, cilantro, fresh pineapple, salsa verde or roja on the side.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Burro Burrito</div>
+        <div class="menu-item-name">Birria quesatacos</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Large flour tortilla, grilled steak with a crisp outside, rice, beans, queso, wrapped tight and griddled.</p>
+      <p class="menu-item-detail">Slow-stewed beef birria, melted Oaxaca cheese, crisped on the flat-top, served with a cup of consome for dipping.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Loaded nachos</div>
+        <div class="menu-item-name">Carne asada torta</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Fresh chips, queso dip, grilled steak, beans, pico, jalapenos on request. Sized for one big appetite or two normal ones.</p>
+      <p class="menu-item-detail">Grilled steak on a telera roll with refried beans, avocado, tomato, onion, jalapeno, and crema. Comes with chips.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Queso dip</div>
+        <div class="menu-item-name">Pollo asado plate</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">House queso served warm with a basket of chips. Add as a side to any plate or take a pint to go.</p>
+      <p class="menu-item-detail">Half a marinated grilled chicken with rice, charro beans, three handmade tortillas, and roasted salsa. Feeds one hungry adult.</p>
     </div>
     <div class="menu-item">
       <div class="menu-item-head">
-        <div class="menu-item-name">Grilled steak plate</div>
+        <div class="menu-item-name">Aguas frescas</div>
         <div class="menu-item-leader"></div>
       </div>
-      <p class="menu-item-detail">Steak grilled to order with rice, beans, and warm tortillas on the side. Build your own tacos at the table.</p>
+      <p class="menu-item-detail">House made horchata, jamaica, and a rotating fruit agua of the week. Poured over ice in a 24 ounce cup.</p>
     </div>
   </div>
 </section>
@@ -168,19 +171,19 @@ a { color: inherit; }
 <section class="note">
   <p class="note-eyebrow">A short note</p>
   <h2>From Laura.</h2>
-  <p>Laura runs the grill at Mr Tacos and she still calls in most of the orders herself. The steak gets a hard sear before it ever hits a tortilla, the queso is made in house, and nothing leaves the window if it would not feed her own family.</p>
+  <p>Laura has been cooking out of this truck since her family moved the recipes over from Jalisco. She runs the flat-top, takes the orders, and answers the phone herself. If a salsa is not made fresh that morning, it does not go on the truck.</p>
   <p class="signature">— Laura</p>
 </section>
 
 <section class="catering">
   <h2>Book Mr Tacos Grill.</h2>
-  <p>We started Mr Tacos because Pensacola deserved a taco counter where the steak actually gets grilled and the queso actually gets made that morning. Six days a week we run the grill between Brent and Pensacola Blvd, working through the lunch rush and the after-work crowd from Ensley and Ferry Pass. The menu is short on purpose. Everything on it, we are willing to put our name on.</p>
+  <p>We started Mr Tacos Grill because Pensacola did not have a real al pastor trompo running on a regular schedule. Every other taco truck in town disappears for weeks at a time or only shows up for one festival a year. We park in the same spots, on the same days, and cook the food the way Laura&#39;s family cooks it at home. A few hundred regulars already know the schedule by heart.</p>
   <a href="tel:+18507607266" class="catering-btn">(850) 760-7266 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">Brent · Pensacola Blvd · Ensley · Ferry Pass · Cordova Park · Myrtle Grove</p>
+  <p class="area-cities">Downtown Pensacola · East Hill · Brownsville · Warrington · Ferry Pass · Gulf Breeze</p>
 </section>
 
 <footer class="foot">

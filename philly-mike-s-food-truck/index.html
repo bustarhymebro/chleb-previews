@@ -4,46 +4,49 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Philly Mike&#39;s Food Truck · New Port Richey food truck</title>
-<meta name="description" content="Mike runs a one-truck operation in New Port Richey serving the most authentic Philly cheesesteak outside of Philly, no shortcuts, no frozen meat." />
+<meta name="description" content="A New Port Richey food truck run by one cook who actually knows your order, serving cheesesteaks the way they&#39;re done back home." />
 <meta property="og:title" content="Philly Mike&#39;s Food Truck" />
-<meta property="og:description" content="Mike runs a one-truck operation in New Port Richey serving the most authentic Philly cheesesteak outside of Philly, no shortcuts, no frozen meat." />
+<meta property="og:description" content="A New Port Richey food truck run by one cook who actually knows your order, serving cheesesteaks the way they&#39;re done back home." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Georgia", "Times New Roman", serif; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; --head-font: "Playfair Display","Georgia",serif; --body-font: "Georgia","Times New Roman",serif; --sans-font: "Helvetica Neue","Arial",sans-serif; --rule: 6px double; --brand-style: italic; --brand-weight: 900; --brand-spacing: -0.045em; --sub-style: italic; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
-.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
 .masthead .vol { font-weight: 700; }
 .masthead .right { color: #555; }
 
-.brand { text-align: center; padding: 50px 24px 14px; border-bottom: 6px double var(--ink); }
-.brand-name { font-family: "Playfair Display", "Georgia", serif; font-size: clamp(56px, 12vw, 156px); font-weight: 900; line-height: 0.92; letter-spacing: -0.045em; margin: 0; font-style: italic; }
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
 .brand-name .accent { color: var(--rust); font-style: normal; }
-.brand-sub { margin-top: 18px; font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
 
 .lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
-.lede .drop-cap { font-family: "Playfair Display", "Georgia", serif; font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
 .lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
 
 .schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
-.schedule-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
-.schedule h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 38px; font-style: italic; margin: 0 0 24px; letter-spacing: -0.015em; }
-.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: "Helvetica Neue", sans-serif; }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
 .schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
 .schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
 .schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
 
 .menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
-.menu-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
-.menu h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
 .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
 .menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
 .menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.menu-item-name { font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
 .menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
 .menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
 
@@ -52,22 +55,22 @@ a { color: inherit; }
 .cluster-tile.big { grid-row: span 2; }
 
 .note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
-.note-eyebrow { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
-.note h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 42px; font-style: italic; letter-spacing: -0.015em; margin: 0 0 20px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
 .note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
-.signature { margin-top: 28px; font-family: "Playfair Display", "Georgia", serif; font-size: 26px; font-style: italic; color: var(--rust); }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
 
-.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: 6px double var(--ink); border-bottom: 6px double var(--ink); text-align: center; }
-.catering h2 { font-family: "Playfair Display", "Georgia", serif; font-size: 56px; font-style: italic; margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
 .catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
-.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: "Helvetica Neue", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
 
 .area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
-.area p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
-.area-cities { margin-top: 12px; font-family: "Playfair Display", "Georgia", serif; font-size: 24px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
 
-.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: "Helvetica Neue", sans-serif; }
-.foot-name { font-family: "Playfair Display", "Georgia", serif; font-size: 36px; font-style: italic; margin: 0 0 8px; }
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
 .foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
 .foot-phone a { color: var(--mustard); text-decoration: none; }
 .foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -93,68 +96,7 @@ a { color: inherit; }
 </header>
 
 <section class="lede">
-  <p><span class="drop-cap">M</span>ike runs a one-truck operation in New Port Richey serving the most authentic Philly cheesesteak outside of Philly, no shortcuts, no frozen meat.</p>
-</section>
-
-<section class="schedule">
-  <p class="schedule-eyebrow">How the truck runs in New Port Richey</p>
-  <h2>What happens when you call.</h2>
-  <div class="schedule-grid">
-    <div class="schedule-row">
-      <div class="schedule-day">Find the truck</div>
-      <div class="schedule-where">Check the page for this week&#39;s pin along the FL-54 corridor or book a private stop.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Order at the window</div>
-      <div class="schedule-where">Tell Mike how you want it, cheese, onions, peppers, the works. He chops it to order.</div>
-    </div>
-    <div class="schedule-row">
-      <div class="schedule-day">Eat it hot</div>
-      <div class="schedule-where">Steak hits the roll, cheese is still melting, you eat it before it gets to the truck of your car.</div>
-    </div>
-  </div>
-</section>
-
-<section class="menu">
-  <p class="menu-eyebrow">The list</p>
-  <h2>What we make.</h2>
-  <div class="menu-list">
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Philly cheesesteak, whiz</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Chopped ribeye, melted American or whiz, soft Amoroso-style roll. The one Mike built the truck around.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Cheesesteak, provolone</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Same chopped ribeye, swapped to sharp provolone for the customers who grew up arguing about it.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Cheesesteak with onions</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Sweet onions cooked down on the flat-top until they go soft, folded into the meat before the cheese hits.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Cheesesteak with peppers</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Green peppers and onions sweated on the grill, piled on top of the chopped ribeye and cheese.</p>
-    </div>
-    <div class="menu-item">
-      <div class="menu-item-head">
-        <div class="menu-item-name">Chicken cheesesteak</div>
-        <div class="menu-item-leader"></div>
-      </div>
-      <p class="menu-item-detail">Chicken chopped fine on the flat-top, same roll, same cheese pull, for the table that does not do red meat.</p>
-    </div>
-  </div>
+  <p><span class="drop-cap">A</span> New Port Richey food truck run by one cook who actually knows your order, serving cheesesteaks the way they&#39;re done back home.</p>
 </section>
 
 <section class="cluster">
@@ -165,22 +107,29 @@ a { color: inherit; }
   <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
 </section>
 
+<section class="menu">
+  <p class="menu-eyebrow">The list</p>
+  <h2>What we make.</h2>
+  <div class="menu-list">
+  </div>
+</section>
+
 <section class="note">
   <p class="note-eyebrow">A short note</p>
   <h2>From Mike.</h2>
-  <p>Mike runs the truck himself out of New Port Richey, parked off FL-54, chopping ribeye on the flat-top the same way he learned it back home. He answers his own phone, posts the week&#39;s stops on the page, and refuses to sell a steak he would not eat himself.</p>
+  <p>We started Philly Mike&#39;s because every lunch option in town was the same three drive thrus and a soggy sandwich from a gas station. Mike runs the truck, takes the orders, and cooks every steak himself. If you call the number on this page, you are talking to the guy holding the spatula. That is the whole pitch.</p>
   <p class="signature">— Mike</p>
 </section>
 
 <section class="catering">
   <h2>Book Philly Mike&#39;s Food Truck.</h2>
-  <p>We started Philly Mike&#39;s because nobody on this stretch of the Gulf coast was doing a real chopped ribeye cheesesteak the way it gets done back home. The truck lives off FL-54 in New Port Richey and pulls into lots around Pasco County through the week. One flat-top, one roll, one steak at a time, and we hand it through the window the second it is ready.</p>
+  <p>We started Philly Mike&#39;s because every lunch option in town was the same three drive thrus and a soggy sandwich from a gas station. Mike runs the truck, takes the orders, and cooks every steak himself. If you call the number on this page, you are talking to the guy holding the spatula. That is the whole pitch.</p>
   <a href="tel:+17278156063" class="catering-btn">(727) 815-6063 · Call to book</a>
 </section>
 
 <section class="area">
   <p>Where we roll</p>
-  <p class="area-cities">New Port Richey · Port Richey · Trinity · Holiday · Hudson · Odessa</p>
+  <p class="area-cities">New Port Richey, FL</p>
 </section>
 
 <footer class="foot">
