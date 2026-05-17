@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hi-Licious Street Kitchen · Lake Charles food truck</title>
+<meta name="description" content="A Thai street kitchen rolling through Lake Charles with pad thai, curries, and stir-fries built from scratch the way Haili grew up eating them." />
+<meta property="og:title" content="Hi-Licious Street Kitchen" />
+<meta property="og:description" content="A Thai street kitchen rolling through Lake Charles with pad thai, curries, and stir-fries built from scratch the way Haili grew up eating them." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1509315811345-672d83ef2fbc?auto=format&fit=crop&w=1200&h=800&q=80" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --paper: #f6f1e6; --ink: #161413; --rust: #c2410c; --mustard: #d4a017; --olive: #4f5e2e; --head-font: "Playfair Display","Georgia",serif; --body-font: "Georgia","Times New Roman",serif; --sans-font: "Helvetica Neue","Arial",sans-serif; --rule: 6px double; --brand-style: italic; --brand-weight: 900; --brand-spacing: -0.045em; --sub-style: italic; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead .vol { font-weight: 700; }
+.masthead .right { color: #555; }
+
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
+.brand-name .accent { color: var(--rust); font-style: normal; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+
+.lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
+
+.schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
+.schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
+.schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
+.schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
+
+.menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
+.menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
+.menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
+.menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
+
+.cluster { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 320px 320px; gap: 6px; margin: 80px 0 0; background: var(--ink); }
+.cluster-tile { background-size: cover; background-position: center; filter: contrast(1.05) saturate(1.05); }
+.cluster-tile.big { grid-row: span 2; }
+
+.note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
+.note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
+
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+
+.area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
+
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
+.foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
+.foot-phone a { color: var(--mustard); text-decoration: none; }
+.foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
+
+@media (max-width: 700px) {
+  .menu-list { grid-template-columns: 1fr; gap: 24px; }
+  .cluster { grid-template-columns: 1fr; grid-template-rows: 220px 220px 220px 220px 220px; }
+  .cluster-tile.big { grid-row: span 1; }
+}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="vol">Vol. 04 · 2026</div>
+  <div class="center">A Hi-Licious Street Kitchen Communique</div>
+  <div class="right">Lake Charles, LA</div>
+</div>
+
+<header class="brand">
+  <h1 class="brand-name">Hi-Licious Street Kitchen</h1>
+  <p class="brand-sub">Run by Haili · Lake Charles</p>
+</header>
+
+<section class="lede">
+  <p><span class="drop-cap">A</span> Thai street kitchen rolling through Lake Charles with pad thai, curries, and stir-fries built from scratch the way Haili grew up eating them.</p>
+</section>
+
+<section class="menu">
+  <p class="menu-eyebrow">The list</p>
+  <h2>What we make.</h2>
+  <div class="menu-list">
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Pad Thai</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Rice noodles wok-tossed with egg, peanut, lime, scallion, and tamarind sauce. Chicken, shrimp, or tofu.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Spicy curries</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Red, green, or massaman simmered with coconut milk, Thai basil, bamboo shoot, and your choice of protein over jasmine rice.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Stir-fries</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Pad kra pao, cashew chicken, and pepper garlic plates fired hot on the wok and served over rice with a fried egg.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Authentic Thai dishes</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Rotating specials Haili grew up cooking. Tom kha, larb, papaya salad when the produce comes in right.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Thai cuisine platters</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Mix-and-match plate of two dishes with rice and a spring roll for folks who can&#39;t pick just one.</p>
+    </div>
+  </div>
+</section>
+
+<section class="note">
+  <p class="note-eyebrow">A short note</p>
+  <h2>From Haili.</h2>
+  <p>Haili cooks the Thai food she grew up eating, nothing dumbed down for the truck. Delicious originals, revitalized classics, and simple downright good eats is the whole pitch. She picks up her own phone for catering and won&#39;t send out a curry she wouldn&#39;t feed her family.</p>
+  <p class="signature">— Haili</p>
+</section>
+
+<section class="cluster">
+  <div class="cluster-tile big" style="background-image: url('https://images.unsplash.com/photo-1509315811345-672d83ef2fbc?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1643741132132-4466f64e1f54?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1572932759899-5ad91d0f9dbb?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1542528180-a1208c5169a5?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+</section>
+
+<section class="schedule">
+  <p class="schedule-eyebrow">Why Lake Charles lines up at the window</p>
+  <h2>What happens when you call.</h2>
+  <div class="schedule-grid">
+    <div class="schedule-row">
+      <div class="schedule-day">Find the truck</div>
+      <div class="schedule-where">Mon and Tue lunch, Wed and Thu dinner, usually parked near Nelson Rd in Lake Charles.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Order at the window</div>
+      <div class="schedule-where">Tell us the dish, the protein, and the spice level. Cash or card, both work.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Eat it hot</div>
+      <div class="schedule-where">Most plates come up in six to eight minutes, wok-fresh, packed for here or to go.</div>
+    </div>
+  </div>
+</section>
+
+<section class="catering">
+  <h2>Book Hi-Licious Street Kitchen.</h2>
+  <p>We started Hi-Licious because Lake Charles deserved real Thai food, not a watered-down version of it. Every plate gets cooked to order on the truck, the curries get their time on the burner, and the menu stays small on purpose. Find us on Nelson Rd, come hungry.</p>
+  <a href="tel:+13372926624" class="catering-btn">(337) 292-6624 · Call to book</a>
+</section>
+
+<section class="area">
+  <p>Where we roll</p>
+  <p class="area-cities">Nelson Rd · South Lake Charles · Prien Lake · Lake Street · Country Club Road · Sulphur</p>
+</section>
+
+<footer class="foot">
+  <h3 class="foot-name">Hi-Licious Street Kitchen</h3>
+  <p class="foot-phone"><a href="tel:+13372926624">(337) 292-6624</a></p>
+  <p class="foot-meta">Lake Charles, LA · Run by Haili</p>
+</footer>
+
+</body>
+</html>
