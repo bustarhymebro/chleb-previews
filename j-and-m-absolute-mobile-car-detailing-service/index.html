@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>J&amp;M Absolute Mobile Car Detailing Service — Florence, AL</title>
+<meta name="description" content="Justin brings the wash to your driveway in Florence, cars, boats, RVs, and rigs handled on site with no shop drop-off." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --black: #0c0c0c; --yellow: #ffd60a; --red: #e63946; --cream: #fffbe9; --head-font: "Bungee","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(0,0,0,0.4); }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+.nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
+.nav-mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
+.today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
+@keyframes blink { 50% { opacity: 0.35; } }
+.today-sep { color: var(--today-hue); }
+
+.hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
+.hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
+.hero h1 { font-family: var(--head-font); font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 .yellow { color: var(--yellow); }
+.hero h1 .red { color: var(--red); }
+.hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
+.hero-cta-row { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-loud { background: var(--yellow); color: var(--black); padding: 18px 28px; font-weight: 900; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; }
+.btn-ghost { background: transparent; color: var(--cream); padding: 18px 28px; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid var(--cream); }
+
+.menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
+.menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.menu-h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 .red { color: var(--red); }
+.menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
+.menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
+.menu-card-name { font-family: var(--head-font); font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
+.menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
+
+.quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
+.quote-mark { font-family: var(--head-font); font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: var(--body-font); font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-body .yellow { color: var(--yellow); }
+.quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+
+.book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
+.book h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
+.book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.find { padding: 60px 22px; background: var(--black); text-align: center; }
+.find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
+.find-list { font-family: var(--head-font); font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list .dot { color: var(--red); margin: 0 14px; }
+
+.foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
+.foot .mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
+.foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
+
+.price-strip { padding: 60px 22px; max-width: 1080px; margin: 0 auto; }
+.price-strip-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 24px; }
+.price-strip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.price-strip-card { background: #141414; border: 1px solid #1f1f1f; border-top: 3px solid var(--yellow); padding: 18px; }
+.price-strip-item { font-family: var(--head-font); font-size: 15px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cream); margin: 0 0 8px; }
+.price-strip-val { font-weight: 900; font-size: 20px; color: var(--yellow); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-mark">J&amp;M Absolute Mobile Car Detailing Service</div>
+  <a href="tel:+12568602176" class="nav-cta">Call (256) 860-2176</a>
+</nav>
+
+<div class="today">
+  <span class="today-dot"></span>
+  <span>You call · Tell Justin the vehicle, the condition, </span>
+  <span class="today-sep">/</span>
+  <span>He rolls up · Water, power, and supplies come with the</span>
+  <span class="today-sep">/</span>
+  <span>Done on site · Wash, shampoo, wax, and windows finished</span>
+</div>
+
+<header class="hero">
+  <p class="hero-eyebrow">Florence, AL · Run by Justin</p>
+  <h1>Mobile detailing, dialed in for Florence.</h1>
+  <p class="hero-sub">Justin brings the wash to your driveway in Florence, cars, boats, RVs, and rigs handled on site with no shop drop-off.</p>
+  <div class="hero-cta-row">
+    <a href="tel:+12568602176" class="btn-loud">Call · book the truck</a>
+    <a href="#menu" class="btn-ghost">See the menu</a>
+  </div>
+</header>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <h2 class="menu-h2">The <span class="red">Menu</span></h2>
+    <div class="menu-meta">5 services · Fast turnaround</div>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <span class="menu-card-tag">Most ordered</span>
+      <h3 class="menu-card-name">Package A, Basic wash</h3>
+      <p class="menu-card-detail">Hand wash exterior, full interior vacuum, inside and outside windows. Starts at $25. Quick turnaround in your driveway.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Package B, Deluxe</h3>
+      <p class="menu-card-detail">Everything in Basic plus shampoo on seats and carpet and a hand wax on the paint. Starts at $75.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Package C, Full extra detail</h3>
+      <p class="menu-card-detail">The whole menu, top to bottom, including toothbrush detail on vents and seams. Starts at $125.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Smoker blow-out and odor treatment</h3>
+      <p class="menu-card-detail">Deep interior pull, headliner and vent treatment, full odor neutralize. For trade-ins, resales, and inherited vehicles.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Engine wax and power wash</h3>
+      <p class="menu-card-detail">Degrease and rinse the bay, then dress the plastics and wax the painted surfaces. Cleans up the look without soaking sensors.</p>
+    </div>
+  </div>
+</section>
+
+<section class="quote-wrap">
+  <p class="quote-mark">"</p>
+  <p class="quote-body">Justin runs J&amp;M out of Florence and details on-site at your home or your office, no shop drop-off required. Cars, trucks, campers, industrial rigs, he power washes the motors too. He picks up his own phone and quotes the job before he pulls in the driveway.</p>
+  <p class="quote-attr">— Justin · J&amp;M Absolute Mobile Car Detailing Service</p>
+</section>
+
+<section class="book">
+  <h2>Book Justin.</h2>
+  <p>We started J&amp;M because the Shoals deserves a detailer who actually comes to you. Every shop in town wants you to drop off at 8 AM and hope for a callback by five. We bring the water, the power, and the supplies to your driveway or your jobsite, and we handle cars, boats, campers, and work trucks the same way.</p>
+  <a href="tel:+12568602176">(256) 860-2176 · Call to book</a>
+</section>
+
+<section class="find">
+  <p class="find-eyebrow">Where Justin rolls</p>
+  <p class="find-list">Florence<span class="dot">·</span>Muscle Shoals<span class="dot">·</span>Sheffield<span class="dot">·</span>Tuscumbia<span class="dot">·</span>Killen<span class="dot">·</span>St. Florian</p>
+</section>
+
+
+<section class="price-strip">
+  <p class="price-strip-eyebrow">Pricing</p>
+  <div class="price-strip-grid">
+    
+    <div class="price-strip-card">
+      <p class="price-strip-item">Package A — Basic (wash, vacuum, windows)</p>
+      <div class="price-strip-val">$25+</div>
+    </div>
+    <div class="price-strip-card">
+      <p class="price-strip-item">Package B — Deluxe (shampoo, seats, carpet, wax)</p>
+      <div class="price-strip-val">$75+</div>
+    </div>
+    <div class="price-strip-card">
+      <p class="price-strip-item">Package C — Full Extra Detail</p>
+      <div class="price-strip-val">$125+</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="mark">J&amp;M Absolute Mobile Car Detailing Service</div>
+  <a href="tel:+12568602176" class="phone">(256) 860-2176</a>
+  <p class="foot-meta">Florence, AL · Run by Justin</p>
+</footer>
+
+</body>
+</html>
