@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Level Up Pressure Washing LLC — Hattiesburg, MS</title>
+<meta name="description" content="Hale runs Level Up out of Hattiesburg, scrubbing siding, driveways, and decks for Pine Belt homeowners who want the job finished the same afternoon." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --black: #0c0a14; --yellow: #d946ef; --red: #84cc16; --cream: #fdf4ff; --head-font: "Anton","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(255,255,255,0.45); }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+.nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
+.nav-mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
+.today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
+@keyframes blink { 50% { opacity: 0.35; } }
+.today-sep { color: var(--today-hue); }
+
+.hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
+.hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
+.hero h1 { font-family: var(--head-font); font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 .yellow { color: var(--yellow); }
+.hero h1 .red { color: var(--red); }
+.hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
+.hero-cta-row { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-loud { background: var(--yellow); color: var(--black); padding: 18px 28px; font-weight: 900; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; }
+.btn-ghost { background: transparent; color: var(--cream); padding: 18px 28px; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid var(--cream); }
+
+.menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
+.menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.menu-h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 .red { color: var(--red); }
+.menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
+.menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
+.menu-card-name { font-family: var(--head-font); font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
+.menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
+
+.quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
+.quote-mark { font-family: var(--head-font); font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: var(--body-font); font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-body .yellow { color: var(--yellow); }
+.quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+
+.book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
+.book h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
+.book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.find { padding: 60px 22px; background: var(--black); text-align: center; }
+.find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
+.find-list { font-family: var(--head-font); font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list .dot { color: var(--red); margin: 0 14px; }
+
+.foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
+.foot .mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
+.foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
+
+.price-strip { padding: 60px 22px; max-width: 1080px; margin: 0 auto; }
+.price-strip-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 24px; }
+.price-strip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.price-strip-card { background: #141414; border: 1px solid #1f1f1f; border-top: 3px solid var(--yellow); padding: 18px; }
+.price-strip-item { font-family: var(--head-font); font-size: 15px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cream); margin: 0 0 8px; }
+.price-strip-val { font-weight: 900; font-size: 20px; color: var(--yellow); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-mark">Level Up Pressure Washing LLC</div>
+  <a href="tel:+16016519571" class="nav-cta">Call (601) 651-9571</a>
+</nav>
+
+<div class="today">
+  <span class="today-dot"></span>
+  <span>You call · Hale answers, walks the job over the pho</span>
+  <span class="today-sep">/</span>
+  <span>We show up · Truck and tank pull up on time, plants g</span>
+  <span class="today-sep">/</span>
+  <span>We finish today · Most single-family jobs wrap inside a ha</span>
+</div>
+
+<header class="hero">
+  <p class="hero-eyebrow">Hattiesburg, MS · Run by Hale</p>
+  <h1>Pressure washing, done right in Hattiesburg.</h1>
+  <p class="hero-sub">Hale runs Level Up out of Hattiesburg, scrubbing siding, driveways, and decks for Pine Belt homeowners who want the job finished the same afternoon.</p>
+  <div class="hero-cta-row">
+    <a href="tel:+16016519571" class="btn-loud">Call · lock the slot</a>
+    <a href="#menu" class="btn-ghost">See the services</a>
+  </div>
+</header>
+
+<section class="book">
+  <h2>Book Hale.</h2>
+  <p>We started Level Up because every washing outfit in the Pine Belt seemed to run on a voicemail and a maybe-next-week. We wanted a number you can actually call and a truck that actually shows up. Three years in, most of our work comes from neighbors of last month&#39;s jobs, and that is exactly how we want it.</p>
+  <a href="tel:+16016519571">(601) 651-9571 · Call to book</a>
+</section>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <h2 class="menu-h2">The <span class="red">Services</span></h2>
+    <div class="menu-meta">5 services · Fast turnaround</div>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <span class="menu-card-tag">Top pick</span>
+      <h3 class="menu-card-name">Full exterior house wash</h3>
+      <p class="menu-card-detail">Soft wash on all siding, soffit, and fascia. Windows rinsed, foundation walked, plants pre-soaked and rinsed back down.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Driveway and walkway combo</h3>
+      <p class="menu-card-detail">Surface-clean the drive, sidewalk, and front porch slab in one visit. Stripes pulled out with a post-treatment rinse.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Roof soft wash</h3>
+      <p class="menu-card-detail">Chemical treatment on shingles to kill gloeocapsa magma. Streaks fade over the next two rains, no shingle granules in the gutters.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Fence brightening</h3>
+      <p class="menu-card-detail">Wood-safe wash on the full run plus a neutralizing brightener. Quoted by linear foot, gates and posts included.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Gutter face cleaning</h3>
+      <p class="menu-card-detail">Hand-scrubbed tiger stripes off the gutter face during a house wash, or booked on its own. Interior flush quoted separately.</p>
+    </div>
+  </div>
+</section>
+
+<section class="find">
+  <p class="find-eyebrow">Where Hale rolls</p>
+  <p class="find-list">Oak Grove<span class="dot">·</span>Petal<span class="dot">·</span>Purvis<span class="dot">·</span>Sumrall<span class="dot">·</span>Hattiesburg Historic Neighborhood<span class="dot">·</span>Midtown</p>
+</section>
+
+<section class="quote-wrap">
+  <p class="quote-mark">"</p>
+  <p class="quote-body">Hale started Level Up about three years back after watching too many neighbors pay for a pressure washing that stripped paint or left zebra stripes on the driveway. He picks up his own phone, runs his own rig, and won&#39;t put a 4000 PSI wand on a roof for any price.</p>
+  <p class="quote-attr">— Hale · Level Up Pressure Washing LLC</p>
+</section>
+
+
+
+<footer class="foot">
+  <div class="mark">Level Up Pressure Washing LLC</div>
+  <a href="tel:+16016519571" class="phone">(601) 651-9571</a>
+  <p class="foot-meta">Hattiesburg, MS · Run by Hale</p>
+</footer>
+
+</body>
+</html>
