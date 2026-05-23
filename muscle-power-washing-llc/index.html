@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Muscle Power Washing LLC — Burlington, NC</title>
+<meta name="description" content="Burlington area homes and driveways washed the right way, with soft wash techniques that protect your surfaces and free estimates on every call." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --black: #0c0a14; --yellow: #d946ef; --red: #84cc16; --cream: #fdf4ff; --head-font: "Anton","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(255,255,255,0.45); }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+.nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
+.nav-mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
+.today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
+@keyframes blink { 50% { opacity: 0.35; } }
+.today-sep { color: var(--today-hue); }
+
+.hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
+.hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
+.hero h1 { font-family: var(--head-font); font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 .yellow { color: var(--yellow); }
+.hero h1 .red { color: var(--red); }
+.hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
+.hero-cta-row { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-loud { background: var(--yellow); color: var(--black); padding: 18px 28px; font-weight: 900; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; }
+.btn-ghost { background: transparent; color: var(--cream); padding: 18px 28px; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid var(--cream); }
+
+.menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
+.menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.menu-h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 .red { color: var(--red); }
+.menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
+.menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
+.menu-card-name { font-family: var(--head-font); font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
+.menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
+
+.quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
+.quote-mark { font-family: var(--head-font); font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: var(--body-font); font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-body .yellow { color: var(--yellow); }
+.quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+
+.book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
+.book h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
+.book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.find { padding: 60px 22px; background: var(--black); text-align: center; }
+.find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
+.find-list { font-family: var(--head-font); font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list .dot { color: var(--red); margin: 0 14px; }
+
+.foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
+.foot .mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
+.foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
+
+.price-strip { padding: 60px 22px; max-width: 1080px; margin: 0 auto; }
+.price-strip-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 24px; }
+.price-strip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.price-strip-card { background: #141414; border: 1px solid #1f1f1f; border-top: 3px solid var(--yellow); padding: 18px; }
+.price-strip-item { font-family: var(--head-font); font-size: 15px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cream); margin: 0 0 8px; }
+.price-strip-val { font-weight: 900; font-size: 20px; color: var(--yellow); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-mark">Muscle Power Washing LLC</div>
+  <a href="tel:+13362633233" class="nav-cta">Call (336) 263-3233</a>
+</nav>
+
+<div class="today">
+  <span class="today-dot"></span>
+  <span>Call for estimate · Christopher comes out, looks at the surf</span>
+  <span class="today-sep">/</span>
+  <span>Prep and wash · Right pressure, right chemical mix for y</span>
+  <span class="today-sep">/</span>
+  <span>Done and rinsed · Job finished same visit, surface cleared</span>
+</div>
+
+<header class="hero">
+  <p class="hero-eyebrow">Burlington, NC · Run by Owner</p>
+  <h1>Clean concrete, clean siding, same day in Burlington.</h1>
+  <p class="hero-sub">Burlington area homes and driveways washed the right way, with soft wash techniques that protect your surfaces and free estimates on every call.</p>
+  <div class="hero-cta-row">
+    <a href="tel:+13362633233" class="btn-loud">Call · lock the slot</a>
+    <a href="#menu" class="btn-ghost">See the services</a>
+  </div>
+</header>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <h2 class="menu-h2">The <span class="red">Services</span></h2>
+    <div class="menu-meta">5 services · Fast turnaround</div>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <span class="menu-card-tag">Top pick</span>
+      <h3 class="menu-card-name">House washing (soft wash)</h3>
+      <p class="menu-card-detail">Full exterior soft wash, top to bottom, covering siding, eaves, and gutterline in one visit.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Driveway cleaning</h3>
+      <p class="menu-card-detail">Surface cleaner plus hand wand for edges, removes tire marks, oil drips, and embedded staining.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Deck cleaning</h3>
+      <p class="menu-card-detail">Pressure matched to your deck material, boards cleared of mold and mildew, ready to seal or stain.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Fence washing</h3>
+      <p class="menu-card-detail">Wood or vinyl fence washed panel by panel, algae and dirt lifted without warping boards.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Mold, mildew, algae, and stain removal</h3>
+      <p class="menu-card-detail">Targeted pre-treatment on affected areas before the wash pass, for stubborn biological growth.</p>
+    </div>
+  </div>
+</section>
+
+<section class="quote-wrap">
+  <p class="quote-mark">"</p>
+  <p class="quote-body">Christopher started Muscle Power Washing in Burlington in 2022 after watching local homes fight the same mold and algae year after year with no reliable crew to call. Three years in, he still runs every job himself, gives you a real quote before any equipment comes off the truck, and won&#39;t leave a surface half-done.</p>
+  <p class="quote-attr">— Owner · Muscle Power Washing LLC</p>
+</section>
+
+<section class="book">
+  <h2>Book Owner.</h2>
+  <p>We started Muscle Power Washing because Burlington and Alamance County have no shortage of mold season, and the options were either a solo guy with a rented machine or a regional company that books three weeks out. Christopher runs every job, shows up on time, and gives you a real quote before touching anything. If it needs washing, we can handle it.</p>
+  <a href="tel:+13362633233">(336) 263-3233 · Call to book</a>
+</section>
+
+<section class="find">
+  <p class="find-eyebrow">Where Owner rolls</p>
+  <p class="find-list">Burlington<span class="dot">·</span>Graham<span class="dot">·</span>Mebane<span class="dot">·</span>Gibsonville<span class="dot">·</span>Elon<span class="dot">·</span>Swepsonville</p>
+</section>
+
+
+
+<footer class="foot">
+  <div class="mark">Muscle Power Washing LLC</div>
+  <a href="tel:+13362633233" class="phone">(336) 263-3233</a>
+  <p class="foot-meta">Burlington, NC · Run by Owner</p>
+</footer>
+
+</body>
+</html>
