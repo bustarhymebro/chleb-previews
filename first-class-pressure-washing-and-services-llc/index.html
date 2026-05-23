@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>First Class Pressure Washing &amp; Services LLC — New Bern, NC</title>
+<meta name="description" content="When your New Bern home or business is looking green, streaked, or stained, we show up and wash it out right." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --black: #08081a; --yellow: #22d3ee; --red: #ec4899; --cream: #f0f9ff; --head-font: "Bowlby One","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(255,255,255,0.45); }
+body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+.nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: var(--black); border-bottom: 2px solid var(--yellow); z-index: 10; }
+.nav-mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; letter-spacing: 0.04em; color: var(--yellow); text-transform: uppercase; }
+.nav-cta { background: var(--yellow); color: var(--black); padding: 10px 18px; border-radius: 0; font-weight: 800; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.today { background: var(--yellow); color: var(--black); padding: 16px 22px; font-weight: 900; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; overflow-x: auto; white-space: nowrap; }
+.today-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; animation: blink 1.2s infinite; }
+@keyframes blink { 50% { opacity: 0.35; } }
+.today-sep { color: var(--today-hue); }
+
+.hero { padding: 56px 22px 40px; background: var(--black); position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 10%, rgba(255,214,10,0.12), transparent 50%), radial-gradient(circle at 5% 90%, rgba(230,57,70,0.12), transparent 60%); pointer-events: none; }
+.hero-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); margin: 0 0 18px; font-weight: 700; }
+.hero h1 { font-family: var(--head-font); font-weight: 900; font-size: clamp(48px, 12vw, 144px); line-height: 0.92; letter-spacing: -0.025em; margin: 0; text-transform: uppercase; color: var(--cream); }
+.hero h1 .yellow { color: var(--yellow); }
+.hero h1 .red { color: var(--red); }
+.hero-sub { margin: 24px 0 0; font-size: 19px; font-weight: 500; color: rgba(255,251,233,0.78); max-width: 640px; line-height: 1.55; }
+.hero-cta-row { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-loud { background: var(--yellow); color: var(--black); padding: 18px 28px; font-weight: 900; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; }
+.btn-ghost { background: transparent; color: var(--cream); padding: 18px 28px; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; border: 2px solid var(--cream); }
+
+.menu { padding: 80px 22px 40px; max-width: 1080px; margin: 0 auto; }
+.menu-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; border-bottom: 2px solid var(--yellow); padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.menu-h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 5.5vw, 56px); letter-spacing: -0.015em; text-transform: uppercase; margin: 0; color: var(--cream); }
+.menu-h2 .red { color: var(--red); }
+.menu-meta { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.menu-card { background: #141414; border: 1px solid #1f1f1f; border-top: 4px solid var(--yellow); padding: 22px; transition: transform 200ms ease, border-color 200ms ease; }
+.menu-card:hover { transform: translateY(-4px); border-top-color: var(--red); }
+.menu-card-name { font-family: var(--head-font); font-weight: 900; font-size: 20px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--yellow); margin: 0 0 6px; }
+.menu-card-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: var(--cream); padding: 3px 8px; margin-bottom: 12px; }
+.menu-card-detail { font-size: 14px; color: rgba(255,251,233,0.72); line-height: 1.6; margin: 0; }
+
+.quote-wrap { padding: 80px 22px; text-align: center; background: linear-gradient(180deg, var(--black), #141414, var(--black)); }
+.quote-mark { font-family: var(--head-font); font-size: 96px; color: var(--red); line-height: 1; margin: 0; }
+.quote-body { font-family: var(--body-font); font-weight: 800; font-size: clamp(22px, 4vw, 40px); line-height: 1.25; max-width: 880px; margin: 16px auto 28px; color: var(--cream); letter-spacing: -0.012em; }
+.quote-body .yellow { color: var(--yellow); }
+.quote-attr { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(255,251,233,0.55); font-weight: 700; }
+
+.book { padding: 80px 22px; background: var(--yellow); color: var(--black); text-align: center; }
+.book h2 { font-family: var(--head-font); font-weight: 900; font-size: clamp(36px, 7vw, 80px); letter-spacing: -0.02em; text-transform: uppercase; margin: 0 0 18px; line-height: 0.95; }
+.book p { margin: 0 auto 28px; max-width: 640px; font-size: 17px; font-weight: 500; line-height: 1.55; color: var(--black); }
+.book a { background: var(--black); color: var(--yellow); padding: 22px 34px; font-size: 16px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.find { padding: 60px 22px; background: var(--black); text-align: center; }
+.find-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 18px; }
+.find-list { font-family: var(--head-font); font-weight: 900; font-size: clamp(20px, 3.2vw, 34px); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); line-height: 1.4; }
+.find-list .dot { color: var(--red); margin: 0 14px; }
+
+.foot { padding: 36px 22px; background: var(--black); border-top: 2px solid var(--yellow); text-align: center; }
+.foot .mark { font-family: var(--head-font); font-weight: 900; font-size: 22px; color: var(--yellow); text-transform: uppercase; margin-bottom: 10px; }
+.foot a.phone { font-weight: 900; font-size: 24px; color: var(--cream); }
+.foot-meta { margin-top: 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,251,233,0.45); }
+
+.price-strip { padding: 60px 22px; max-width: 1080px; margin: 0 auto; }
+.price-strip-eyebrow { font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin: 0 0 24px; }
+.price-strip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.price-strip-card { background: #141414; border: 1px solid #1f1f1f; border-top: 3px solid var(--yellow); padding: 18px; }
+.price-strip-item { font-family: var(--head-font); font-size: 15px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cream); margin: 0 0 8px; }
+.price-strip-val { font-weight: 900; font-size: 20px; color: var(--yellow); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-mark">First Class Pressure Washing &amp; Services LLC</div>
+  <a href="tel:+19196913528" class="nav-cta">Call (919) 691-3528</a>
+</nav>
+
+<div class="today">
+  <span class="today-dot"></span>
+  <span>Call or text · Zackier picks up, you describe the surfa</span>
+  <span class="today-sep">/</span>
+  <span>We roll up · Truck arrives on the day agreed, equipme</span>
+  <span class="today-sep">/</span>
+  <span>Walk the job · You inspect the finished surface before </span>
+</div>
+
+<header class="hero">
+  <p class="hero-eyebrow">New Bern, NC · Run by Zackier</p>
+  <h1>First Class pressure washing for New Bern.</h1>
+  <p class="hero-sub">When your New Bern home or business is looking green, streaked, or stained, we show up and wash it out right.</p>
+  <div class="hero-cta-row">
+    <a href="tel:+19196913528" class="btn-loud">Call · book the team</a>
+    <a href="#menu" class="btn-ghost">See the lineup</a>
+  </div>
+</header>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <h2 class="menu-h2">The <span class="red">Lineup</span></h2>
+    <div class="menu-meta">5 services · Fast turnaround</div>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <span class="menu-card-tag">Popular</span>
+      <h3 class="menu-card-name">Home pressure wash</h3>
+      <p class="menu-card-detail">Full house exterior washed top to bottom; siding, trim, and foundation line all covered in one visit.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Business exterior wash</h3>
+      <p class="menu-card-detail">Commercial building fronts power washed; storefront glass perimeter, entryway, and wall surfaces included in the price.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">House exterior wash</h3>
+      <p class="menu-card-detail">Algae, streak, and stain removal across siding, brick, or stucco; surface left clean and dry before we go.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Driveway + concrete clean</h3>
+      <p class="menu-card-detail">Also offered: high-pressure concrete wash for driveways and walkways; oil spots, tire marks, and grime removed in one pass.</p>
+    </div>
+    <div class="menu-card">
+      
+      <h3 class="menu-card-name">Deck + fence wash</h3>
+      <p class="menu-card-detail">Also offered: wood or vinyl deck and fence surfaces washed; mildew, dirt, and discoloration cleared before the season sets in.</p>
+    </div>
+  </div>
+</section>
+
+<section class="quote-wrap">
+  <p class="quote-mark">"</p>
+  <p class="quote-body">Zackier started First Class because homeowners around New Bern kept paying for washes that still left streaks, or waiting weeks just to get a callback from someone who never showed. He runs every job personally, picks up his own phone, and quotes you before the truck pulls out. If it is green, stained, or streaked, he shows up and leaves it looking right.</p>
+  <p class="quote-attr">— Zackier · First Class Pressure Washing &amp; Services LLC</p>
+</section>
+
+<section class="book">
+  <h2>Book Zackier.</h2>
+  <p>We started First Class because every other option in New Bern ran on a wait list or a voicemail, and the work still came back halfway done. We show up when we say, quote before we start, and finish the job in one visit. Green siding, black streaks, stained concrete, if it is on your property and visible from the street, we wash it out.</p>
+  <a href="tel:+19196913528">(919) 691-3528 · Call to book</a>
+</section>
+
+<section class="find">
+  <p class="find-eyebrow">Where Zackier rolls</p>
+  <p class="find-list">Trent Woods<span class="dot">·</span>River Bend<span class="dot">·</span>Bridgeton<span class="dot">·</span>Havelock<span class="dot">·</span>Morehead City<span class="dot">·</span>Vanceboro</p>
+</section>
+
+
+
+<footer class="foot">
+  <div class="mark">First Class Pressure Washing &amp; Services LLC</div>
+  <a href="tel:+19196913528" class="phone">(919) 691-3528</a>
+  <p class="foot-meta">New Bern, NC · Run by Zackier</p>
+</footer>
+
+</body>
+</html>
