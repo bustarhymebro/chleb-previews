@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bowlby+One&family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --black: #0c0a14; --yellow: #d946ef; --red: #84cc16; --cream: #fdf4ff; --head-font: "Anton","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(255,255,255,0.45); }
+:root { --black: #08081a; --yellow: #22d3ee; --red: #ec4899; --cream: #f0f9ff; --head-font: "Bowlby One","Inter",sans-serif; --body-font: "Inter","-apple-system","Helvetica Neue",Arial,sans-serif; --today-hue: rgba(255,255,255,0.45); }
 body { margin: 0; background: var(--black); color: var(--cream); font-family: var(--body-font); line-height: 1.4; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
@@ -97,8 +97,8 @@ a { color: inherit; text-decoration: none; }
   <h1>Mobile detailing, dialed in for Springfield.</h1>
   <p class="hero-sub">We bring the wash bay to your driveway across Springfield and the 417, booked direct with the owner and finished the same day.</p>
   <div class="hero-cta-row">
-    <a href="tel:+14176893456" class="btn-loud">Call · lock the slot</a>
-    <a href="#menu" class="btn-ghost">See the services</a>
+    <a href="tel:+14176893456" class="btn-loud">Call · book the team</a>
+    <a href="#menu" class="btn-ghost">See the lineup</a>
   </div>
 </header>
 
@@ -109,12 +109,12 @@ a { color: inherit; text-decoration: none; }
 
 <section class="menu" id="menu">
   <div class="menu-head">
-    <h2 class="menu-h2">The <span class="red">Services</span></h2>
+    <h2 class="menu-h2">The <span class="red">Lineup</span></h2>
     <div class="menu-meta">5 services · Fast turnaround</div>
   </div>
   <div class="menu-grid">
     <div class="menu-card">
-      <span class="menu-card-tag">Top pick</span>
+      <span class="menu-card-tag">Popular</span>
       <h3 class="menu-card-name">Express wash and wax</h3>
       <p class="menu-card-detail">Two-bucket hand wash, tire shine, quick interior vacuum, and a spray wax topper. Ninety minutes in your driveway.</p>
     </div>
@@ -161,5 +161,55 @@ a { color: inherit; text-decoration: none; }
   <p class="foot-meta">Springfield, MO · Run by Owner</p>
 </footer>
 
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef0ff; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Book a call with Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Preview built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like it? Make it yours.</p>
+    <a class="chleb-bk__btn" href="https://calendar.app.google/uZuVNYYg2NDCoucB9" target="_blank" rel="noopener">Book a 15 minute call</a>
+  </div>
+</aside>
 </body>
 </html>

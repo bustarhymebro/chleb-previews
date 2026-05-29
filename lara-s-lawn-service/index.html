@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&family=Cormorant+Garamond:wght@500;700&family=Lora:wght@500;700&family=Caveat:wght@600;700&family=Inter:wght@400;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --moss: #1f3a2e; --leaf: #65794a; --bark: #2b1f16; --bone: #efe9d8; --rust: #b08a4a; --sage: #b8c79f; --head-font: "Cormorant Garamond","Source Serif Pro","Georgia",serif; --sans-font: "Inter","Helvetica",sans-serif; --script-font: "Caveat","Cormorant Garamond",cursive; }
+:root { --moss: #5a4d3c; --leaf: #a48a55; --bark: #3c2f24; --bone: #fbf3e2; --rust: #c98146; --sage: #dcd2b7; --head-font: "Lora","Source Serif Pro","Georgia",serif; --sans-font: "Inter","Helvetica",sans-serif; --script-font: "Caveat","Lora",cursive; }
 body { margin: 0; background: var(--bone); color: var(--bark); font-family: var(--head-font); line-height: 1.55; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -91,7 +91,7 @@ a { color: inherit; }
 <body>
 
 <div class="book-top">
-  <span><span class="seal"></span>Pine Ledger · 2026</span>
+  <span><span class="seal"></span>Yard Almanac · 2026</span>
   <span class="meta">Baton Rouge, LA · Run by Owner</span>
 </div>
 
@@ -119,10 +119,10 @@ a { color: inherit; }
   <p class="section-eyebrow">From the field</p>
   <h2 class="section-h2">Recent properties.</h2>
   <div class="snapshots-grid">
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1734303023518-71e656574f50?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1734079692079-aae7e24a7035?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1608101854678-b45ad1d25556?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1712248673238-6c42ec3e0918?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1553482301-80009ff35f41?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1692339267725-ce644ac805ec?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&h=700&q=80');"></div>
   </div>
 </section>
 
@@ -132,17 +132,17 @@ a { color: inherit; }
     <h2 class="section-h2">The cycle.</h2>
     <div class="week-grid">
     <div class="week-card">
-      <div class="week-num">Visit 1</div>
+      <div class="week-num">Round 1</div>
       <div class="week-name">Walk the yard</div>
       <p class="week-detail">Free on-site estimate, measured cut area, and a written weekly number before we leave the driveway.</p>
     </div>
     <div class="week-card">
-      <div class="week-num">Visit 2</div>
+      <div class="week-num">Round 2</div>
       <div class="week-name">Lock the day</div>
       <p class="week-detail">You get a fixed day of the week. Same crew, same truck, no rotating subs in and out.</p>
     </div>
     <div class="week-card">
-      <div class="week-num">Visit 3</div>
+      <div class="week-num">Round 3</div>
       <div class="week-name">Run the cycle</div>
       <p class="week-detail">Mow, edge, trim, blow-down every visit. Beds, mulch, and hedge work on the rolling schedule.</p>
     </div>
@@ -208,5 +208,55 @@ a { color: inherit; }
   <p class="foot-fj-meta">Baton Rouge, LA · (337) 523-1867 · Run by Owner</p>
 </footer>
 
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef0ff; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Book a call with Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Preview built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like it? Make it yours.</p>
+    <a class="chleb-bk__btn" href="https://calendar.app.google/uZuVNYYg2NDCoucB9" target="_blank" rel="noopener">Book a 15 minute call</a>
+  </div>
+</aside>
 </body>
 </html>

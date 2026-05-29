@@ -7,7 +7,7 @@
 <meta name="description" content="A small Plant City cleaning crew run by Elda, taking on residential and commercial work plus light organizing for folks who want the same hands every visit." />
 <meta property="og:title" content="Grandmas Cleaning Services" />
 <meta property="og:description" content="A small Plant City cleaning crew run by Elda, taking on residential and commercial work plus light organizing for folks who want the same hands every visit." />
-<meta property="og:image" content="https://images.unsplash.com/photo-1758273238564-806f750a2cce?auto=format&fit=crop&w=1200&h=800&q=80" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&h=800&q=80" />
 <meta name="robots" content="noindex,nofollow" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,7 +42,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 .hero-cl-trust { display: flex; gap: 28px; margin-top: 40px; flex-wrap: wrap; }
 .hero-cl-trust div { font-size: 13px; color: var(--muted); }
 .hero-cl-trust b { display: block; font-family: var(--head-font); font-size: 22px; color: var(--ink); font-weight: 700; margin-bottom: 2px; }
-.hero-cl-photo { background-image: url('https://images.unsplash.com/photo-1758273238564-806f750a2cce?auto=format&fit=crop&w=1200&h=800&q=80'); background-size: cover; background-position: center; }
+.hero-cl-photo { background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&h=800&q=80'); background-size: cover; background-position: center; }
 
 .section-cl { padding: 96px 36px; max-width: 1180px; margin: 0 auto; }
 .section-cl-narrow { max-width: 920px; }
@@ -236,10 +236,10 @@ ul { padding: 0; margin: 0; list-style: none; }
   <p class="section-eyebrow-cl">Recent work</p>
   <h2 class="section-h2-cl">Before and <em>after.</em></h2>
   <div class="gallery-cl-grid">
-    <div class="gallery-cl-tile wide" style="background-image: url('https://images.unsplash.com/photo-1556037843-347ddff9f4b0?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">After · Kitchen</span></div>
-    <div class="gallery-cl-tile" style="background-image: url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">After · Bath</span></div>
-    <div class="gallery-cl-tile" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">Move-out clean</span></div>
-    <div class="gallery-cl-tile" style="background-image: url('https://images.unsplash.com/photo-1550572017-4b7a301b9d81?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">Weekly visit</span></div>
+    <div class="gallery-cl-tile wide" style="background-image: url('https://images.unsplash.com/photo-1647381518264-97ff1835026f?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">After · Kitchen</span></div>
+    <div class="gallery-cl-tile" style="background-image: url('https://images.unsplash.com/photo-1758272421751-963195322eaa?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">After · Bath</span></div>
+    <div class="gallery-cl-tile" style="background-image: url('https://images.unsplash.com/photo-1691057185806-ea8b5b9a4506?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">Move-out clean</span></div>
+    <div class="gallery-cl-tile" style="background-image: url('https://images.unsplash.com/photo-1556037843-347ddff9f4b0?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">Weekly visit</span></div>
     <div class="gallery-cl-tile" style="background-image: url('https://images.unsplash.com/photo-1583079091703-911961c927af?auto=format&fit=crop&w=1200&h=800&q=80');"><span class="gallery-cl-label">Deep clean</span></div>
   </div>
 </section>
@@ -308,5 +308,55 @@ ul { padding: 0; margin: 0; list-style: none; }
   <div>Plant City, FL · Run by Owner · 2026</div>
 </footer>
 
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef0ff; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Book a call with Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Preview built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like it? Make it yours.</p>
+    <a class="chleb-bk__btn" href="https://calendar.app.google/uZuVNYYg2NDCoucB9" target="_blank" rel="noopener">Book a 15 minute call</a>
+  </div>
+</aside>
 </body>
 </html>

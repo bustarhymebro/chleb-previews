@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,800&family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --noir: #3d2e2c; --bone: #fbf4ee; --rouge: #b85661; --sand: #c98b91; --line: #5a4540; --head-font: "Didot","Bodoni Moda","Playfair Display","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; }
+:root { --noir: #000000; --bone: #f5ecd9; --rouge: #b8902e; --sand: #d4af37; --line: #2a2114; --head-font: "Playfair Display","Cormorant Garamond","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
@@ -23,7 +23,7 @@ a { color: inherit; text-decoration: none; }
 .nav-ep-call { background: var(--rouge); color: var(--bone); padding: 10px 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
 
 .hero-ep { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 88vh; }
-.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1757283213626-3178d3ab8800?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
+.hero-ep-photo { background-image: url('https://images.unsplash.com/photo-1541533848490-bc8115cd6522?auto=format&fit=crop&w=1400&h=1800&q=80'); background-size: cover; background-position: center; filter: contrast(1.05) saturate(0.85); }
 .hero-ep-text { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; background: var(--noir); }
 .hero-ep-eyebrow { font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--sand); margin: 0 0 22px; font-weight: 600; }
 .hero-ep-name { font-family: var(--head-font); font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 0.96; letter-spacing: -0.012em; margin: 0; font-style: italic; color: var(--bone); }
@@ -106,7 +106,7 @@ a { color: inherit; text-decoration: none; }
 </section>
 
 <section class="menu-ep">
-  <p class="menu-ep-eyebrow">The list</p>
+  <p class="menu-ep-eyebrow">Services</p>
   <h2 class="menu-ep-title">How the chair has run for thirty years</h2>
   <p class="menu-ep-sub">Walk-ins welcome · Calls preferred</p>
   <div class="cut-list">
@@ -134,7 +134,7 @@ a { color: inherit; text-decoration: none; }
 </section>
 
 <section class="ritual-section">
-  <p class="menu-ep-eyebrow">The ritual</p>
+  <p class="menu-ep-eyebrow">The chair</p>
   <h2 class="menu-ep-title">A seat in the chair.</h2>
   <div class="ritual-grid">
     <div class="ritual">
@@ -157,10 +157,10 @@ a { color: inherit; text-decoration: none; }
 
 <section class="portraits">
   <div class="portraits-grid">
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1546596468-13349ee0c504?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1550948806-acbfbd82ae77?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1635273051368-de31ef6a8cc4?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
     <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1760243875500-16a7ecafa52b?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
-    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
+    <div class="portrait" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&h=1800&q=80');"></div>
   </div>
 </section>
 
@@ -171,7 +171,7 @@ a { color: inherit; text-decoration: none; }
 </section>
 
 <section class="area-ep">
-  <p>Where Duane books</p>
+  <p>Where Duane works</p>
   <p class="area-ep-cities">Linwood Road · Bessemer City · Lowell · Ranlo · Dallas · Cramerton</p>
 </section>
 
@@ -186,5 +186,55 @@ a { color: inherit; text-decoration: none; }
   <p class="foot-ep-meta">Gastonia, NC · Run by Duane</p>
 </footer>
 
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef0ff; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Book a call with Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Preview built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like it? Make it yours.</p>
+    <a class="chleb-bk__btn" href="https://calendar.app.google/uZuVNYYg2NDCoucB9" target="_blank" rel="noopener">Book a 15 minute call</a>
+  </div>
+</aside>
 </body>
 </html>

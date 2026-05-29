@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Sans+Condensed:wght@700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@700;800;900&family=Oswald:wght@600;700;900&family=Inter:wght@400;600;700;900&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --steel: #0b1726; --steel-2: #0f1f33; --concrete: #1a2c44; --safety: #22d3ee; --bone: #e6f4f9; --line: #1e3553; --green: #facc15; --mono-font: "JetBrains Mono","IBM Plex Mono","Menlo",monospace; --sans-cond: "Barlow Condensed","IBM Plex Sans Condensed",sans-serif; --sans: "Barlow","Inter",sans-serif; }
+:root { --steel: #161a1f; --steel-2: #1c2128; --concrete: #2a3038; --safety: #f97316; --bone: #ebe5d8; --line: #3a4047; --green: #6ee7b7; --mono-font: "IBM Plex Mono","JetBrains Mono","Menlo",monospace; --sans-cond: "IBM Plex Sans Condensed","Inter",sans-serif; --sans: "IBM Plex Sans","Inter",sans-serif; }
 body { margin: 0; background: var(--steel); color: var(--bone); font-family: var(--mono-font); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
@@ -87,36 +87,30 @@ a { color: inherit; text-decoration: none; }
 <body>
 
 <div class="top">
-  <div class="top-mark">Fair Tech Mobile Car and Truck Repair // Brandon, FL</div>
-  <div class="top-status">Online</div>
-  <a href="tel:+18133477872" class="top-call">Send · (813) 347-7872</a>
+  <div class="top-mark">Fair Tech Mobile Car and Truck Repair · Brandon, FL</div>
+  <div class="top-status">On call</div>
+  <a href="tel:+18133477872" class="top-call">Dispatch · (813) 347-7872</a>
 </div>
 
 <header class="hero">
   <div class="hero-spec">
-    <span><b>INVENTORY</b> common parts on board</span>
-    <span><b>RANGE</b> Brandon + nearby</span>
-    <span><b>TURN</b> same-day, most jobs</span>
+    <span><b>VAN-STOCKED</b> common parts on board</span>
+    <span><b>RADIUS</b> Brandon + nearby</span>
+    <span><b>RESPONSE</b> same-day, most jobs</span>
   </div>
   <h1>Mobile mechanic work, done at your driveway.</h1>
   <p class="hero-sub">Brandon&#39;s mobile repair shop for cars and trucks, run by a wrench who shows up on time and tells you straight what the job needs.</p>
   <div class="hero-cta-row">
-    <a href="tel:+18133477872" class="btn-call">Send · (813) 347-7872</a>
+    <a href="tel:+18133477872" class="btn-call">Dispatch · (813) 347-7872</a>
     <a href="#jobs" class="btn-text">Common jobs + rates</a>
   </div>
 </header>
 
 
 
-
-
-
-
-
-
 <section class="dispatch">
   <div class="dispatch-card">
-    <p class="dispatch-eyebrow">Send · same-day, most jobs</p>
+    <p class="dispatch-eyebrow">Dispatch · same-day, most jobs</p>
     <h2>How we run jobs in Brandon</h2>
     <a href="tel:+18133477872" class="dispatch-phone">(813) 347-7872</a>
     <p class="dispatch-meta">Final quote on site before any wrench moves.</p>
@@ -128,5 +122,55 @@ a { color: inherit; text-decoration: none; }
   <p class="foot-meta">Brandon, FL · Run by Owner</p>
 </footer>
 
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef0ff; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Book a call with Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Preview built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like it? Make it yours.</p>
+    <a class="chleb-bk__btn" href="https://calendar.app.google/uZuVNYYg2NDCoucB9" target="_blank" rel="noopener">Book a 15 minute call</a>
+  </div>
+</aside>
 </body>
 </html>

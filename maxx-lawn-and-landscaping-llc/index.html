@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&family=Cormorant+Garamond:wght@500;700&family=Lora:wght@500;700&family=Caveat:wght@600;700&family=Inter:wght@400;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --moss: #5a4d3c; --leaf: #a48a55; --bark: #3c2f24; --bone: #fbf3e2; --rust: #c98146; --sage: #dcd2b7; --head-font: "Lora","Source Serif Pro","Georgia",serif; --sans-font: "Inter","Helvetica",sans-serif; --script-font: "Caveat","Lora",cursive; }
+:root { --moss: #2c3e2a; --leaf: #4f7a3a; --bark: #3b2d20; --bone: #f4f1e8; --rust: #b54d2c; --sage: #cdd5be; --head-font: "Source Serif Pro","Charter","Iowan Old Style","Georgia",serif; --sans-font: "Inter","Helvetica",sans-serif; --script-font: "Caveat","Source Serif Pro",cursive; }
 body { margin: 0; background: var(--bone); color: var(--bark); font-family: var(--head-font); line-height: 1.55; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -29,7 +29,7 @@ a { color: inherit; }
 .cover-flourish::before { left: -4px; }
 .cover-flourish::after { right: -4px; }
 
-.field-photo { position: relative; height: 540px; background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=1800&h=900&q=80'); margin: 0; }
+.field-photo { position: relative; height: 540px; background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1588680281884-5e694f9e9e52?auto=format&fit=crop&w=1800&h=900&q=80'); margin: 0; }
 .field-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(60, 51, 40, 0.5) 100%); }
 .field-caption { position: absolute; bottom: 32px; left: 32px; right: 32px; color: var(--bone); font-family: var(--script-font); font-size: 32px; font-weight: 600; max-width: 760px; line-height: 1.3; z-index: 2; }
 
@@ -91,7 +91,7 @@ a { color: inherit; }
 <body>
 
 <div class="book-top">
-  <span><span class="seal"></span>Yard Almanac · 2026</span>
+  <span><span class="seal"></span>Field Journal · 2026</span>
   <span class="meta">Bartlett, TN · Run by Maxx</span>
 </div>
 
@@ -161,17 +161,17 @@ a { color: inherit; }
     <h2 class="section-h2">The cycle.</h2>
     <div class="week-grid">
     <div class="week-card">
-      <div class="week-num">Round 1</div>
+      <div class="week-num">Week 1</div>
       <div class="week-name">Walk the yard</div>
       <p class="week-detail">Brian comes out, measures, and writes the scope while standing on the property with you.</p>
     </div>
     <div class="week-card">
-      <div class="week-num">Round 2</div>
+      <div class="week-num">Week 2</div>
       <div class="week-name">Quote and schedule</div>
       <p class="week-detail">Itemized quote sent the same week, install or service date locked on a fixed route day.</p>
     </div>
     <div class="week-card">
-      <div class="week-num">Round 3</div>
+      <div class="week-num">Week 3</div>
       <div class="week-name">Maintain it</div>
       <p class="week-detail">Same crew returns weekly or seasonally so the work compounds instead of resetting every year.</p>
     </div>
@@ -183,10 +183,10 @@ a { color: inherit; }
   <p class="section-eyebrow">From the field</p>
   <h2 class="section-h2">Recent properties.</h2>
   <div class="snapshots-grid">
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1692339267725-ce644ac805ec?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1584615994639-2b6ffc07ac5b?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1610999927337-3997faf0227a?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1775803157852-21f21c12b127?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1775803157824-a4418229e381?auto=format&fit=crop&w=900&h=700&q=80');"></div>
   </div>
 </section>
 
@@ -215,5 +215,55 @@ a { color: inherit; }
   <p class="foot-fj-meta">Bartlett, TN · (901) 338-8851 · Run by Maxx</p>
 </footer>
 
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef0ff; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Book a call with Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Preview built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like it? Make it yours.</p>
+    <a class="chleb-bk__btn" href="https://calendar.app.google/uZuVNYYg2NDCoucB9" target="_blank" rel="noopener">Book a 15 minute call</a>
+  </div>
+</aside>
 </body>
 </html>

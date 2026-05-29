@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&family=Cormorant+Garamond:wght@500;700&family=Lora:wght@500;700&family=Caveat:wght@600;700&family=Inter:wght@400;600;700&display=swap" />
 <style>
 *,*::before,*::after { box-sizing: border-box; }
-:root { --moss: #5a4d3c; --leaf: #a48a55; --bark: #3c2f24; --bone: #fbf3e2; --rust: #c98146; --sage: #dcd2b7; --head-font: "Lora","Source Serif Pro","Georgia",serif; --sans-font: "Inter","Helvetica",sans-serif; --script-font: "Caveat","Lora",cursive; }
+:root { --moss: #2c3e2a; --leaf: #4f7a3a; --bark: #3b2d20; --bone: #f4f1e8; --rust: #b54d2c; --sage: #cdd5be; --head-font: "Source Serif Pro","Charter","Iowan Old Style","Georgia",serif; --sans-font: "Inter","Helvetica",sans-serif; --script-font: "Caveat","Source Serif Pro",cursive; }
 body { margin: 0; background: var(--bone); color: var(--bark); font-family: var(--head-font); line-height: 1.55; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -29,7 +29,7 @@ a { color: inherit; }
 .cover-flourish::before { left: -4px; }
 .cover-flourish::after { right: -4px; }
 
-.field-photo { position: relative; height: 540px; background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1800&h=900&q=80'); margin: 0; }
+.field-photo { position: relative; height: 540px; background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1697490251905-d7abdf8436ca?auto=format&fit=crop&w=1800&h=900&q=80'); margin: 0; }
 .field-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(60, 51, 40, 0.5) 100%); }
 .field-caption { position: absolute; bottom: 32px; left: 32px; right: 32px; color: var(--bone); font-family: var(--script-font); font-size: 32px; font-weight: 600; max-width: 760px; line-height: 1.3; z-index: 2; }
 
@@ -91,7 +91,7 @@ a { color: inherit; }
 <body>
 
 <div class="book-top">
-  <span><span class="seal"></span>Yard Almanac · 2026</span>
+  <span><span class="seal"></span>Field Journal · 2026</span>
   <span class="meta">Montgomery, AL · Run by Keondrel</span>
 </div>
 
@@ -105,6 +105,50 @@ a { color: inherit; }
 <div class="field-photo">
   <div class="field-caption">"We started Stovalls in 2022 because every yard crew in Montgomery seems to run on a wait list and a voicemail, and folks deserve a guy who actually shows up on the day he promised." — Keondrel</div>
 </div>
+
+<section class="letter">
+  <div class="letter-inner">
+    <p class="letter-eyebrow">A short note from the owner</p>
+    <h2>About Stovalls Lawn Care LLC.</h2>
+    <p>Keondrel has been cutting professionally since 2010 and started Stovalls in 2022 while serving as a Fire Lieutenant in Montgomery. He runs the route himself, answers his own phone between shifts at the station, and only takes on what his crew can finish right.</p>
+    <p class="signature">— Keondrel</p>
+  </div>
+</section>
+
+<section class="snapshots">
+  <p class="section-eyebrow">From the field</p>
+  <h2 class="section-h2">Recent properties.</h2>
+  <div class="snapshots-grid">
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1630311853242-edd0c07766c0?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1608101854678-b45ad1d25556?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?auto=format&fit=crop&w=900&h=700&q=80');"></div>
+  </div>
+</section>
+
+<section class="cycle">
+  <div class="cycle-inner">
+    <p class="section-eyebrow">How a property runs with us</p>
+    <h2 class="section-h2">The cycle.</h2>
+    <div class="week-grid">
+    <div class="week-card">
+      <div class="week-num">Week 1</div>
+      <div class="week-name">Walk the yard</div>
+      <p class="week-detail">Keondrel comes out, looks at the property, and quotes a real number for a weekly or bi-weekly route.</p>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Week 2</div>
+      <div class="week-name">Set the day</div>
+      <p class="week-detail">You get a fixed service day. We show up that day every week unless the weather pushes us.</p>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Week 3</div>
+      <div class="week-name">Cut and clear</div>
+      <p class="week-detail">Mow, edge, trim, and blow off. Yard is left ready, invoice goes out after the visit.</p>
+    </div>
+    </div>
+  </div>
+</section>
 
 <section class="plans">
   <p class="section-eyebrow">The plan list</p>
@@ -148,50 +192,6 @@ a { color: inherit; }
   </ul>
 </section>
 
-<section class="cycle">
-  <div class="cycle-inner">
-    <p class="section-eyebrow">How a property runs with us</p>
-    <h2 class="section-h2">The cycle.</h2>
-    <div class="week-grid">
-    <div class="week-card">
-      <div class="week-num">Round 1</div>
-      <div class="week-name">Walk the yard</div>
-      <p class="week-detail">Keondrel comes out, looks at the property, and quotes a real number for a weekly or bi-weekly route.</p>
-    </div>
-    <div class="week-card">
-      <div class="week-num">Round 2</div>
-      <div class="week-name">Set the day</div>
-      <p class="week-detail">You get a fixed service day. We show up that day every week unless the weather pushes us.</p>
-    </div>
-    <div class="week-card">
-      <div class="week-num">Round 3</div>
-      <div class="week-name">Cut and clear</div>
-      <p class="week-detail">Mow, edge, trim, and blow off. Yard is left ready, invoice goes out after the visit.</p>
-    </div>
-    </div>
-  </div>
-</section>
-
-<section class="snapshots">
-  <p class="section-eyebrow">From the field</p>
-  <h2 class="section-h2">Recent properties.</h2>
-  <div class="snapshots-grid">
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1553482301-80009ff35f41?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1712248673238-6c42ec3e0918?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1731082686849-d2e0a4d2c70c?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-    <div class="snapshot" style="background-image: url('https://images.unsplash.com/photo-1690068023694-053da714f95f?auto=format&fit=crop&w=900&h=700&q=80');"></div>
-  </div>
-</section>
-
-<section class="letter">
-  <div class="letter-inner">
-    <p class="letter-eyebrow">A short note from the owner</p>
-    <h2>About Stovalls Lawn Care LLC.</h2>
-    <p>Keondrel has been cutting professionally since 2010 and started Stovalls in 2022 while serving as a Fire Lieutenant in Montgomery. He runs the route himself, answers his own phone between shifts at the station, and only takes on what his crew can finish right.</p>
-    <p class="signature">— Keondrel</p>
-  </div>
-</section>
-
 <section class="area-fj">
   <p>Where we keep yards</p>
   <p class="area-fj-cities">Cloverdale · Old Cloverdale · Wynlakes · Pike Road · Prattville · Millbrook</p>
@@ -208,5 +208,55 @@ a { color: inherit; }
   <p class="foot-fj-meta">Montgomery, AL · (334) 538-6428 · Run by Keondrel</p>
 </footer>
 
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef0ff; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Book a call with Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Preview built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like it? Make it yours.</p>
+    <a class="chleb-bk__btn" href="https://calendar.app.google/uZuVNYYg2NDCoucB9" target="_blank" rel="noopener">Book a 15 minute call</a>
+  </div>
+</aside>
 </body>
 </html>
