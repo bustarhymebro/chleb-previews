@@ -1,0 +1,30 @@
+{
+  "bundle_sha256": "6bad2a2c98bc74a54eb8277a9b354301f3170f0b2546b5e58c8cd3f1ca28464e",
+  "algorithm": "sha256 of sorted '<basename>:<sha256(file)>' lines joined by newline",
+  "slides": [
+    {
+      "file": "slide-01.mp4",
+      "sha256": "39226b6b65fa82d0b3d725a9c0ee56462387b02522669feba5a90e0588ac8967"
+    },
+    {
+      "file": "slide-02.mp4",
+      "sha256": "e5a17cfbf2238bea5219e294d7801beeab14f8edcc4ef5a80a8129ea474c191b"
+    },
+    {
+      "file": "slide-03.mp4",
+      "sha256": "74408239b7afd4b52be600619b29c3876df1ae3489e1f04c5fa9840100068472"
+    },
+    {
+      "file": "slide-04.mp4",
+      "sha256": "0a6e695197edf263a8f75d030329aaaf22048267ff9524d9c31087dead4d60ba"
+    },
+    {
+      "file": "slide-05.mp4",
+      "sha256": "b4e98638e1bf38fdefb1897fd549ad56475605337930da51c29200686ddff4a4"
+    },
+    {
+      "file": "slide-06.mp4",
+      "sha256": "865cf158411bc87388d0c2ad15a7e1e3f71ca2a4fa399ddd8344948e2d250615"
+    }
+  ]
+}
