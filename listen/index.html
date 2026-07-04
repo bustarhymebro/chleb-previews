@@ -60,9 +60,9 @@
   const audio = document.getElementById('audio'), play = document.getElementById('play'),
         hint = document.getElementById('hint'), player = document.getElementById('player'), wave = document.getElementById('wave');
   for (let i = 0; i < 26; i++) wave.appendChild(document.createElement('span'));
-  if (src && /^https:\/\/(www\.)?chleb\.ai\//.test(src)) audio.src = src; else hint.textContent = 'Sample unavailable — call Dom to hear it live.';
+  if (src && /^https:\/\/((www\.|previews\.)?chleb\.ai)\//.test(src)) audio.src = src; else hint.textContent = 'Sample unavailable — call Dom to hear it live.';
   function setPlaying(on){ player.classList.toggle('playing', on); play.classList.toggle('pulse', !on); play.innerHTML = on ? '&#10074;&#10074;' : '&#9654;'; hint.textContent = on ? 'Playing — your receptionist, live' : 'Tap to listen'; }
-  play.addEventListener('click', () => { if (audio.paused) { audio.play(); } else { audio.pause(); } });
+  play.addEventListener('click', () => { if (!audio.src) { hint.textContent = 'Sample unavailable — call Dom to hear it live.'; return; } if (audio.paused) { audio.play().catch(() => setPlaying(false)); } else { audio.pause(); } });
   audio.addEventListener('play', () => setPlaying(true));
   audio.addEventListener('pause', () => setPlaying(false));
   audio.addEventListener('ended', () => { setPlaying(false); hint.textContent = 'That was your AI receptionist. Want her on your line this week?'; const c = document.getElementById('callCta'); c.scrollIntoView({behavior:'smooth', block:'center'}); c.style.animation = 'pulse 1.6s ease-in-out 4'; });
