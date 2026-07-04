@@ -11,12 +11,12 @@
   h1{font-size:26px;line-height:1.25;margin-bottom:6px}
   .biz{color:var(--gold)}
   .sub{color:#aeb8cf;font-size:14px;margin-bottom:30px}
-  .player{background:rgba(255,255,255,.06);border:1px solid rgba(201,164,92,.35);border-radius:20px;padding:28px 22px;backdrop-filter:blur(6px)}
+  .player{background:rgba(255,255,255,.07);border:1px solid rgba(201,164,92,.45);border-radius:18px;padding:22px 18px 16px;backdrop-filter:blur(6px)}
   .btn-play{width:86px;height:86px;border-radius:50%;border:none;background:var(--gold);color:var(--navy);font-size:34px;cursor:pointer;box-shadow:0 10px 30px rgba(201,164,92,.35);transition:transform .15s}
   .btn-play:active{transform:scale(.93)}
   .pulse{animation:pulse 1.6s ease-in-out infinite}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,164,92,.45)}50%{box-shadow:0 0 0 18px rgba(201,164,92,0)}}
-  .wave{display:flex;align-items:center;justify-content:center;gap:4px;height:44px;margin:22px 0 6px}
+  .wave{display:flex;align-items:center;justify-content:center;gap:3px;height:48px;margin:18px 0 4px}
   .wave span{width:5px;border-radius:3px;background:var(--gold);height:8px;transition:height .12s}
   .playing .wave span{animation:eq 1s ease-in-out infinite}
   .wave span:nth-child(2n){animation-delay:.15s}.wave span:nth-child(3n){animation-delay:.3s}.wave span:nth-child(5n){animation-delay:.45s}
@@ -59,13 +59,13 @@
   if (biz) { document.getElementById('biz').textContent = biz; document.title = 'Hear the AI receptionist for ' + biz; }
   const audio = document.getElementById('audio'), play = document.getElementById('play'),
         hint = document.getElementById('hint'), player = document.getElementById('player'), wave = document.getElementById('wave');
-  for (let i = 0; i < 16; i++) wave.appendChild(document.createElement('span'));
+  for (let i = 0; i < 26; i++) wave.appendChild(document.createElement('span'));
   if (src && /^https:\/\/(www\.)?chleb\.ai\//.test(src)) audio.src = src; else hint.textContent = 'Sample unavailable — call Dom to hear it live.';
   function setPlaying(on){ player.classList.toggle('playing', on); play.classList.toggle('pulse', !on); play.innerHTML = on ? '&#10074;&#10074;' : '&#9654;'; hint.textContent = on ? 'Playing — your receptionist, live' : 'Tap to listen'; }
   play.addEventListener('click', () => { if (audio.paused) { audio.play(); } else { audio.pause(); } });
   audio.addEventListener('play', () => setPlaying(true));
   audio.addEventListener('pause', () => setPlaying(false));
-  audio.addEventListener('ended', () => { setPlaying(false); hint.textContent = 'That was your AI receptionist. Want her on your line this week?'; });
+  audio.addEventListener('ended', () => { setPlaying(false); hint.textContent = 'That was your AI receptionist. Want her on your line this week?'; const c = document.getElementById('callCta'); c.scrollIntoView({behavior:'smooth', block:'center'}); c.style.animation = 'pulse 1.6s ease-in-out 4'; });
   // try autoplay (works on desktop + some Android; iOS needs the tap)
   audio.play().catch(() => {});
 </script>
