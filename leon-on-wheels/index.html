@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leon On Wheels · Norfolk food truck</title>
+<meta name="description" content="The menu is short because everything on it earns its spot." />
+<meta property="og:title" content="Leon On Wheels" />
+<meta property="og:description" content="The menu is short because everything on it earns its spot." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1770543508997-6c6bee500099?auto=format&fit=crop&w=1200&h=800&q=80" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" />
+<style>
+*,*::before,*::after { box-sizing: border-box; }
+:root { --paper: #ece2cd; --ink: #2a2118; --rust: #a04d28; --mustard: #a98032; --olive: #5a6234; --head-font: "Cardo","Georgia",serif; --body-font: "Cardo","Georgia",serif; --sans-font: "Inter","Helvetica Neue",sans-serif; --rule: 4px double; --brand-style: italic; --brand-weight: 700; --brand-spacing: -0.02em; --sub-style: italic; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body-font); line-height: 1.45; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+.masthead { border-bottom: 2px solid var(--ink); padding: 18px 28px 14px; display: flex; align-items: baseline; justify-content: space-between; font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.masthead .vol { font-weight: 700; }
+.masthead .right { color: #555; }
+
+.brand { text-align: center; padding: 50px 24px 14px; border-bottom: var(--rule) var(--ink); }
+.brand-name { font-family: var(--head-font); font-size: clamp(56px, 12vw, 156px); font-weight: var(--brand-weight); line-height: 0.92; letter-spacing: var(--brand-spacing); margin: 0; font-style: var(--brand-style); }
+.brand-name .accent { color: var(--rust); font-style: normal; }
+.brand-sub { margin-top: 18px; font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; }
+
+.lede { max-width: 920px; margin: 56px auto 0; padding: 0 28px; }
+.lede .drop-cap { font-family: var(--head-font); font-size: 64px; font-weight: 900; line-height: 0.9; float: left; margin: 6px 12px 0 0; color: var(--rust); }
+.lede p { font-size: 22px; line-height: 1.55; color: #1f1c1a; margin: 0; }
+
+.schedule { margin: 64px auto 0; max-width: 1080px; padding: 28px; background: var(--ink); color: var(--paper); }
+.schedule-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mustard); margin: 0 0 14px; }
+.schedule h2 { font-family: var(--head-font); font-size: 38px; font-style: var(--sub-style); margin: 0 0 24px; letter-spacing: -0.015em; }
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-family: var(--sans-font); }
+.schedule-row { border-top: 1px solid #2a2622; padding-top: 14px; }
+.schedule-day { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mustard); }
+.schedule-where { margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--paper); }
+
+.menu { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
+.menu-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.menu h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
+.menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 36px 56px; }
+.menu-item { border-bottom: 1px dotted #1614134d; padding-bottom: 20px; }
+.menu-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.menu-item-name { font-family: var(--head-font); font-size: 24px; font-weight: 800; letter-spacing: -0.005em; margin: 0; }
+.menu-item-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 6px; }
+.menu-item-detail { margin: 6px 0 0; font-size: 15px; color: #4a4541; line-height: 1.55; font-style: italic; }
+
+.cluster { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 320px 320px; gap: 6px; margin: 80px 0 0; background: var(--ink); }
+.cluster-tile { background-size: cover; background-position: center; filter: contrast(1.05) saturate(1.05); }
+.cluster-tile.big { grid-row: span 2; }
+
+.note { max-width: 760px; margin: 80px auto 0; padding: 0 28px; }
+.note-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--olive); margin: 0 0 12px; }
+.note h2 { font-family: var(--head-font); font-size: 42px; font-style: var(--sub-style); letter-spacing: -0.015em; margin: 0 0 20px; }
+.note p { font-size: 18px; line-height: 1.7; color: #1f1c1a; }
+.signature { margin-top: 28px; font-family: var(--head-font); font-size: 26px; font-style: var(--sub-style); color: var(--rust); }
+
+.prices { max-width: 1080px; margin: 80px auto 0; padding: 0 28px; }
+.prices-eyebrow { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: #555; margin: 0 0 12px; }
+.prices h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 36px; letter-spacing: -0.02em; }
+.prices-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; }
+.price-row { border-bottom: 1px dotted #1614134d; padding: 14px 0; }
+.price-item-head { display: flex; align-items: baseline; gap: 10px; }
+.price-name { font-family: var(--head-font); font-size: 20px; font-weight: 700; }
+.price-leader { flex: 1; border-bottom: 1px dotted #1614134d; margin: 0 8px 4px; }
+.price-val { font-family: var(--sans-font); font-size: 16px; font-weight: 600; white-space: nowrap; }
+@media (max-width: 680px) { .prices-grid { grid-template-columns: 1fr; } }
+
+.catering { margin: 80px auto 0; max-width: 1080px; padding: 56px 36px; background: var(--mustard); color: var(--ink); border-top: var(--rule) var(--ink); border-bottom: var(--rule) var(--ink); text-align: center; }
+.catering h2 { font-family: var(--head-font); font-size: 56px; font-style: var(--sub-style); margin: 0 0 14px; letter-spacing: -0.02em; }
+.catering p { margin: 0 auto 28px; max-width: 560px; font-size: 19px; line-height: 1.55; }
+.catering-btn { display: inline-block; padding: 18px 36px; background: var(--ink); color: var(--paper); text-decoration: none; font-family: var(--sans-font); font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+
+.area { max-width: 920px; margin: 64px auto 0; padding: 0 28px; text-align: center; }
+.area p { font-family: var(--sans-font); font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #4a4541; margin: 0; }
+.area-cities { margin-top: 12px; font-family: var(--head-font); font-size: 24px; font-style: var(--sub-style); color: var(--ink); line-height: 1.5; }
+
+.foot { margin-top: 80px; padding: 36px 28px; background: var(--ink); color: var(--paper); text-align: center; font-family: var(--sans-font); }
+.foot-name { font-family: var(--head-font); font-size: 36px; font-style: var(--sub-style); margin: 0 0 8px; }
+.foot-phone { font-size: 22px; font-weight: 700; margin: 14px 0; }
+.foot-phone a { color: var(--mustard); text-decoration: none; }
+.foot-meta { font-size: 12px; color: #c8bfae; letter-spacing: 0.18em; text-transform: uppercase; }
+
+@media (max-width: 700px) {
+  .menu-list { grid-template-columns: 1fr; gap: 24px; }
+  .cluster { grid-template-columns: 1fr; grid-template-rows: 220px 220px 220px 220px 220px; }
+  .cluster-tile.big { grid-row: span 1; }
+}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="vol">Volume IV · 2026</div>
+  <div class="center">A Leon On Wheels Letters</div>
+  <div class="right">Norfolk, NE</div>
+</div>
+
+<header class="brand">
+  <h1 class="brand-name">Leon On Wheels</h1>
+  <p class="brand-sub">Run by Owner · Norfolk</p>
+</header>
+
+<section class="lede">
+  <p><span class="drop-cap">T</span>he menu is short because everything on it earns its spot.</p>
+</section>
+
+<section class="menu">
+  <p class="menu-eyebrow">The list</p>
+  <h2>What we make.</h2>
+  <div class="menu-list">
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Street tacos</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">The one people drive across town for.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Tacos de birria / quesabirria tacos</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">First-timers get told to order the tacos de birria / quesabirria tacos.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Crack Quesadilla (award-winning)</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">Made fresh every morning, gone by close.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Neptune&#39;s Melt</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">The one people drive across town for.</p>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <div class="menu-item-name">Cheesy quesadillas</div>
+        <div class="menu-item-leader"></div>
+      </div>
+      <p class="menu-item-detail">First-timers get told to order the cheesy quesadillas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="note">
+  <p class="note-eyebrow">A short note</p>
+  <h2>From Owner.</h2>
+  <p>The Leon On Wheels crew built this truck to cook the food they grew up on and serve it the way Norfolk deserves: hot, fast, and without cutting a single corner.</p>
+  <p class="signature">, Owner</p>
+</section>
+
+<section class="cluster">
+  <div class="cluster-tile big" style="background-image: url('https://images.unsplash.com/photo-1770543508997-6c6bee500099?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1570441643216-8a07341321e9?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1572932759899-5ad91d0f9dbb?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+  <div class="cluster-tile" style="background-image: url('https://images.unsplash.com/photo-1643741132132-4466f64e1f54?auto=format&fit=crop&w=1200&h=800&q=80');"></div>
+</section>
+
+<section class="schedule">
+  <p class="schedule-eyebrow">A kitchen on wheels, run like a kitchen</p>
+  <h2>What happens when you call.</h2>
+  <div class="schedule-grid">
+    <div class="schedule-row">
+      <div class="schedule-day">Find the truck</div>
+      <div class="schedule-where">Regular spots posted weekly on our pages.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Order at the window</div>
+      <div class="schedule-where">Everything cooked fresh while you wait.</div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-day">Come back hungry</div>
+      <div class="schedule-where">The menu rotates, the standard does not.</div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="catering">
+  <h2>Book Leon On Wheels.</h2>
+  <p>No steam tables, no shortcuts. Leon On Wheels preps every morning and serves until it is gone. If the window is open in Norfolk, the food is fresh.</p>
+  <a href="tel:+14029402787" class="catering-btn">(402) 940-2787 · Call to book</a>
+</section>
+
+<section class="area">
+  <p>Where we roll</p>
+  <p class="area-cities">Dodge Library, Norfolk NE · David City Fairgrounds, David City NE · Dodge, NE · Norfolk</p>
+</section>
+
+<footer class="foot">
+  <h3 class="foot-name">Leon On Wheels</h3>
+  <p class="foot-phone"><a href="tel:+14029402787">(402) 940-2787</a></p>
+  <p class="foot-meta">Norfolk, NE · Run by Owner</p>
+</footer>
+
+<!-- Chleb booking CTA (injected on every preview, all layout variants) -->
+<style>
+  /* Universal mobile-overflow guard (injected last so it wins the cascade).
+     Root cause of the QA gate's no_overflow_iphone-390/430 blocks: oversized
+     uppercase headings with negative letter-spacing and long unbreakable words
+     push past the 390/430 viewport, and a few flex rows (nav + full phone CTA)
+     don't wrap. Cap the document width, clip horizontal scroll, and let long
+     heading words break. Layout-agnostic so it covers all 10 variants. */
+  html, body { max-width: 100%; overflow-x: hidden; }
+  h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+  img, video, table, pre { max-width: 100%; }
+  .chleb-bk {
+    position: fixed; top: 14px; right: 14px; z-index: 2147483647;
+    max-width: 320px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    background: #0b1020; color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-bk__mark {
+    flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+    background: linear-gradient(135deg, #0f9d6b, #0a7a52);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 17px; color: #ffffff; letter-spacing: -0.02em;
+  }
+  .chleb-bk__copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .chleb-bk__eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.62); margin: 0;
+  }
+  .chleb-bk__line { font-size: 13px; font-weight: 600; color: #ffffff; margin: 0; }
+  .chleb-bk__btn {
+    display: inline-block; margin-top: 2px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #ffffff; color: #0b1020 !important;
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .chleb-bk__btn:hover { background: #eef7f2; }
+  .chleb-bk__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+  @media (max-width: 560px) {
+    .chleb-bk { top: 10px; right: 10px; left: 10px; max-width: none; padding: 10px 12px; }
+    .chleb-bk__eyebrow { font-size: 9px; }
+    .chleb-bk__line { font-size: 12px; }
+  }
+  @media print { .chleb-bk { display: none; } }
+</style>
+<aside class="chleb-bk" role="complementary" aria-label="Contact Chleb AI">
+  <div class="chleb-bk__mark" aria-hidden="true">C</div>
+  <div class="chleb-bk__copy">
+    <p class="chleb-bk__eyebrow">Built for you by Chleb AI</p>
+    <p class="chleb-bk__line">Like this site? Email or call us to make it yours.</p>
+    <div class="chleb-bk__actions">
+      <a class="chleb-bk__btn" href="mailto:chleb@chleb.ai">Email us</a>
+      <a class="chleb-bk__btn" href="tel:+18623733686">Call or text 862-373-3686</a>
+    </div>
+  </div>
+</aside>
+<!-- Chleb 1-click "claim your site" CTA (injected on every preview) -->
+<style>
+  .chleb-claim {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 2147483646;
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    flex-wrap: wrap;
+    padding: 14px 18px calc(14px + env(safe-area-inset-bottom, 0px));
+    background: rgba(11,16,32,0.92);
+    border-top: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 -8px 28px rgba(0,0,0,0.32);
+    backdrop-filter: blur(8px);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .chleb-claim__copy { color: #ffffff; font-size: 15px; font-weight: 600; margin: 0; line-height: 1.35; }
+  .chleb-claim__copy span { color: rgba(255,255,255,0.66); font-weight: 500; }
+  .chleb-claim__btn {
+    appearance: none; border: none; cursor: pointer;
+    padding: 13px 26px; border-radius: 999px;
+    background: #f9a825; color: #ffffff;
+    font-weight: 800; font-size: 15.5px; letter-spacing: -0.01em;
+    font-family: inherit; white-space: nowrap;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+  }
+  .chleb-claim__btn:hover { filter: brightness(1.08); }
+  .chleb-claim__btn:active { transform: translateY(1px); }
+  .chleb-claim__done { color: #ffffff; font-size: 15px; font-weight: 700; margin: 0; }
+  .chleb-claim__done b { color: #f9a825; }
+  .chleb-claim[hidden], .chleb-claim__thanks[hidden] { display: none !important; }
+  @media (max-width: 560px) {
+    .chleb-claim { gap: 10px; padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .chleb-claim__copy { font-size: 13.5px; flex: 1 1 100%; text-align: center; }
+    .chleb-claim__btn { flex: 1 1 100%; }
+  }
+  @media print { .chleb-claim { display: none; } }
+</style>
+<div class="chleb-claim" role="region" aria-label="Claim this website">
+  <p class="chleb-claim__copy">Like this site for Leon On Wheels? <span>It can be live this week.</span></p>
+  <button type="button" class="chleb-claim__btn" id="chleb-claim-btn">Yes, I want this site, claim it</button>
+  <p class="chleb-claim__thanks chleb-claim__done" hidden>Got it. <b>We will reach out today to set it up.</b></p>
+</div>
+<form id="chleb-claim-form" action="https://formsubmit.co/a8e724f60967741b5d166aafda2df2b9" method="POST" target="chleb-claim-sink" style="display:none" aria-hidden="true">
+  <input type="hidden" name="_subject" value="PREVIEW CLAIM: Leon On Wheels (leon-on-wheels) wants their site" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_cc" value="chlebholdings@gmail.com" />
+  <input type="hidden" name="_next" value="https://chleb.ai/?claimed=1" />
+  <input type="text" name="_honey" tabindex="-1" autocomplete="off" />
+  <input type="hidden" name="business" value="Leon On Wheels" />
+  <input type="hidden" name="preview_slug" value="leon-on-wheels" />
+  <input type="hidden" name="city" value="Norfolk" />
+  <input type="hidden" name="state" value="NE" />
+  <input type="hidden" name="vertical" value="food-truck" />
+  <input type="hidden" name="signal" value="claim" />
+</form>
+<iframe name="chleb-claim-sink" title="" style="display:none;width:0;height:0;border:0" aria-hidden="true"></iframe>
+<script>
+  (function () {
+    var btn = document.getElementById("chleb-claim-btn");
+    var form = document.getElementById("chleb-claim-form");
+    if (!btn || !form) return;
+    btn.addEventListener("click", function () {
+      btn.disabled = true;
+      try { form.submit(); } catch (e) {}
+      var bar = btn.closest(".chleb-claim");
+      var copy = bar && bar.querySelector(".chleb-claim__copy");
+      var thanks = bar && bar.querySelector(".chleb-claim__thanks");
+      if (copy) copy.setAttribute("hidden", "");
+      btn.setAttribute("hidden", "");
+      if (thanks) thanks.removeAttribute("hidden");
+    });
+  })();
+</script>
+</body>
+</html>
